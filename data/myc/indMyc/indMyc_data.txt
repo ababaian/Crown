@@ -1,0 +1,6 @@
+mt-dox_1	IMEC	SRS965185	inVitro	SRR2069978.fastq.gz 
+mt-dox_2	IMEC	SRS965180	inVitro	SRR2069983.fastq.gz 
+myc-etoh_1	IMEC	SRS965183	inVitro	SRR2069980.fastq.gz 
+myc-etoh_2	IMEC	SRS965178	inVitro	SRR2069985.fastq.gz
+myc-dox_1	IMEC	SRS965184	inVitro	SRR2069979.fastq.gz 
+myc-dox_2	IMEC	SRS965179	inVitro	SRR2069984.fastq.gz

@@ -1,0 +1,6 @@
+myc-etoh_1	IMEC	SRS1171734	inVitro	SRR2939547.fastq.gz
+myc-etoh_2	IMEC	SRS1171740	inVitro	SRR2939541.fastq.gz
+myc-dox_1	IMEC	SRS1171744	inVitro	SRR2939537.fastq.gz
+myc-dox_1b	IMEC	SRS1171743	inVitro	SRR2939538.fastq.gz
+myc-dox_1c	IMEC	SRS1171733	inVitro	SRR2939548.fastq.gz
+myc-dox_2	IMEC	SRS1171739	inVitro	SRR2939542.fastq.gz
