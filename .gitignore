@@ -31,6 +31,8 @@ data/tmp/*
 *cuffData.db
 *_tracking
 *.diff
+*.bt
+*.bt2
 
 # --------------------------
 # Local Data
