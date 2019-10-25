@@ -46,6 +46,8 @@ data/tmp/*
 data/rm/*
 software/*
 literature/*
+# resources must be added with -f
+resources/*
 
 # --------------------------
 # Plot Files

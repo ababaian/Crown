@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="/home/artem/Crown/resources/hgr/hgr.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="chr13:1008758-1008974" path="/home/artem/Desktop/Crown/data/1kg_pilot/pilot_genomes.xml" version="8">
+    <Resources>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA19238_pcr.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA19239_pcr.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/lifeCons.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA18525.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kgenomes/NA19240_hgr.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA19017.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/gc/rDNA.gc.w30.s1.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/eukCons.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/HG00731_pcr.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_pcr.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA20845.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/vertCons.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/HG02716_vlowcov.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/gc/rDNA.gc.w75.s1.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/HG00096.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/entropy_protContacts/proteinContacts_45S.bed"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/HG00268.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/entropy_protContacts/entropy_45S.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/HG03118_lowcov.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_lowcov.45s.bam"/>
+        <Resource path="/home/artem/Desktop/Crown/resources/rDNA/rDNA.gtf"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/gc/rDNA.gc.w50.s1.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/map/rDNA.w75k10.bam"/>
+    </Resources>
+    <Panel height="1203" name="DataPanel" width="2541">
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" height="30" id="/home/artem/Desktop/Crown/resources/rDNA/rDNA.gtf" name="rDNA.gtf" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,153,51" colorScale="ContinuousColorScale;0.0;75.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="20" id="/home/artem/Desktop/Crown/data/rDNA_stats/map/rDNA.w75k10.bam_coverage" name="Mappability-w75k10" showReference="false" snpThreshold="0.1" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,204,0" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,204,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="20" id="/home/artem/Desktop/Crown/data/rDNA_stats/entropy_protContacts/proteinContacts_45S.bed" name="proteinContacts" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;2.0;0,255,0;0,255,0;0,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="20" id="/home/artem/Desktop/Crown/data/rDNA_stats/entropy_protContacts/entropy_45S.wig" name="Entropy" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.45;0.0;0.55;1.0;0,0,255;255,255,255;255,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/gc/rDNA.gc.w30.s1.wig" name="gc.w30" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.45;0.0;0.55;1.0;0,0,255;255,255,255;255,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/gc/rDNA.gc.w50.s1.wig" name="gc.w50" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.45;0.0;0.55;1.0;0,0,204;255,255,255;255,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/gc/rDNA.gc.w75.s1.wig" name="gc.w75" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;100.0;255,255,255;255,255,255;0,0,51" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/lifeCons.wig" name="lifeCons" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;100.0;255,255,255;255,255,255;0,0,102" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/eukCons.wig" name="eukCons" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;100.0;255,255,255;255,255,255;0,0,153" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/vertCons.wig" name="vertCons" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG02716_vlowcov.45s.bam_junctions" name="HG02716_vlowcov.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG02716_vlowcov.45s.bam" name="HG02716_vlowcov.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="READ_STRAND" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG03118_lowcov.45s.bam_junctions" name="HG03118_lowcov.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG03118_lowcov.45s.bam" name="HG03118_lowcov.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="READ_STRAND" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_lowcov.45s.bam_junctions" name="NA19240_lowcov.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_lowcov.45s.bam" name="NA19240_lowcov.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="READ_STRAND" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_pcr.45s.bam_junctions" name="NA19240_pcr.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_pcr.45s.bam" name="NA19240_pcr.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="READ_STRAND" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kgenomes/NA19240_hgr.bam_junctions" name="NA19240_hgr.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kgenomes/NA19240_hgr.bam" name="NA19240_hgr.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="READ_STRAND" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;2605.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19239_pcr.45s.bam_coverage" name="NA19239_pcr.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2465.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;1587.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19238_pcr.45s.bam_coverage" name="NA19238_pcr.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1466.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;7287.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_pcr.45s.bam_coverage" name="NA19240_pcr.45s.bam Coverage" showReference="false" snpThreshold="0.01" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="7598.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;800.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_lowcov.45s.bam_coverage" name="NA19240_lowcov.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="74.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;4657.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00731_pcr.45s.bam_coverage" name="HG00731_pcr.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="5142.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;6720.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00096.45s.bam_coverage" name="HG00096.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="7442.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;7784.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA18525.45s.bam_coverage" name="NA18525.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="8626.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;13041.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19017.45s.bam_coverage" name="NA19017.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="12289.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;7528.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA20845.45s.bam_coverage" name="NA20845.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="6669.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00096.45s.bam_junctions" name="HG00096.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00096.45s.bam" name="HG00096.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;39.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG02716_vlowcov.45s.bam_coverage" name="HG02716_vlowcov.45s.bam Coverage" showReference="false" snpThreshold="0.05" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="13.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00268.45s.bam_junctions" name="HG00268.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00268.45s.bam" name="HG00268.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00731_pcr.45s.bam_junctions" name="HG00731_pcr.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00731_pcr.45s.bam" name="HG00731_pcr.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG02716_vlowcov.45s.bam_junctions" name="HG02716_vlowcov.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG02716_vlowcov.45s.bam" name="HG02716_vlowcov.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;340.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG03118_lowcov.45s.bam_coverage" name="HG03118_lowcov.45s.bam Coverage" showReference="false" snpThreshold="0.5" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="122.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG03118_lowcov.45s.bam_junctions" name="HG03118_lowcov.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG03118_lowcov.45s.bam" name="HG03118_lowcov.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA18525.45s.bam_junctions" name="NA18525.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA18525.45s.bam" name="NA18525.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19017.45s.bam_junctions" name="NA19017.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19017.45s.bam" name="NA19017.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19238_pcr.45s.bam_junctions" name="NA19238_pcr.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19238_pcr.45s.bam" name="NA19238_pcr.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19239_pcr.45s.bam_junctions" name="NA19239_pcr.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19239_pcr.45s.bam" name="NA19239_pcr.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_lowcov.45s.bam_junctions" name="NA19240_lowcov.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_lowcov.45s.bam" name="NA19240_lowcov.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA20845.45s.bam_junctions" name="NA20845.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA20845.45s.bam" name="NA20845.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" color="175,175,175" colorScale="ContinuousColorScale;0.0;1691.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/HG00268.45s.bam_coverage" name="HG00268.45s.bam Coverage" showReference="false" snpThreshold="0.01" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="10.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_pcr.45s.bam_junctions" name="NA19240_pcr.45s.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/1kg_pilot/NA19240_pcr.45s.bam" name="NA19240_pcr.45s.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="YT" colorOption="TAG" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+    </Panel>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
