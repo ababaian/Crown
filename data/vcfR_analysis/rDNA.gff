@@ -1,0 +1,6 @@
+# rDNA annotation for hgr
+chr13	crown	exon	10220	10340	.	+	.	ID=5S
+chr13	crown	exon	1000001	1013408	.	+	.	ID=45S
+chr13	crown	exon	1003661	1005529	.	+	.	ID=18S
+chr13	crown	exon	1006623	1006779	.	+	.	ID=5.8S
+chr13	crown	exon	1007948	1013018	.	+	.	ID=28S
