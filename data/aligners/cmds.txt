@@ -1,0 +1,2 @@
+samtools view -bh -f 9 NA19240_hgr.bam > NA19240_f9.bam
+
