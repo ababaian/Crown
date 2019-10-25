@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="/home/artem/Crown/resources/hgr/hgr.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="chr13:1003629-1004000" path="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA_igvSession.xml" version="8">
+    <Resources>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/entropy_45S.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/vertCons.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/lifeCons.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA.gc.w30.s1.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA.gc.w75.s1.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/proteinContacts_45S.bed"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA.gc.w50.s1.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/eukCons.wig"/>
+        <Resource path="/home/artem/Desktop/Crown/resources/rDNA/rDNA.gtf"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/map/rDNA.w75k10.bam"/>
+    </Resources>
+    <Panel height="715" name="DataPanel" width="1732">
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" height="30" id="/home/artem/Desktop/Crown/resources/rDNA/rDNA.gtf" name="rDNA.gtf" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,153,51" colorScale="ContinuousColorScale;0.0;75.0;255,255,255;175,175,175" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="20" id="/home/artem/Desktop/Crown/data/rDNA_stats/map/rDNA.w75k10.bam_coverage" name="rDNA.w75k10.bam Coverage" showReference="false" snpThreshold="0.1" sortable="true" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,204,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="20" id="/home/artem/Desktop/Crown/data/rDNA_stats/proteinContacts_45S.bed" name="proteinContacts_45S.bed" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;2.0;0,255,0;0,255,0;0,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="20" id="/home/artem/Desktop/Crown/data/rDNA_stats/entropy_45S.wig" name="entropy_45S.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.45;0.0;0.55;1.0;0,0,255;255,255,255;255,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA.gc.w30.s1.wig" name="rDNA.gc.w30.s1.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.45;0.0;0.55;1.0;0,0,255;255,255,255;255,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA.gc.w50.s1.wig" name="rDNA.gc.w50.s1.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.45;0.0;0.55;1.0;0,0,204;255,255,255;255,0,0" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/rDNA.gc.w75.s1.wig" name="rDNA.gc.w75.s1.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;100.0;255,255,255;255,255,255;0,0,51" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/lifeCons.wig" name="lifeCons.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;100.0;255,255,255;255,255,255;0,0,102" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/eukCons.wig" name="eukCons.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;0.0;0.0;100.0;255,255,255;255,255,255;0,0,153" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="12" id="/home/artem/Desktop/Crown/data/rDNA_stats/conservation/vertCons.wig" name="vertCons.wig" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="43" name="Panel1478207144830" width="1732">
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="/home/artem/Desktop/Crown/data/rDNA_stats/map/rDNA.w75k10.bam_junctions" name="rDNA.w75k10.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/artem/Desktop/Crown/data/rDNA_stats/map/rDNA.w75k10.bam" name="rDNA.w75k10.bam" sortable="true" visible="false">
+            <RenderOptions colorByTag="XS" colorOption="READ_STRAND" flagUnmappedPairs="true" groupByTag="" maxInsertSize="1000" minInsertSize="50" shadeBasesOption="NONE" shadeCenters="true" showAllBases="false" sortByTag=""/>
+        </Track>
+    </Panel>
+    <PanelLayout dividerFractions="0.9372549019607843"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

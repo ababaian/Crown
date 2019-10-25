@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="/home/artem/Desktop/primaseq/hgRNA/hgRNA0.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="chr13:1004358-1005538" nextAutoscaleGroup="2" path="/home/artem/Desktop/Crown/data/rDNA_stats/hgr0/primaseq_rrna.xml" version="8">
+    <Resources>
+        <Resource path="/home/artem/Desktop/primaseq/hgRNA/annotation/hgRNA_annotation.bed"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TOT1.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT1.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TKD2.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TOT2.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TOT2.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TOT3.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TKD3.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TKD1.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TKD2.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT2.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TKD3.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/hgRNA/annotation/rRNA_mods.bed"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TOT3.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TOT1.hgRNA.RTstop.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/TKD1.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/Crown/data/rDNA_stats/hgr1/conservation/protContacts.bed"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT2.hgRNA.bw"/>
+        <Resource path="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT1.hgRNA.RTstop.bw"/>
+    </Resources>
+    <Panel height="1033" name="DataPanel" width="1826">
+        <Track altColor="0,0,178" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" fontSize="12" height="20" id="/home/artem/Desktop/primaseq/hgRNA/annotation/hgRNA_annotation.bed" name="hgRNA_annotation.bed" visible="true"/>
+        <Track clazz="org.broad.igv.track.FeatureTrack" color="255,102,0" fontSize="12" height="20" id="/home/artem/Desktop/primaseq/hgRNA/annotation/rRNA_mods.bed" name="rRNA_mods.bed" visible="true"/>
+        <Track clazz="org.broad.igv.track.FeatureTrack" color="0,204,0" fontSize="12" height="30" id="/home/artem/Desktop/Crown/data/rDNA_stats/hgr1/conservation/protContacts.bed" name="protContacts.bed" visible="true"/>
+        <Track clazz="org.broad.igv.track.SequenceTrack" displayMode="EXPANDED" fontSize="12" id="Reference sequence" name="Reference sequence" visible="true"/>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,204" colorScale="ContinuousColorScale;0.0;15.404500007629395;255,255,255;204,0,204" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TOT1.hgRNA.bw" name="TOT1.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2572600.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,204" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TOT2.hgRNA.bw" name="TOT2.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2421360.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,204" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TOT3.hgRNA.bw" name="TOT3.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="4275500.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="255,102,0" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT1.hgRNA.bw" name="BTOT1.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1743880.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="255,102,0" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT2.hgRNA.bw" name="BTOT2.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2516360.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TKD1.hgRNA.bw" name="TKD1.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.079E7" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TKD2.hgRNA.bw" name="TKD2.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="7243500.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TKD3.hgRNA.bw" name="TKD3.hgRNA.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.15904E7" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,204" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TOT1.hgRNA.RTstop.bw" name="TOT1.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2177640.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,204" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TOT2.hgRNA.RTstop.bw" name="TOT2.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2151930.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,204" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TOT3.hgRNA.RTstop.bw" name="TOT3.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="3958410.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="255,102,0" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT1.hgRNA.RTstop.bw" name="BTOT1.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1582280.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="255,102,0" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/BTOT2.hgRNA.RTstop.bw" name="BTOT2.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="2242710.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TKD1.hgRNA.RTstop.bw" name="TKD1.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.00823E7" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TKD2.hgRNA.RTstop.bw" name="TKD2.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="6713160.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="SQUISHED" fontSize="12" height="40" id="/home/artem/Desktop/primaseq/fastq/align/bw/TKD3.hgRNA.RTstop.bw" name="TKD3.hgRNA.RTstop.bw" renderer="BAR_CHART" visible="true" windowFunction="none">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1.08929E7" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Regions>
+        <Region chromosome="miRNA" end="83352" start="83300"/>
+        <Region chromosome="miRNA" end="208344" start="208300"/>
+        <Region chromosome="chrM" end="14783" start="14723"/>
+        <Region chromosome="vtRNA" end="339" start="249"/>
+        <Region chromosome="tRNA" end="7624" start="7550"/>
+        <Region chromosome="tRNA" end="5373" start="5300"/>
+        <Region chromosome="tRNA" end="5873" start="5800"/>
+        <Region chromosome="ribozymes" end="1064" start="800"/>
+    </Regions>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
