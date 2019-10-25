@@ -1,0 +1,6 @@
+# rDNA annotation for hgr
+13	crown	5S	10221	10340	.	+	.	gene_name "5S rRNA"; gene_source "hg38"
+13	crown	45S	1000001	1013398	.	+	.	gene_name "rRNA"; gene_source "U13369.1"
+13	crown	18S	1003654	1005522	.	+	.	gene_name "18S rRNA"; gene_source "K03432.1"
+13	crown	5-8S	1006616	1006772	.	+	.	gene_name "5.8S rRNA"; gene_source "J01866.1"
+13	crown	28S	1007940	1013007	.	+	.	gene_name "28S rRNA"; gene_source "M11167.1"
