@@ -44,8 +44,6 @@ tmp/*
 # --------------------------
 local/*
 *local*
-data/tmp/*
-data/rm/*
 software/*
 literature/*
 # resources must be added with -f
@@ -62,20 +60,16 @@ literature/*.tif
 # --------------------------
 data/*/1kg_hgr1*datasets.xlsx
 data/hgr1_vcf/100g_gvcf/gvcf_individual/*
+data/vcf_correlation/vcf/*
+data/CRC
+data/rm/*
+data/tmp/*
 
 data2/*/hgr1.fa
 data2/6EK0/COSMIC/*
-resources/hg38/hg38.fa
-resources/hg38r/hg38r.fa
-data/1kg_pilot/*.bam*
-data/1kg_pilot/*.vcf*
-data/vcf_correlation/vcf/*
-.Rproj.user
-data/na12878_pacbio/*.bam
+
 wiki/notebook/.ipynb_checkpoints/*
-data/NA12_alignment/*.bam
 data/dlbcl/*
-data/vcf_correlation/vcf/*
 
 # --------------------------
 # Restricted keywords
