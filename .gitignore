@@ -18,6 +18,7 @@ tmp/*
 *.fq
 *.fastq.gz
 *.bam
+*.bam.bai
 *.vcf
 *.gvcf
 *.bcf
