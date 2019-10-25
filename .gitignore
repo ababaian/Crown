@@ -4,10 +4,11 @@
 *~
 *.swp
 data/tmp/*
+tmp/*
 *.Rproj.user
 *.Rproj
-.RData
-.Rhistory
+*.RData
+*.Rhistory
 *.ipynb_checkpoints*
 
 # --------------------------
@@ -33,19 +34,18 @@ data/tmp/*
 *.diff
 *.bt
 *.bt2
+*.bcf
+*.pse
 
 # --------------------------
 # Local Data
 # --------------------------
 local/*
-*.bcf
-local/*
+*local*
 data/tmp/*
-*.pse
 data/rm/*
 software/*
-resources/hgr/hgr/*
-*local*
+literature/*
 
 # --------------------------
 # Plot Files
@@ -69,4 +69,10 @@ wiki/notebook/.ipynb_checkpoints/*
 data/NA12_alignment/*.bam
 data/dlbcl/*
 data/vcf_correlation/vcf/*
+
+# --------------------------
+# Restricted keywords
+# --------------------------
 *PRIVATE*
+*token*
+*.pem
