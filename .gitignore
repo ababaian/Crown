@@ -1,0 +1,70 @@
+# ---------------------------
+# Temporary files / histories
+# ---------------------------
+*~
+*.swp
+data/tmp/*
+*.Rproj.user
+*.Rproj
+.RData
+.Rhistory
+*.ipynb_checkpoints*
+
+# --------------------------
+# Large Data files
+# --------------------------
+*.fq.gz
+*.fq
+*.fastq.gz
+*.bam
+*.vcf
+*.gvcf
+*.bcf
+*.gtf
+*.2bit
+*.cif
+*.cif.gz
+*.xml
+*.xml.gz
+*.pse
+*cufflinks*
+*cuffData.db
+*_tracking
+*.diff
+
+# --------------------------
+# Local Data
+# --------------------------
+local/*
+*.bcf
+local/*
+data/tmp/*
+*.pse
+data/rm/*
+software/*
+resources/hgr/hgr/*
+*local*
+
+# --------------------------
+# Plot Files
+# --------------------------
+literature/*.tif
+*.pse
+
+# --------------------------
+# Specific Local Files
+# --------------------------
+data2/*/hgr1.fa
+data2/6EK0/COSMIC/*
+resources/hg38/hg38.fa
+resources/hg38r/hg38r.fa
+data/1kg_pilot/*.bam*
+data/1kg_pilot/*.vcf*
+data/vcf_correlation/vcf/*
+.Rproj.user
+data/na12878_pacbio/*.bam
+wiki/notebook/.ipynb_checkpoints/*
+data/NA12_alignment/*.bam
+data/dlbcl/*
+data/vcf_correlation/vcf/*
+*PRIVATE*
