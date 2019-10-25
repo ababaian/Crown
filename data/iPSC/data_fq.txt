@@ -1,0 +1,13 @@
+## HPSI0714i-jilk_4
+# ERS1461240
+# http://www.hipsci.org/lines/#/lines/HPSI0714i-jilk_4
+
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR155/005/ERR1555125/ERR1555125_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR155/005/ERR1555125/ERR1555125_2.fastq.gz
+
+# HPSI0314i-sojd_3
+# ERS1148740
+# http://www.hipsci.org/lines/#/lines/HPSI0314i-sojd_3
+
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR124/006/ERR1243456/ERR1243456_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR124/006/ERR1243456/ERR1243456_2.fastq.gz

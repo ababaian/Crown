@@ -1,0 +1,15 @@
+# 18181
+http://www.ebi.ac.uk/ena/data/view/PRJEB7388
+http://www.hipsci.org/lines/#/lines/HPSI0114i-eipl_3
+
+ftp://ftp.sra.ebi.ac.uk/vol1/ERA565/ERA565054/cram/18181_2%234.cram
+
+# 14963
+http://www.hipsci.org/lines/#/lines/HPSI0114i-bezi_1
+
+ftp://ftp.sra.ebi.ac.uk/vol1/ERA452/ERA452492/cram/14963_7%237.cram
+
+# other
+https://thinklab.com/discussion/tissue-specific-gene-expression-resources/81
+http://bgee.org/
+http://tissues.jensenlab.org/About

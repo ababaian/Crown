@@ -1,0 +1,1 @@
+iPSC_1	jilk4	ERS1461240	inVitro	ERR1555125_1.fastq.gz	ERR1555125_2.fastq.gz

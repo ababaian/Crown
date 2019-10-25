@@ -1,0 +1,1 @@
+iPSC_2	sojd_3	ERS1148740	inVitro	ERR1243456_1.fastq.gz	ERR1243456_2.fastq.gz
