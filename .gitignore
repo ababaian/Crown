@@ -60,6 +60,7 @@ literature/*.tif
 # --------------------------
 # Specific Local Files
 # --------------------------
+data/*/1kg_hgr1*datasets.xlsx
 data2/*/hgr1.fa
 data2/6EK0/COSMIC/*
 resources/hg38/hg38.fa

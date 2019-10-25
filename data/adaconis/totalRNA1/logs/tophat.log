@@ -1,0 +1,34 @@
+
+[2016-04-18 14:47:22] Beginning TopHat run (v2.1.0)
+-----------------------------------------------
+[2016-04-18 14:47:22] Checking for Bowtie
+		  Bowtie version:	 2.2.6.0
+[2016-04-18 14:47:22] Checking for Bowtie index files (genome)..
+[2016-04-18 14:47:22] Checking for reference FASTA file
+[2016-04-18 14:47:22] Generating SAM header for /home/artem/Crown/resources/hgr/hgr
+[2016-04-18 14:47:22] Preparing reads
+	 left reads: min. length=76, max. length=76, 11899532 kept reads (7049 discarded)
+	right reads: min. length=76, max. length=76, 11900440 kept reads (6141 discarded)
+[2016-04-18 14:53:09] Mapping left_kept_reads to genome hgr with Bowtie2 
+[2016-04-18 15:05:42] Mapping left_kept_reads_seg1 to genome hgr with Bowtie2 (1/3)
+[2016-04-18 15:06:46] Mapping left_kept_reads_seg2 to genome hgr with Bowtie2 (2/3)
+[2016-04-18 15:07:39] Mapping left_kept_reads_seg3 to genome hgr with Bowtie2 (3/3)
+[2016-04-18 15:08:38] Mapping right_kept_reads to genome hgr with Bowtie2 
+[2016-04-18 15:21:15] Mapping right_kept_reads_seg1 to genome hgr with Bowtie2 (1/3)
+[2016-04-18 15:22:11] Mapping right_kept_reads_seg2 to genome hgr with Bowtie2 (2/3)
+[2016-04-18 15:23:01] Mapping right_kept_reads_seg3 to genome hgr with Bowtie2 (3/3)
+[2016-04-18 15:23:59] Searching for junctions via segment mapping
+[2016-04-18 15:27:37] Retrieving sequences for splices
+[2016-04-18 15:27:37] Indexing splices
+[2016-04-18 15:27:37] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/3)
+[2016-04-18 15:29:40] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/3)
+[2016-04-18 15:31:33] Mapping left_kept_reads_seg3 to genome segment_juncs with Bowtie2 (3/3)
+[2016-04-18 15:33:27] Joining segment hits
+[2016-04-18 15:36:05] Mapping right_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/3)
+[2016-04-18 15:38:28] Mapping right_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/3)
+[2016-04-18 15:40:24] Mapping right_kept_reads_seg3 to genome segment_juncs with Bowtie2 (3/3)
+[2016-04-18 15:42:28] Joining segment hits
+[2016-04-18 15:44:46] Reporting output tracks
+-----------------------------------------------
+[2016-04-18 16:07:25] A summary of the alignment counts can be found in ./tophat_out/align_summary.txt
+[2016-04-18 16:07:25] Run complete: 01:20:03 elapsed
