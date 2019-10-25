@@ -1,0 +1,41 @@
+# Launched AWS instance
+# C4.xlarge
+#
+# ec2-34-209-2-228.us-west-2.compute.amazonaws.com
+# Thu Apr  6 15:29:41 PDT 2017
+#
+
+## Had to install SRA toolkit!
+# add to next release of Crown AMI
+#
+
+cd software/
+wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2-1/sratoolkit.2.8.2-1-ubuntu64.tar.gz
+
+gzip -d sratoolkit.2.8.2-1-ubuntu64.tar.gz
+
+tar -xvf sratoolkit.2.8.2-1-ubuntu64.tar
+
+cp sratoolkit.2.8.2-1-ubuntu64/bin/* /home/ubuntu/bin/
+
+# Set custom NCBI folder in /resources/ when setting this up on the next image
+
+cd ~/
+
+# IFNg pipeline
+
+aws s3 cp s3://crownproject/IFNg/ ./ --recursive
+
+# download: s3://crownproject/IFNg/IFNg_align_v0.sh to ./IFNg_align_v0.sh
+# download: s3://crownproject/IFNg/initializeData1.sh to ./initializeData1.sh
+# download: s3://crownproject/IFNg/IFNg_data_1.txt to ./IFNg_data_1.txt
+
+screen
+
+sh initializeData1.sh
+
+sh IFNg_align_v0.sh
+
+#...
+
+sh IFNg_align_v0.sh 
