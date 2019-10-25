@@ -20,6 +20,7 @@ tmp/*
 *.bam
 *.bam.bai
 *.vcf
+*.vcf.idx
 *.gvcf
 *.bcf
 *.gtf
