@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Bed Coverage over 'regions' of rDNA
+samtools bedcov hgr1_regions.bed NA12878_pp.hgr1.bam NA12891_pp.hgr1.bam NA12892_pp.hgr1.bam
+
+# Bed Coverage, 100 bp, sliding 50
+bedtools makewindows -b hgr1_wigRegions.bed -w 100 -s 50 > covRegions.w100s50.bed
+bedtools makewindows -b hgr1_wigRegions.bed -w 50 -s 50 > covRegions.w50s50.bed
+
+samtools bedcov covRegions.w100s50.bed NA12878_pp.hgr1.bam NA12891_pp.hgr1.bam NA12892_pp.hgr1.bam > TRIO.cov.w100s50.csv
+
+#Variant Density
+bcftools view -s NA12878 100g.hgr1.g.vcf > NA12878.hgr1.g.vcf
+bcftools view -s NA12891 100g.hgr1.g.vcf > NA12891.hgr1.g.vcf
+bcftools view -s NA12892 100g.hgr1.g.vcf > NA12892.hgr1.g.vcf
