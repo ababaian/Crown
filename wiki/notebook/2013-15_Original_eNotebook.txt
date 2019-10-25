@@ -1,0 +1,1051 @@
+# Artem Babaian
+# Electronic Notebook
+# ====================================================================
+# Mar 27 2013
+
+Initializing my place on the GSC.
+
+'~/contents'
+	this file will contain a brief schematic of where which files
+	belong. Probably a good place to start. Stay organized!
+	
+
+Human Genome (hg19)
+	Aquired the human genome from UCSC
+	ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/hg19.2bit
+
+	The work of thousands of scientists over a decade, and I download it
+	in 81 seconds....
+
+	Genome converted to fasta format for easy manipulation.
+
+Just out of curiousity I'm going to append rDNA to hg19. I would like to see
+how regions of rRNA and/or rDNA map within our data.
+
+HYPOTHESIS:
+	rDNA is mutable in cancer.
+	rDNA mutations will result in altered rRNA.
+	Altered rRNA may represent gain of function ribosomes.
+
+rDNA sequence
+	Downloaded complete human rDNA sequence, repeat unit
+	Genbank: U13369.1
+	This is the same as Zentner et al., 2011 Nucl. Acids Res. (39)
+	Saved to resources/genome/rDNA.fa
+
+	Similiar to Zentner I am going to append the rRNA sequence to
+	chromosome 13. Just to be pretty though it's going to be start
+	at chr13:1,000,000
+
+	[stopped at this point, didn't get rDNA into chr13 yet...]
+
+# =====================================================================
+April 5th 2013
+
+Back from a nice 5 day climb at Skaha :)
+
+	Using head/tail I created an alternative chr13.fa file for hg19
+	with rDNA (U13369.1) inserted at coordinates chr13:1 000 000
+	diff	20002,20861c20002,20861
+	wc chr13.fa	2303399   2303399 117473283
+	wc tmp.fa	2303399   2303399 117473283	
+	
+	The altered chromosome chr13r.fa is stored in the resource folder
+
+hg19r.fa
+hg19r.2bit
+	This is the entire genome hg19 plus rDNA sequence on chr13
+	To analyze rRNA use this files!
+	Stored in Genome folder
+
+
+Installed Software to ~/bin
+	samtools 0.1.17 
+		Note 0.1.19 does not work on Apollo
+		This version was build on Apollo itself to work
+	
+	bowtie2 2.1.0
+		Built on xhost07; Does not work on Apollo
+		Cannot be make on Apollo; bug report sent in
+
+	tophat 2.0.8
+		Built on xhost07; appears to work on Apollo
+
+	cufflinks-2.0.2
+		Built on xhost07; appears to work on Apollo
+	
+Index hg19r genome
+	Index hg19r.fa [Ran on Xhost07... it was late]	
+		bowtie2 hg19r.fa hg19r
+	Completed successfully by next morning (~ 2 hour run)
+	moved into resources/index_bt2
+
+# =====================================================================
+April 6th 2013
+	Reading a bit more I think I may have made a mistake in selecting
+	which chromosomes to include in my genome assembly.
+	Chromosomes marked with 'hap' are haplotypes and therefore
+	may better be excluded.
+
+	iGenomes from Illumina downloaded to /resources/
+	ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Homo_sapiens/UCSC/hg19/Homo_sapiens_UCSC_hg19.tar.gz
+	This build appears to only use the main chromosomes of the assembly
+
+
+	From http://www.cureffi.org/2012/09/07/an-alternative-exome-sequencing-pipeline-using-bowtie2-and-samtools/
+
+	I pulled a nice/neat ordered list of chromosomes, this will be the basis for hg19r
+	
+	chr1.fa chr2.fa chr3.fa chr4.fa chr5.fa chr6.fa chr7.fa chr8.fa chr9.fa chr10.fa chr11.fa
+	chr12.fa chr13.fa chr14.fa chr15.fa chr16.fa chr17.fa chr18.fa chr19.fa chr20.fa chr21.fa
+	chr22.fa chrX.fa chrY.fa chrM.fa
+	chr1_gl000191_random.fa chr1_gl000192_random.fa chr4_gl000193_random.fa chr4_gl000194_random.fa
+	chr7_gl000195_random.fa chr8_gl000196_random.fa chr8_gl000197_random.fa chr9_gl000198_random.fa
+	chr9_gl000199_random.fa chr9_gl000200_random.fa chr9_gl000201_random.fa chr11_gl000202_random.fa
+	chr17_gl000203_random.fa chr17_gl000204_random.fa chr17_gl000205_random.fa chr17_gl000206_random.fa
+	chr18_gl000207_random.fa chr19_gl000208_random.fa chr19_gl000209_random.fa chr21_gl000210_random.fa
+	chrUn_gl000211.fa chrUn_gl000212.fa chrUn_gl000213.fa chrUn_gl000214.fa chrUn_gl000215.fa
+	chrUn_gl000216.fa chrUn_gl000217.fa chrUn_gl000218.fa chrUn_gl000219.fa chrUn_gl000220.fa
+	chrUn_gl000221.fa chrUn_gl000222.fa chrUn_gl000223.fa chrUn_gl000224.fa chrUn_gl000225.fa
+	chrUn_gl000226.fa chrUn_gl000227.fa chrUn_gl000228.fa chrUn_gl000229.fa chrUn_gl000230.fa
+	chrUn_gl000231.fa chrUn_gl000232.fa chrUn_gl000233.fa chrUn_gl000234.fa chrUn_gl000235.fa
+	chrUn_gl000236.fa chrUn_gl000237.fa chrUn_gl000238.fa chrUn_gl000239.fa chrUn_gl000240.fa
+	chrUn_gl000241.fa chrUn_gl000242.fa chrUn_gl000243.fa chrUn_gl000244.fa chrUn_gl000245.fa
+	chrUn_gl000246.fa chrUn_gl000247.fa chrUn_gl000248.fa chrUn_gl000249.fa	
+
+
+	Genome Indexing
+	Ran on xhost07 (saturday)
+
+		bowtie2-build hg19r.fa hg19r
+		samtools faidx hg19r.fa
+	
+~~~ rRNA like seqeuences in the assembly ~~~
+
+	Since there is so much rRNA in the cell they are highly retrotranscribed
+	A challange to this project will be to distinguish expressed pseudogenes
+	from the real variant rRNA. Expressed pseudogenes will in theory be more
+	variable then then the rRNA since they can also contain SNPs/indels.
+
+	Cancer / adjacent control may be a good way around this problem; look for
+	recurrently arising somatic change.
+
+	From Blat I do note that there is rRNA sequence on chrUn_g1000210
+	
+	Dfam has the following rRNA hit listings
+	
+					length	mean_ln	hits_nr	hits_al	
+		LSU rRNA (DF0000772)	4600	266.6	279	284
+		SSU rRNA (DF0001066)	1869	404.9	49	51
+		5S rRNA  (DF0000012)	121	93.7	749	839
+
+
+# April 7th 2013 ===========================================================
+
+Prepping the BAM files for TopHat
+The input needs to be in two fastq files
+ 
+# Samtools to sort the BAM by name prior to next command
+	samtools sort -n HS0988.bam HS0988_nsort.bam
+	~ 1 hour run time
+
+Use bam2fastx (packaged with tophat)
+[-q] fastq output [-A] all reads (including unmapped
+[-P] paired end data [-N] add /1 /2 suffix to fastq
+[-o] <output.suffix>
+
+	bam2fastx -q -A -P -N -o fastq/HS0988.fq bam/HS0988_nsort.bam
+	~ 20 minutes (or less)
+
+TopHat Alignment (no transcriptome data yet...)
+Run from index folder
+
+	Parameters (non-default)
+
+	[-r] <read inner distanc> = 200
+	<index_base> = hg19r
+	<library> = fr-unstranded
+	<reads_1> = ~/data/fastq/HS0988.1.fq
+	<reads_2> = ~/data/fastq/HS0988.2.fq
+	-p [threads] = 4
+	--report-secondary-alignments
+
+	Alignment Parameters (mostly default)
+	
+	<Mismatch> = default, 2
+	<gap_len> = default, 2
+	<read_edit-dist> = default, 2
+	<output> = ~/tmp
+
+		
+		
+#First point BOWTIE2_INDEXES to the hg19r index directory
+	BOWTIE2_INDEXES='/home/ababaian/resources/index/hg19r/'
+	(I ran directly out of the above directory for simplicity...)
+
+# Run Tophat with above parameters
+	time tophat2 -p 8 -r 200 --report-secondary-alignments  -o ~/projects/output hg19r ~/data/fastq/HS0988.1.fq ~/data/fastq/HS0988.2.fq
+
+	it works but i ran out of disk space.
+	Jake has given me a place in Matt's folder to work out of.
+	/projects/mbilenky/mlc/Artem
+
+	This folder is symbolically linked to ~/projects/
+		made subfolder ~/projects/output/
+		to run large output into
+	
+	The run went well and is fairly fast. In the future I will use Genesis
+	which should be capable of running bowtie2 from some testing.
+
+	" Please try running TopHat again with the option
+	 (--no-coverage-search) if this step takes too much time or memory."
+
+	Came up from TopHat, a little bit of reading suggests that it's
+	best to disable this (add --no-coverage-search) for libraries
+	>10 million reads OR >=75 bp reads. As such the future runs will
+	include this option (it saves LOTS of time).
+	The main routine in TopHat ran in a few hours, this splice junction
+	thing has been running overnight and is still not done.
+
+
+	Tophat finished running the next day; 25.5 hours total run time.
+
+
+# April 11th 2013 =============================================================
+
+Output folder from TopHat2
+
+	accepted_hits.bam  insertions.bed  /logs             unmapped.bam
+	deletions.bed      junctions.bed   prep_reads.info
+
+The accepted_hits.bam and unmapped.bam will be appended to one another.
+
+	samtools cat -o HS0988r.bam accepted_hits.bam unmapped.bam
+
+	HS0988r.bam stored in ~/projects/data/bam/HS0988r.bam (not done)
+
+	All the logs/bed files from tophat stored in ~/data/logs/130407
+
+# Looking at rDNA with IGV
+
+	There is quite a bit more variability then I expected within the rDNA
+	it is far from invariable. There are positions which are called as
+	different from the reference and expressed. I need to run this on
+	a cancer/ matched normal to really see if these are somatic differences
+	which is what the money will be!
+
+	At least the presence of this variation suggests the simple notion
+	that rDNA are invariable is not true. This may be my first real
+	and significant discovery in science!
+
+# GENCODE v15 annotation downloaded
+	
+	To use as -g (guide) for Cufflinks I downloaded GENCODE v15 from
+	ftp://ftp.sanger.ac.uk/pub/gencode/release_15/gencode.v15.annotation.gtf.gz
+
+	Downloaded to ~/resources/gencode/
+
+	This will be used to guide assembly and hopefully speed things up a bit
+
+# Cufflinks Trancsriptome Assembly
+
+	Use the alinged HS0988r.bam file to build the transcriptome.
+
+	Submitted on Geneis using the command
+
+	qsub -S /bin/bash -V -m e -M ababaian@bccrc.ca -l mem_token=40G runCuff.sh
+
+	Let's see how this goes ...  
+	
+	Didn't work; retry with explicit request to use 4 threads of 8gb each
+
+	qsub -S /bin/bash -V -m e -M ababaian@bccrc.ca -pe ncpus 4 -l mem_free=8G -l mem_token=8G -l h_vmem=8G runCuff.sh
+
+
+# April 16 2012 ====================================================================
+
+	After 4 days and 6 hours of runtime Cufflinks exited with status 134 and a
+	core-dump. Likely it didn't finish. Interestingly the transcripts.gtf file
+	was output and may be complete, but genes.fpkm_tracking and
+	isoforms.fpkm_tracking were output so the error might be in the FPKM
+	quantification and not in transcriptome assembly.
+	The transcripts.gtf file only goes part way through chromosome 3 after which
+	it stops :( I'm going to re-run the assembly.
+
+	Output was moved to ~/data/assembly/hs0988
+	
+	Going to take a look on UCSC of what the assembly looks like so far.
+
+	Re-started Cufflinks, with less memory (6 gb / thread) and more core; 8
+
+	iqsub -S /bin/bash -V -m e -M ababaian@bccrc.ca -pe ncpus 8 -l mem_free=5G
+	 -l mem_token=5G -l h_vmem=5G runCuff.sh
+
+	Hopefully this does it!
+
+# April 19 2012 ===================================================================
+
+	After 3 days and 6 hours I get the same problem. This time error output
+	worked and I get the following error.
+
+	terminate called after throwing an instance of 'std::bad_alloc'
+	what():  std::bad_alloc
+
+	It did reach chromosome 7 this time which means it was *ALMOST* done
+	I think a strategy of divide and conquor may be of use here.
+	Ideally breaking up the bed file by chromosome, then running the
+	assembly on each component would be the ideal course of action. I am a bit
+	strapped for time at the moment so I will take the less elegant solution
+	and try to optimize a bit further with 12 cores of 3.8 Gb of memory each
+	and give them an ample 8 gb of virtual memory before it gets angry.
+
+
+        qsub -S /bin/bash -V -m e -M ababaian@bccrc.ca -pe ncpus 12 -l mem_free=3.8G
+         -l mem_token=3.8G -l h_vmem=8G runCuff.sh
+	
+	... didn't work. I forgot to set the script to use 12 cores, restarting...
+
+# April 24 2012 ===================================================================
+
+	I will align HS0999 to hg19r.fa, from the RACE clones there are SNPs and
+	and a possible change in frame in IRF5 which I want to take a careful look
+	at.
+
+<runTH2.sh> script
+
+	A quick little script to input a bam file and genome index and re-align it
+	Works on genesis!
+
+	qsub -S /bin/bash -V -m e -M ababaian@bccrc.ca -pe ncpus 4 -l mem_free=10G 
+	-l mem_token=10G -l h_vmem=8G -l tmp_token=30G runTH2.sh	
+	
+# April 26 2012 ==================================================================
+	
+I have thought about this carefully and I need to accomplish 2 main goals
+fairly quickly to really get the ribosome project working
+
+1) Find a way to quantify variants quickly and efficiently
+	I think the best bet here is to learn the VCF filetype
+	used in the 1000 genomes project.
+	This will let me see and hopefully plot 'mutated' positions
+	fairly quickly to visualize them and see if there is overlap
+	of mutated sites.
+
+2) Run VCF analysis on a Cancer / Matched Normal
+	This will distinguish somatic (cancer-specific) mutations
+	from the variation you expect to occur naturally
+
+#--------------------------------------
+
+	RunCuff ran for 2 days 19 hours; same 134 error output
+	12 cores was more optimal for the assembly; completing up to chr8
+
+	Looking at the data which IS present it looks like the assembly
+	didn't extend any of the ENCODE transcripts upstream.
+
+	Neither IRF5, RALB nor CSF1R transcripts were changed by
+	Cufflinks. CSF1R was the postiive control essentially.
+	
+	Screen shots in /data/logs/130426/...
+
+	Don't use a guiding transcriptome. Perform de novo assembly!
+
+Plan B)
+	-Break down the genome by chromosomes; Samtools
+		(done in /home)
+
+	-In parallel assemble each chromosome by submitting multiple jobs;
+		(cp to /tmp and work from there)
+
+	-Once all jobs are completed, append all chromosomes into one file
+	
+	-Note: This means that all the FPKM measurements are not accurate
+	for isoform usage. This is alright since I'm more interested in
+	contig assembly then FPKM measurements.
+
+Pre-processing Aligned genome
+	<chrSplitBam.sh>
+
+	
+
+#--------------------------------------
+
+K562 Whole Cell Total RNA Sequencing
+	
+	From ENCODE CSHL downloaded total RNA sequencing; that is not
+	treated with RiboMinus or selected in any way.
+	
+	ENCODE accession: wgEncodeEH000142
+	
+	http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqK562CellTotalFastqRep1.fastq.gz
+
+	Will run alignment onto hg19r to see what rDNA region looks like here.
+
+	All ENCODE data will be saved to /data/encode/
+
+# May 1st 2013 ===================================================
+
+rDNA in HS0988
+	Looking at HS0988r.bam with IGV at rDNA region I notice a few things;
+
+	1) The majority of the rDNA reads within rDNA are MAPQ = 0
+		The single largest contribution to this unmappable regions
+		is the unplaced contig chrUn_g1000220 which is ~50 kb
+		and the second half of which is about 26 kb either rDNA
+		or rDNA-like sequence.                is the unplaced contig chrUn_g1000220 which is ~50 kb
+
+	2) There are variable positions relative to the reference rDNA;
+		These variations fall within rRNA sequences
+		notes:	Coords are hg19r chr13 plus 1 Mb, so r.50 => chr13:1000050
+			In the case of allelelic variants; the variant allele freq is given
+			Only alleles (freq < 0.2) are given; there are many more lower freq variants)
+			There are PCR duplicates; same read occuring multiple times with the same variant (correct for this!)
+			Inserstion / Deletion frequency (and variants at those positions) are likely not calculated correctly; I was taking Ins / (Ins + Total) as if it were a deletion.
+
+	5` Transcribed Spacer
+	chr13:1,000,001-1,003,656	
+		r.73 C > A
+		r.74 A > C
+		r.139 T > A
+		r.237 ins C
+		r.329 G > T	0.67
+		r.336 T > C	0.33
+		r.363 ins T
+		r.419 ins GT
+		r.623 ins T
+		r.626 T >G	0.78
+		r.673 G > C
+		r.674 C > G
+		r.764 del	0.71
+		r.765 del	0.71
+		r.1608 C > T	0.57
+		r.1612 ins T	?
+		r.1671 G > A	0.2
+		r.1672 C > T	0.55
+		r.1672 del	0.45
+		r.1678 C > G	
+		r.1757 del	0.91
+		r.1757 T > V	0.09
+		r.1938 G > C	0.76
+		r.1939 T > G	0.75
+		r.1993 C > T	0.69
+		r.2392 G > C	
+		r.2484 G > A
+		r.2497 C > T	0.58
+		r.2553 C > G
+		r.2599 T > C	0.25
+		r.3007 ins G	0.93
+		r.3090 G > C	
+		r.3153 C > G	0.33
+		r.3153 del	0.66
+		r.3408 G > C	0.29
+		r.3412 C > G	0.62
+		r.3635 G > C	0.99
+	18S rRNA
+	chr13:1,003,657-1,005,527
+		r.4903 del	0.034
+		r.4904 del	0.036	*
+		r.4904 T > C	0.34	*
+		r.4904 T > A	0.030	*
+		r.5294 del	0.18
+		r.5294 G > A	0.74
+		r.5304 G > C	0.62
+		r.5304 del	0.38
+	Internal Transcribed Spacer 1
+		chr13:1,005,528-1,006,622
+		r.5692 C > G	0.21
+		r.5692 ins G	0.40
+		r.5717 G > A	0.73
+		r.5892 del G	0.73
+		r.6543 G > C	0.33
+	5.8S rRNA
+	chr13:1,006,623-1,006,779
+		n/a
+	Internal Transcribed Spacer 2
+	chr13:1,006,780-1,007,934
+		r.6791 ins C	0.43
+		r.7025 G > C	0.65
+		r.7026 G > C	0.24
+		r.7322 del C	0.88
+		r.7661 C > G	
+		r.7717 C > G
+		r.7719 T > G	0.88
+		r.7719 T > C	0.13
+	28S rRNA
+	chr13:1,007,935-1,012,969
+		r.7794 A > G	0.44
+		r.8063 C > G	0.27
+		r.8065 C > G	0.59
+		r.8174 A > G	0.37
+		r.8181 G > C	0.98
+		r.8182 G > C	0.98
+		r.8187 C > G	0.95
+		r.8705 ins G	0.32
+		r.8786 C > T	0.23
+		r.8800 G > T	0.56
+		r.8804 G > C	0.98
+		r.9243 A	0.14	*
+		r.9243 A > T	0.61	*
+		r.9243 A > C	0.03	*
+		r.9243 A > G	0.22	*
+		r.10882 del G	0.52
+		r.10887 C > G	0.63
+		r.10959 A > G	0.20
+		r.10967 C > T	0.22
+		r.10986	C > T	0.24
+		r.11036 G > C	0.79
+		r.11149 C > G	
+		r.11150 G > C	
+		r.11223 C > G
+		r.11224 G > C
+		r.11269 G > C	0.5
+		r.11269 del G	0.5
+		r.11293	ins G	0.43
+		r.11485	ins G	0.44
+		r.11936 ins C	0.43
+		r.11937 ins ?	0.42
+		r.12011 ins C	0.43
+		r.12047 C > G	0.17
+		r.12047 ins G	0.13
+		r.12399 G > C	0.99
+		r.12434 T > A	0.16
+		r.12434 T > G	0.19
+		r.12434 del T	0.035
+		r.12624 ins G	0.46
+		r.12709 T > C	0.25
+		r.12719	C > G	0.38
+		r.12721 G > C	0.20
+		r.12722 C > G	0.18
+		r.12722 ins G	0.36
+		r.12969 C > A	0.80
+	3' Transcribed Spacer
+	chr13:1,012,970-1,013,314
+		r.12998 ins G	0.42
+		r.13011	T > C	0.89
+		r.13071 C > G	
+		r.13072 G > C
+		r.13113 ins G	0.5	
+		r.13150 ins C	0.5
+		r.13219 ins G	0.5
+		r.13288 ins G	0.44
+
+# May 4th 2013 ============================================
+
+	Time to fix up the run from last time; it looks like 
+	the phenominon is there the question now becomes how
+	do I capture it in a nice logical box to analyze and
+	describe. Think Strong Inference!
+
+	There are a few immediate corrections which I need
+	to apply and re-analyze the KMH2 line
+
+1) Remake hg19r without chrUn_G1000220
+	This contig contains an rDNA seciton and it's throwing
+	alignment off so the map quality is pretty bad.
+
+2) Remove PCR duplicates
+	Simple command on the bam file with samtools will do
+	this.
+
+3) Take select variants and cross check them
+	a) look for expressed pseudogenes throughout the genome
+	b) are the pairs mapping to some unique region?
+	c) contaminanting organisms; BLAST it!
+
+4) Possibly see if you can phase any of the variant pairs using
+	paired ends...
+
+	Updated hg19r made and is moved to resources;
+	Indexing the genome
+                bowtie2-build hg19r.fa hg19r
+                samtools faidx hg19r.fa
+  
+	Chromosome 5 also taken and placed into ~/resources/chromosomes/
+	indexed into ~/resources/index/chr5
+
+
+# May 5-10th 2013 ==========================================
+
+HS0988 Alignment
+	HS0988r.bam and HS0988r.bam.bai was regenerated using
+	the new version of hg19r.
+
+	Older versions of the alignment have been removed.
+
+	One version will be stored on ~/genesis/data and
+	others will be symbolically linked to it.
+
+	( for assembly stuff)
+
+	Log files have been moved to /data/logs/130511
+
+# May 13 2013 ==============================================
+
+VCF Format
+	As a test for now; I am using the older (April 11)
+	HS0988r.bam file and I will generate VCF files
+	for the ribosomal region (chr13:1,000,000-1,060,000)
+	Compare to the manual annotation I have above.
+
+rDNA.bed
+	chr13	1000000	1060000	rDNA	0	+
+
+Command:
+	samtools mpileup -u -Q 10 -f /home/ababaian/resources/index/hg19r/hg19r.fa -l rDNA.bed HS0988r.bam > hs0988r.vcf
+		[-f] Faidx index for hg19r
+		[-Q] Base quality for a base to be considered 	
+		[-l] BED file containing rDNA coordinates
+		[-u] VCF file output
+	 bcftools view -c -p 0.1 hs0988r.vcf > variants
+		[-c] call varients
+		[-p] minimum allele frequency; 0.1
+
+
+	So here's the skinny; no variants are ever called in the rDNA
+	and it's due to the MapQ = 0 for the reads. Therefore when
+	calling variants, the calculation rejects them.
+
+	This is cool because it means that unless you're certain there
+	are variants then automated processes will miss this.
+
+Example: Position r.4904 (chr13:1004904)
+	In the manual annotation I had
+                r.4904 del      0.036   *
+                r.4904 T > C    0.34    *
+                r.4904 T > A    0.030   *
+	Using bcftools the variants are not called. read comes up as
+#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  HS0988r.bam
+chr13   1004904 .       T       .       35      .       DP=635;AF1=0;AC1=0;DP4=183,151,145,139;MQ=0;FQ=-67.1;PV4=0.37,1,1,1     PL      0
+
+	Depth of Coverage [DP] = 635
+	Max-Liklihood Estimate of variant [AF1/AC1] = 0
+	High quality reads [DP4]
+		Ref Forward 183
+		Ref Reverse 151
+*		Alt Forward 145
+*		Alt Reverse 139
+	Map Quality [MQ] = 0
+	Phred-Prob of samples being the same [FQ] = -67.1
+	P-value bias
+		Strand = 0.37
+		baseQ bias = 1
+		mapQ bias = 1
+		tail bias = 1
+	Genotype Liklihood [PL] = 0
+
+	
+	* note that there are high quality alternative calls at this position
+	but that due to mapping they don't get called as variants.
+
+	Possibly use rDNA only genome for variant calling?
+
+
+# May 23rd 2013 ==================================================
+
+regionVCF.sh Script
+	A script was written to automatically generate VCF/BCF files
+	for a given region and then call variants within those regions
+	The output yields 3 files
+		1) output.raw.bcf - basic bcf file generated from region
+		2) output.reads.vcf - list of all reads/quality at each position
+		3) output.vcf - variant calls for the region
+
+	HS0999r.bam file was analyzed and again position r.4904 there is a high
+	quality T > C point mutation present at ~50%. First evidence that if this
+	is indeed a mutation it could be a recurrant SNP :D
+
+	Running region VCF on K562 data from ENCODE...
+	r.4904 is again mutated T >C in K562 (11868 read coverage) with
+		DP=11868 and DP4=4452,2763,2351,1391
+
+	I need to check a few normals to see if they too have this position
+	changed or is it specific to cancer / cell lines...
+
+
+# May 25th 2013 ================================================
+
+In the human Ribosomal structure paper by Anger et al,. (nature, may 2013)
+
+I have looked at position r.4904 which is variable in Hodgkin's lymphoma and
+K562 to see how it fits into the structure of the ribosome.
+	
+	1) The paper refers to this position as 18S 1248 U
+	2) 1248 U is within stem-loop H31 of the 18S human rRNA
+	3) 18S:1246-1248 [ACU] interact with residues 149,151 of SERPB1 (serpine1)
+
+I'm not sure as of right now how the U > C change of the rRNA will effect the interaction
+but if it's recurently there then that may suggest significance.
+I need to run the normal B-cells immediatly and see if the variation is absent in
+those cells. Anger used human peripheral blood as the source of 80S ribosome
+so we may be on to something!!!!!!
+
+
+# May 27th 2013 ===============================================
+
+'rDNA Variation'
+	Reading the literature a bit there was a reference to variable
+	rRNA. This emphasizes the importance of checking the normal
+	to see if the variablility observed is just the natural
+	variablitity in rRNA.
+
+	Definitively defining normal rRNA variation in the B-cells
+	you can	then ask if there is variance form normal in the
+	cancerous. It might be quite difficult to establish if these
+	are 'de novo' mutations in cancer/ recurring or whether they
+	are just re activated forms of rDNA.
+
+
+# Undated Notes ===============================================
+
+	I fell behind a bit over the last little bit with notes here
+	what I can summirize is that I see some of the same variants
+	in our normal B-cells as I do with the hodgkin's samples.
+	Namely the r.4904 variant position is present in both samples
+	so it seems to be a site which is simply polymorphic within the
+	cell.
+
+'Exclusion Hypotheses'
+	A variant detected in rRNA may not be a true change to a base
+	incorporated into the RNA molecule as it's transcribed. There
+	are three exclusive hypotheses which need to be considered for 
+	a variation at a particular base.
+	
+	1\ The rRNA has a polymorphic base at a particular
+	position.
+		NNNNN'A'NNNNN && NNNNN'U'NNNNN
+	
+	2\ The rRNA has a modified base at a particular position.
+	(different base incorporated at low rate by RT step'
+		NNNNN'me A'NNNNN	NNNNN'A/U'NNNNN
+	
+	3\ The rRNA has an edited base at a particular position.
+		NNNNN'A'NNNNN / NNNNN'U'NNNNN
+
+# June 24 2013 ================================================
+
+Bit of a delay, got back from a conference but had lots of time to 
+think about this project. I'm going to run the analysis on K562
+TotalRNA which should mostly be rRNA.
+
+Data Aquisition:
+	http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqK562CellTotalFastqRep1.fastq.gz
+	http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqK562CellTotalFastqRep2.fastq.gz
+
+Files copied to genesis and set up to align to hg19r.
+
+Alignment failed due to lack of physical memory in standard run, retry
+with a more memory allocated and using only 2 cores.
+
+# June 30 2013 ================================================
+
+	I have been thinking quite extensively how to go about
+	identifying the variation within rRNA in a way. I am going
+	to start with the 28S subunit since I can find the most
+	information on it's variation to compare against.
+
+	loci	r.1-43000	
+	18S	r.3657-5527
+	5.8S	r.6623-6779
+	28S	r.7935-12969	chr13:1007394-1012696
+
+
+# July 3rd 2013 ==============================================
+
+'VCF'
+	I ran mpileup --> bcftools on all hodgkin lymphoma, normal
+	B-cells and K562. VCF tracks were loaded into UCSC browswer
+	and visualized. There are overall more variants in the Hodgkin
+	lines then the normal and it appears to be significant but
+	the variations occur at places with relatively low coverage.
+	This lead me to believe that they are near the ends of reads
+	and fairly low quality but for some reason more likely to
+	occur in the cancer then normal. Anyways, when I looked at
+	regions with high coverage (~10k reads) one locus stood out.
+
+'chr13:1009242'
+
+>reference_allele
+cggctacccacccgacccgtcttgAaacacggaccaaggagtctaa
+>T_allele
+cggctacccacccgacccgtcttgTaacacggaccaaggagtctaa
+>G_allele
+cggctacccacccgacccgtcttgGaacacggaccaaggagtctaa
+>C_allele[not_observed]
+cggctacccacccgacccgtcttgCaacacggaccaaggagtctaa
+
+Blat to hg19 only shows a single match at
+	chrUn_gl000220:114,645-114,690
+
+Sequence References
+	chr13:1009242
+	r.9243
+	28S.1308
+
+
+This is the same variant I noted previously as having high
+confidence in. The pattern is not that the cancer has gained a variant
+as originally hypothesized but most lines (10/12 HL and K562) lack
+a G allele at that position while all normal B-cells have the G allele.
+
+The Hodgkin's lines with r.9243 G are HS0988 (KMH2) and HS1484
+(Karpas1106p). This might be of interest.
+
+# October 2nd 2013 ========================================
+
+'miCLIP NSUN2'
+	Read paper Hussain et al., 2013. Cell Reports.
+	PMID:     23871666
+
+	Data downloaded and unpacked from GEO/SRA
+		GEO:	GSE44385
+		SRA:  	SRP018723
+
+	Hypotheses
+		1) 5.8S and 18S ribosomal RNA is methylated
+		by NSUN2
+
+		2) Alu RNA is methylated by NSUN2
+
+	The authors noted that there is methylation at
+	intronic sequences (retained?) and 3' UTR
+
+	I believe this is actually Alu RNA methylation
+	and by aligning multimapping reads I can pinpoint
+	methylated RNA by aligning more reads then basic
+	parameters allow.
+
+	N reads are quality of B which means encoding is
+	in Illumina 1.5+ Phred+64
+
+# October 9 2013 ==========================================
+
+	Cont'd
+
+	I ran tophat2 on the data and very few (~10k)
+	alignments were made. Looking into it the data
+	is barcoded and taking a set of 30 random reads
+	and using BLAT to place them onto the genome
+	shows that the read positions 10-35 match genomic
+	coordinate (for uniquely mapping reads) which means
+	the data is functionally 25 bp long. That is what
+	_25 probably means in the library names.
+
+	Note that replicates 456 are _35 so I need to check
+	to see if they are 35 bases long. --> They also
+	match in the 10-35 bp range so all filse
+	will be parsed to those bases
+
+
+'chr13t.fa'
+
+	Chromosome 13 was taken, masked to all N
+
+	Then the tRNA sequences from
+	http://lowelab.ucsc.edu/GtRNAdb/Hsapi/hg18-tRNAs.fa
+	were taken, padded with N to 300 bases
+	making a 300 bp * 631 tRNA length fasta file.
+
+	This fasta file was inserted into positions
+	chr13:1,110,000-1,299,300
+
+	I can now align against this tRNA Genome
+	to quickly deplete tRNA reads making up
+	~80% of the mapped reads from the experiment
+
+# October 21 2014 =========================================
+
+It's been almost a year since Ive investigated rDNA sequence
+largly I have been focusing on the chimeric analysis project
+and a bit of trouble interpreting these results lead me to 
+delay working on this again.
+
+In a talk with R.Morin I discussed variation in rDNA and
+although he didn't seem interested he suggested looking
+at normal DNA to build an analysis of variation that exists
+in rDNA normally. From this mutation/oncogensis could be
+compared.
+
+An alternative hypothesis which I've always had is regarding
+TE sequences which would insert into rDNA. They are likely
+to be ignored/non-detected in humans (compare to R1, R2 in
+D. mel). It's a very long-shot but worth investigating.
+
+
+# H1: There exists a transposable element within human
+# ribosomal DNA, inserted in a small number of loci.
+
+
+From the 1K genome project I downloaded the following seq
+
+NA12878
+	SRR003162.filt.fastq.gz
+	SRR003177.filt.fastq.gz
+	SRR622457_1.filt.fastq.gz
+	SRR622457_2.filt.fastq.gz
+
+using rDNA.fa from I will generate a bowtie2 alignment
+file and align the SRR6... paired-end illumina data
+to the rDNA consensus. From that I'll look for read
+pairs where one pair is mapped and the second is 
+unmapped. Assembly of these unmapped read-pairs will then
+yield contigs that are either flanking or inserted in
+the consensus rDNA sequence. A step aligning the pairs
+against hg19 and removing mapped reads (i.e leaving only
+unmapped read pairs) will yield only novel insertions.
+
+
+Ribosomal DNA genome
+	In contrast to hg19r which contains both rDNA
+	and hg19, I will make a genome annotation
+	in which all of hg19 is masked to 'N' and
+	only the rDNA at chr13 remains unmasked
+	This is to align to a single rDNA locus
+	and still allow use of the UCSC
+
+Bowtie2 Alignment to hgr.fa
+	'bowtie2 -x hgr -1 NA12878/SRR622457_1.filt.fastq.gz -2 NA12878/SRR622457_2.filt.fastq.gz -S NA12_rDNA'
+
+	Finished overnight, ~99.8% of reads were unmapped.
+	~600 Gb file
+
+Convert to bam file
+	samtools view -bT hgr.fa NA12_rDNA.sam > NA12_rDNA.bam
+
+Extracting rDNA reads and their unmapped mates
+
+
+   reads ~~~,,,---  ---,,~~~  ---,,--- ---,,--- ---,,~~~	 
+   rDNA   ***===========*****=======================******
+       flank             ins.			    flank
+
+	Mapped Reads ( --- )
+	Unmapped Reads ( ~~~ )
+
+	Map/Unmapped Pair ( ---,,~~~ )
+	Mapped Pair ( ---,,--- )
+	Unmapped Pair ( ~~~,,~~~ )
+
+	To extract all mapped reads use flag -F 4
+		Ignore if read is unmapped
+	To extract all unmapped reads with pair mapped use -f 4 -F 8
+		Require read is unmapped
+		Ignore if read-pair is unmapped
+
+
+	Output:
+	NA12_rDNA.bam	2783700988 reads	9962582 mapped	107 Gb (on gsc)
+	NA12_rDNA.F4.bam	9962582 reads	5569878 pair-mapped	657 Mb	
+	NA12_rDNA.f4F8.bam 	4392704 reads	90 Mb
+
+hg19s Genome
+
+	I made a simplified hg19 genome in which ChrUn are removed
+	hg19s
+
+# April 9th/10th 2015 ==========================================
+
+Looking casually at the NA12 reads aligned to rRNA there are some variations
+which are present in nearly 100% of reads, some are clearly mis-alignment
+issues while further still others may be low abundance variants. Need to think
+how best to approach this problem of alignment.
+
+Aligning rDNA back to itself
+
+	To measure regions of rDNA which are intrinsically repetative I'm
+	breaking down the rDNA fasta file into simulated paired-end reads
+	of 75 bases with 200 bp fragment sizes. The idea is that this will
+	demonstrate which regions of the file have internal repeats or
+	may be so-called 'unmappable'
+
+> fasta2frag -l 75 -i 1 -p 1 -r FR -insert_size 200 -insert_stdev 40 -minqual 30 -infile rDNA.fa -outfile rDNA_75_1_200.fq
+
+	To transform that output to a fastq file of format
+		@SEQ_ID
+		ATGCATGCATGCATGCATGC...
+		+
+		!*3QQUUAAllity{{{||}~~~
+
+	Remove "  160 200 240 1 75" from the names
+	Change > to @
+	Chagne '@' to '+\n@' with regex
+	Change '+' to '+\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+	Change '[RYMKSWHBVD]' to N
+
+
+	In the end of the file there were some truncated reads due missing
+	'N' spacers at the end of the fasta file. I trimmed the last reads
+	where the second pair was truncated.
+	To break the file into pairs /1 and /2 I search and replaced
+	"@hg_rdna_[0-9]*_pe/1[ATGCNX\n/+]*" to "" to remove pair /1
+
+	Bowtie2 rDNA alignment to hgr.fa (in ~/data/rDNA_hgr)
+	> bowtie2 -x hgr -1 rDNA_75_1_200.fq_1 -2 rDNA_75_1_200.fq_2 -S rdnaHgr
+
+	42800 reads; of these:
+  	42800 (100.00%) were paired; of these:
+    	0 (0.00%) aligned concordantly 0 times
+    	37021 (86.50%) aligned concordantly exactly 1 time
+    	5779 (13.50%) aligned concordantly >1 times
+    	----
+    	0 pairs aligned concordantly 0 times; of these:
+      	0 (0.00%) aligned discordantly 1 time
+    	----
+    	0 pairs aligned 0 times concordantly or discordantly; of these:
+      	0 mates make up the pairs; of these:
+        0 (0.00%) aligned 0 times
+        0 (0.00%) aligned exactly 1 time
+        0 (0.00%) aligned >1 times
+	100.00% overall alignment rate
+
+# April 28th 2015 ==========================================
+
+Aligning mDNA to rDNA
+	Extracted chrM from hg19
+
+> fasta2frag -l 75 -i 1 -p 1 -r FR -insert_size 200 -insert_stdev 40 -minqual 30 -infile chrM.fa -outfile chrM_75_1_200.fq
+> sed -i 's/ 160 200 240 1 75//g' chrM_75_1_200.fq
+> 
+
+(not finished)
+
+# May 6th 2015 ============================================
+
+Assembly of rDNA from genomic NA12 reads
+/data/assembly
+
+Abyss Usage
+	# paired end library -pe
+	# name=NA12
+	# kmer 64
+> abyss-pe name=NA12 k=64 in='NA12.rDNA.bam'
+
+In the output there was lots of contigs that are fairly short.
+Longer contigs (10^3 bases) are of rDNA sequences as expected and there is
+an abundance of shorter assemblies. I can't load the assembly data to memory
+in assembly_explorer, need to figure this out.
+
+	N50 = 231 bp
+	Contiguity = 37006 bp
+	Reconstruction = 5164868 bp
+	Span = 5209322 bp
+	Mediam k-mer = 3
+	N = 516979
+	n (I>= 200bp) = 21381
+	n (I>= N50) = 9259
+
+Assembly_NotInGenome
+
+To ask the question of which novel sequences (not in the hg19 genome) was
+assembled I aligned the contigs file from Abyss to hg19 with the 
+contigSearch.sh (Blat search)
+
+The output here are contigs which failed to align to the genome. Going
+through these output many of these are repetative sequences. Possibly
+Repeat Masking the contigs files will be another or more efficient.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ()()         ____
+   (..)        /|o  |		 END
+   /\/\       /o|  o|		NOTES
+  c\db/o...  /o_|_o_|
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
