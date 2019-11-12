@@ -58,6 +58,7 @@ literature/*.tif
 # --------------------------
 # Specific Local Files
 # --------------------------
+# Natural rDNA Variation
 data/*/1kg_hgr1*datasets.xlsx
 data/hgr1_vcf/100g_gvcf/gvcf_individual/*
 data/vcf_correlation/vcf/*
@@ -65,6 +66,7 @@ data/CRC
 data/rm/*
 data/tmp/*
 
+# rDNA/rRNA Variation in cancer
 data2/*/hgr1.fa
 data2/6EK0/COSMIC/*
 
@@ -77,3 +79,4 @@ data/dlbcl/*
 *PRIVATE*
 *token*
 *.pem
+.Rproj.user
