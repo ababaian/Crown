@@ -29,6 +29,7 @@ tmp/*
 *.cif.gz
 *.xml
 *.xml.gz
+*.pdf
 *.pse
 *cufflinks*
 *cuffData.db
@@ -37,7 +38,6 @@ tmp/*
 *.bt
 *.bt2
 *.bcf
-*.pse
 
 # --------------------------
 # Local Data
@@ -76,9 +76,12 @@ data2/TALL/*
 data2/TALL2/*
 
 # extra files in data folders
-data2/*.pdf
+data2/2Mycs/*
 data2/6EK0/*
 data2/archs4/*
+data2/ccle/bam/*
+data2/ccle/gvcf/*
+data2/ccle/metadata/*
 
 #
 wiki/notebook/.ipynb_checkpoints/*
