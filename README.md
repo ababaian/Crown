@@ -3,6 +3,7 @@ Open-source investigation into ribosomal DNA/RNA variation in humans
 
 ### Manuscripts:
 [Loss of macpΨ ribosomal RNA modification is a major feature of cancer](https://www.biorxiv.org/content/10.1101/840132v1).
+
 [Intra- and Inter-individual Genetic Variation in Human Ribosomal RNAs](http://biorxiv.org/content/early/2017/03/21/118760).
 
 ## HYPOTHESIS
@@ -13,16 +14,16 @@ Open-source investigation into ribosomal DNA/RNA variation in humans
 
 ## Contents
 
-  [./Crown/wiki/Home.md](./wiki/Home.md)
+  `[./Crown/wiki/Home.md](./wiki/Home.md)`: 
 	Index file for notebooks
 
-  ./Crown/scripts/
+  `./Crown/scripts/`:
 	Analysis scripts for Crown
 
 ### Research Files
 - [100 Genomes (GVCF)](./data/hgr1_vcf/100g_gvcf/100g.hgr1.g.vcf.gz) [(XLS)](./data/hgr1_vcf/100g_gvcf/100genomes.hgr1.xls)
 - [100 Genomes hgr1-aligned BAM](./data/hgr1_vcf/100g_gvcf/100g_bamFiles.txt)
-- [hgr1 reference sequence [(fasta)](./data/hgr1/hgr1.fa) [(annotation)](./data/rDNA_stats/hgr1/annot/rRNA.bed)
+- [hgr1 reference sequence (fasta)](./data/hgr1/hgr1.fa) [(annotation)](./data/rDNA_stats/hgr1/annot/rRNA.bed)
 
 # Open Questions
 These are some of the open questions regarding rDNA variation. If you think you can take one on then join the project and give it a stab. Open and unrestricted collaboration.
@@ -51,4 +52,4 @@ These are some of the open questions regarding rDNA variation. If you think you 
 3. How can the internet be leveraged to share and collaborate on data and experiments?
 
 ## Contact + Community
-email: artem [AT] rRNA [DOT] ca
+email: ababaian [AT] bccrc [DOT] ca
