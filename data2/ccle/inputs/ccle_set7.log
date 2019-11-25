@@ -1,0 +1,2068 @@
+kec2-user@ip-172-31-31-245:~\[?1034h[ec2-user@ip-172-31-31-245 ~]$ bash queenB.sh in[K[Kccle_set7.input [K
+Launch instance # 1
+Wed Jun 19 17:38:15 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: 5637 wgs SAMN10987658 SRR8639140 SRX5437593
+Instance ID: i-0a5ad42bfa719a6d1
+Public DNS: ec2-34-212-89-53.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-212-89-53.us-west-2.compute.amazonaws.com,172.31.27.179' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 2
+Wed Jun 19 17:41:24 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: 22Rv1 wgs SAMN10988315 SRR8639138 SRX5437595
+Instance ID: i-0600764273f6fc9a0
+Public DNS: ec2-35-165-18-171.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-165-18-171.us-west-2.compute.amazonaws.com,172.31.31.81' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 3
+Wed Jun 19 17:44:34 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: 23132_87 wgs SAMN10988573 SRR8639137 SRX5437596
+Instance ID: i-0ab643077989cc079
+Public DNS: ec2-34-217-211-44.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-217-211-44.us-west-2.compute.amazonaws.com,172.31.28.131' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 4
+Wed Jun 19 17:47:42 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: 59M wgs SAMN10988041 SRR8639139 SRX5437594
+Instance ID: i-080fedf50c66be074
+Public DNS: ec2-34-218-250-202.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-218-250-202.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-218-250-202.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.21.32'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:304
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 5
+Wed Jun 19 17:50:49 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: A2780 wgs SAMN10988216 SRR8639176 SRX5437557
+Instance ID: i-0416bf1b3b4882daa
+Public DNS: ec2-34-215-97-63.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-215-97-63.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-215-97-63.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.17.255'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:147
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 6
+Wed Jun 19 17:53:56 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: AGS wgs SAMN10988305 SRR8639169 SRX5437564
+Instance ID: i-0052fe73dbce8b910
+Public DNS: ec2-34-222-157-70.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-157-70.us-west-2.compute.amazonaws.com,172.31.25.2' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 7
+Wed Jun 19 17:57:03 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: AN3.CA wgs SAMN10988375 SRR8639168 SRX5437565
+Instance ID: i-0729b8a18efcf5cb8
+Public DNS: ec2-54-201-76-159.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-201-76-159.us-west-2.compute.amazonaws.com,172.31.16.200' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 8
+Wed Jun 19 18:00:11 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: CAL.27 wgs SAMN10987905 SRR8639202 SRX5437531
+Instance ID: i-0ef6c46db7961ef1e
+Public DNS: ec2-34-222-124-239.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-124-239.us-west-2.compute.amazonaws.com,172.31.24.49' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 9
+Wed Jun 19 18:03:18 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Caov-3 wgs SAMN10988200 SRR8639190 SRX5437543
+Instance ID: i-0ff311fde77627811
+Public DNS: ec2-34-209-3-16.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-209-3-16.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-209-3-16.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.22.107'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1133
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 10
+Wed Jun 19 18:06:25 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Capan-1 wgs SAMN10987884 SRR8639189 SRX5437544
+Instance ID: i-0181df82adf63d4c9
+Public DNS: ec2-52-25-127-30.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-25-127-30.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-52-25-127-30.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.23.59'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:101
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 11
+Wed Jun 19 18:09:32 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: CAS-1 wgs SAMN10987869 SRR8639192 SRX5437541
+Instance ID: i-0517c33fc5a7bce02
+Public DNS: ec2-54-190-28-75.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-190-28-75.us-west-2.compute.amazonaws.com,172.31.24.9' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 12
+Wed Jun 19 18:12:38 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: CHP-212 wgs SAMN10988326 SRR8639197 SRX5437536
+Instance ID: i-0bbf696f38b7955e7
+Public DNS: ec2-34-222-47-64.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-47-64.us-west-2.compute.amazonaws.com,172.31.17.178' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 13
+Wed Jun 19 18:15:45 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: COV362 wgs SAMN10987971 SRR8639222 SRX5437511
+Instance ID: i-0e9fe7ebe22813a1a
+Public DNS: ec2-35-167-106-69.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-167-106-69.us-west-2.compute.amazonaws.com,172.31.19.178' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 14
+Wed Jun 19 18:18:51 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: COV644 wgs SAMN10988003 SRR8639214 SRX5437519
+Instance ID: i-0d2e080cc8f8fdbf7
+Public DNS: ec2-54-202-1-5.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-202-1-5.us-west-2.compute.amazonaws.com,172.31.17.81' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 15
+Wed Jun 19 18:22:04 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: DAN-G wgs SAMN10987807 SRR8788980 SRX5578769
+Instance ID: i-0f6f39f6d1d6770b2
+Public DNS: ec2-34-222-143-64.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-143-64.us-west-2.compute.amazonaws.com,172.31.20.59' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 16
+Wed Jun 19 18:25:12 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Daoy wgs SAMN10988097 SRR8639212 SRX5437521
+Instance ID: i-0ee42c66916fcbfeb
+Public DNS: ec2-34-219-50-4.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-50-4.us-west-2.compute.amazonaws.com,172.31.25.35' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 17
+Wed Jun 19 18:28:43 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Detroit.562 wgs SAMN10988307 SRR8639218 SRX5437515
+Instance ID: i-0791ff8d02b8a19b5
+Public DNS: ec2-34-219-6-144.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-6-144.us-west-2.compute.amazonaws.com,172.31.24.122' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 18
+Wed Jun 19 18:31:52 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: DU.145 wgs SAMN10988253 SRR8639152 SRX5437581
+Instance ID: i-00135d9c34a9afd36
+Public DNS: ec2-52-36-243-117.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-36-243-117.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-52-36-243-117.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.25.100'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1135
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 19
+Wed Jun 19 18:35:00 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: EFO-21 wgs SAMN10988346 SRR8639153 SRX5437580
+Instance ID: i-02043aeeeae70ef5a
+Public DNS: ec2-34-212-28-158.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-212-28-158.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-212-28-158.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.20.171'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:368
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 20
+Wed Jun 19 18:38:08 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: EFO-27 wgs SAMN10988215 SRR8639154 SRX5437579
+Instance ID: i-04b660c36e11e1b4f
+Public DNS: ec2-34-220-216-227.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-220-216-227.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-220-216-227.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.29.23'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:261
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 21
+Wed Jun 19 18:41:15 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: ES-2 wgs SAMN10988319 SRR8639144 SRX5437589
+Instance ID: i-02717ebcdb95ac1ed
+Public DNS: ec2-54-218-119-19.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-218-119-19.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-218-119-19.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.25.174'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1082
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 22
+Wed Jun 19 18:44:22 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: ESS-1 wgs SAMN10988289 SRR8639234 SRX5437499
+Instance ID: i-0a14654a91251ca39
+Public DNS: ec2-34-208-191-85.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-208-191-85.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-208-191-85.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.26.60'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1228
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 23
+Wed Jun 19 18:47:30 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: FaDu wgs SAMN10987898 SRR8639233 SRX5437500
+Instance ID: i-0ad949289aaf84766
+Public DNS: ec2-34-222-50-210.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-50-210.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-222-50-210.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.22.200'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:322
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 24
+Wed Jun 19 18:50:37 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: FU97 wgs SAMN10987784 SRR8639236 SRX5437497
+Instance ID: i-09108ffeb4e5de39e
+Public DNS: ec2-54-214-106-19.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-214-106-19.us-west-2.compute.amazonaws.com,172.31.23.44' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 25
+Wed Jun 19 18:53:43 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: FU-OV-1 wgs SAMN10988241 SRR8639235 SRX5437498
+Instance ID: i-0c4515ab0eb92738d
+Public DNS: ec2-54-188-39-245.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-188-39-245.us-west-2.compute.amazonaws.com,172.31.29.112' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 26
+Wed Jun 19 18:56:50 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: GAMG wgs SAMN10988278 SRR8639239 SRX5437494
+Instance ID: i-0c9dbda94a3690c3e
+Public DNS: ec2-52-36-61-108.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-36-61-108.us-west-2.compute.amazonaws.com,172.31.18.26' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 27
+Wed Jun 19 18:59:57 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: GB-1 wgs SAMN10988051 SRR8639232 SRX5437501
+Instance ID: i-0022b6536e0e8cc95
+Public DNS: ec2-34-209-155-84.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-209-155-84.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-209-155-84.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.23.166'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:611
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 28
+Wed Jun 19 19:03:04 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: GCIY wgs SAMN10987813 SRR8639231 SRX5437502
+Instance ID: i-057db66d3569f32bb
+Public DNS: ec2-52-12-84-225.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-12-84-225.us-west-2.compute.amazonaws.com,172.31.28.76' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 29
+Wed Jun 19 19:06:13 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: GI-1 wgs SAMN10987799 SRR8639177 SRX5437556
+Instance ID: i-025e22094472221f4
+Public DNS: ec2-34-222-136-214.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-136-214.us-west-2.compute.amazonaws.com,172.31.30.182' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 30
+Wed Jun 19 19:09:33 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: H4 wgs SAMN10987915 SRR8639179 SRX5437554
+Instance ID: i-04055abb8ed129cbd
+Public DNS: ec2-34-216-69-210.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-216-69-210.us-west-2.compute.amazonaws.com,172.31.16.176' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 31
+Wed Jun 19 19:12:40 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: HCC38 wgs SAMN10987659 SRR8639157 SRX5437576
+Instance ID: i-0f6942a0131792f6d
+Public DNS: ec2-34-220-153-51.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-220-153-51.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-220-153-51.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.25.88'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1117
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 32
+Wed Jun 19 19:15:47 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: HEC-1-A wgs SAMN10988293 SRR8639188 SRX5437545
+Instance ID: i-0995b91941c77d34d
+Public DNS: ec2-54-187-230-203.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-187-230-203.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-187-230-203.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.19.168'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1168
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 33
+Wed Jun 19 19:18:56 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: HGC-27 wgs SAMN10987863 SRR8639199 SRX5437534
+Instance ID: i-0d69c89b47c262d42
+Public DNS: ec2-34-221-211-174.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-221-211-174.us-west-2.compute.amazonaws.com,172.31.22.59' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 34
+Wed Jun 19 19:22:04 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: HPAC wgs SAMN10987698 SRR8639156 SRX5437577
+Instance ID: i-076665efae869b8a5
+Public DNS: ec2-34-220-110-132.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-220-110-132.us-west-2.compute.amazonaws.com,172.31.24.214' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 35
+Wed Jun 19 19:25:11 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Hs.746T wgs SAMN10987647 SRR8652116 SRX5449784
+Instance ID: i-03f174162ef0bb477
+Public DNS: ec2-35-167-117-85.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-167-117-85.us-west-2.compute.amazonaws.com,172.31.30.199' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 36
+Wed Jun 19 19:28:18 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: HSC-3 wgs SAMN10987855 SRR8652118 SRX5449782
+Instance ID: i-0b0194264b4ff7985
+Public DNS: ec2-52-27-34-252.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-27-34-252.us-west-2.compute.amazonaws.com,172.31.22.91' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 37
+Wed Jun 19 19:31:25 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: HT-1376 wgs SAMN10988225 SRR8652112 SRX5449788
+Instance ID: i-0ac45f2a24ebaeaad
+Public DNS: ec2-34-215-247-108.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-215-247-108.us-west-2.compute.amazonaws.com,172.31.22.123' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 38
+Wed Jun 19 19:34:32 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: IGROV1 wgs SAMN10988218 SRR8652061 SRX5449839
+Instance ID: i-0939f47923bcf141f
+Public DNS: ec2-34-222-53-224.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-53-224.us-west-2.compute.amazonaws.com,172.31.22.40' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 39
+Wed Jun 19 19:37:40 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: IM95 wgs SAMN10988365 SRR8652062 SRX5449838
+Instance ID: i-00849b0301b2937b6
+Public DNS: ec2-54-191-42-249.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-191-42-249.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-191-42-249.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.16.18'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:503
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 40
+Wed Jun 19 19:40:48 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Ishikawa.Heraklio wgs SAMN10988025 SRR8652063 SRX5449837
+Instance ID: i-048abd684c7d6ac23
+Public DNS: ec2-35-165-50-139.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-165-50-139.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-35-165-50-139.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.22.93'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:113
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 41
+Wed Jun 19 19:43:55 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: JHOS-2 wgs SAMN10988178 SRR8652066 SRX5449834
+Instance ID: i-0cd29f7111d69c80f
+Public DNS: ec2-54-213-61-121.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-213-61-121.us-west-2.compute.amazonaws.com,172.31.22.240' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 42
+Wed Jun 19 19:47:02 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: JHUEM-1 wgs SAMN10987934 SRR8652067 SRX5449833
+Instance ID: i-05704517b97198169
+Public DNS: ec2-54-202-76-75.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-202-76-75.us-west-2.compute.amazonaws.com,172.31.22.90' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 43
+Wed Jun 19 19:50:17 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KALS-1 wgs SAMN10987840 SRR8652068 SRX5449832
+Instance ID: i-0cc20d9adbfebdbf6
+Public DNS: ec2-54-212-57-141.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-212-57-141.us-west-2.compute.amazonaws.com,172.31.23.182' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 44
+Thu Jun 20 01:56:06 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KATO.III wgs SAMN10988331 SRR8652060 SRX5449840
+Instance ID: i-0478c982edc5dcc50
+Public DNS: ec2-34-211-77-151.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-211-77-151.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-211-77-151.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.16.7'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:435
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 45
+Thu Jun 20 04:49:40 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KE-39 wgs SAMN10987859 SRR8652074 SRX5449826
+Instance ID: i-0a2a918f3906904ce
+Public DNS: ec2-34-208-9-97.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-208-9-97.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-208-9-97.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.24.51'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:406
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 46
+Thu Jun 20 04:52:48 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KLE wgs SAMN10987617 SRR8652073 SRX5449827
+Instance ID: i-084bf00985529fbff
+Public DNS: ec2-54-188-112-182.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-188-112-182.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-188-112-182.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.16.91'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:824
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 47
+Thu Jun 20 05:26:01 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KNS-81 wgs SAMN10987823 SRR8652069 SRX5449831
+Instance ID: i-0a9e332b2d0ef8de1
+Public DNS: ec2-34-214-248-68.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-214-248-68.us-west-2.compute.amazonaws.com,172.31.17.120' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 48
+Thu Jun 20 06:09:15 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KU-19-19 wgs SAMN10988557 SRR8652072 SRX5449828
+Instance ID: i-0fbbcfcfa0121a79c
+Public DNS: ec2-52-34-16-105.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-34-16-105.us-west-2.compute.amazonaws.com,172.31.17.166' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 49
+Thu Jun 20 06:42:28 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KYSE-180 wgs SAMN10987810 SRR8652078 SRX5449822
+Instance ID: i-0bab6d1c25674be15
+Public DNS: ec2-35-164-181-194.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-164-181-194.us-west-2.compute.amazonaws.com,172.31.22.41' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 50
+Thu Jun 20 07:50:46 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KYSE-30 wgs SAMN10988382 SRR8652077 SRX5449823
+Instance ID: i-0ef74ea87e9a85917
+Public DNS: ec2-54-244-2-204.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-244-2-204.us-west-2.compute.amazonaws.com,172.31.23.204' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 51
+Thu Jun 20 07:54:01 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KYSE-410 wgs SAMN10987801 SRR8652095 SRX5449805
+Instance ID: i-027c03426edecfc1e
+Public DNS: ec2-52-13-189-252.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-13-189-252.us-west-2.compute.amazonaws.com,172.31.28.245' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 52
+Thu Jun 20 07:57:09 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KYSE-450 wgs SAMN10987615 SRR8652096 SRX5449804
+Instance ID: i-0ec5d00fa60423e7c
+Public DNS: ec2-34-219-72-55.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-72-55.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-219-72-55.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.25.223'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:983
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 53
+Thu Jun 20 08:15:21 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KYSE-520 wgs SAMN10987932 SRR8652093 SRX5449807
+Instance ID: i-0330fd123f1202551
+Public DNS: ec2-54-149-186-8.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-149-186-8.us-west-2.compute.amazonaws.com,172.31.21.6' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 54
+Thu Jun 20 08:18:29 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: KYSE-70 wgs SAMN10988277 SRR8652094 SRX5449806
+Instance ID: i-0a30262f56d4a9ccb
+Public DNS: ec2-34-219-130-190.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-130-190.us-west-2.compute.amazonaws.com,172.31.21.172' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 55
+Thu Jun 20 08:22:18 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: LN-18 wgs SAMN10988197 SRR8652090 SRX5449810
+Instance ID: i-0ebd4f50a869167ba
+Public DNS: ec2-52-37-192-30.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-37-192-30.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-52-37-192-30.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.31.26'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:40
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Launch instance # 56
+Thu Jun 20 08:30:40 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: LN-229 wgs SAMN10987619 SRR8652097 SRX5449803
+Instance ID: i-06c22d4b42d7cc1a5
+Public DNS: ec2-34-209-215-153.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-209-215-153.us-west-2.compute.amazonaws.com,172.31.17.132' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 57
+Thu Jun 20 08:48:58 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MFE-280 wgs SAMN10987795 SRR8652127 SRX5449773
+Instance ID: i-00d86115dcbce2f3e
+Public DNS: ec2-34-221-119-27.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-221-119-27.us-west-2.compute.amazonaws.com,172.31.30.251' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 58
+Thu Jun 20 08:52:15 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MFE-296 wgs SAMN10987797 SRR8652128 SRX5449772
+Instance ID: i-0793d0606d73715ba
+Public DNS: ec2-34-219-63-143.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-63-143.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-219-63-143.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.20.102'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:194
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 59
+Thu Jun 20 08:55:24 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MFE-319 wgs SAMN10987796 SRR8652121 SRX5449779
+Instance ID: i-0c255e174c152d3e4
+Public DNS: ec2-52-33-157-144.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-33-157-144.us-west-2.compute.amazonaws.com,172.31.17.11' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 60
+Thu Jun 20 08:58:31 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MIA.PaCa-2 wgs SAMN10988205 SRR8652122 SRX5449778
+Instance ID: i-0ad7602c3ebfc861e
+Public DNS: ec2-54-187-199-190.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-187-199-190.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-187-199-190.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.18.218'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:646
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 61
+Thu Jun 20 09:11:47 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MKN1 wgs SAMN10987827 SRR8652123 SRX5449777
+Instance ID: i-0898e60e54994323f
+Public DNS: ec2-35-164-35-130.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-164-35-130.us-west-2.compute.amazonaws.com,172.31.21.241' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 62
+Thu Jun 20 09:14:55 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MKN-45 wgs SAMN10988555 SRR8652124 SRX5449776
+Instance ID: i-0fb725934f135d4a6
+Public DNS: ec2-34-208-248-173.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-208-248-173.us-west-2.compute.amazonaws.com,172.31.25.193' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 63
+Thu Jun 20 09:18:11 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MKN7 wgs SAMN10988431 SRR8652120 SRX5449780
+Instance ID: i-062c0a962e6af1b54
+Public DNS: ec2-35-164-166-16.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-164-166-16.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-35-164-166-16.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.23.26'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:317
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 64
+Thu Jun 20 09:21:27 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MKN74 wgs SAMN10987828 SRR8652119 SRX5449781
+Instance ID: i-00e1e88adfda71cc9
+Public DNS: ec2-34-222-57-130.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-57-130.us-west-2.compute.amazonaws.com,172.31.18.237' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 65
+Thu Jun 20 09:24:35 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: MSTO-211H wgs SAMN10987652 SRR8652134 SRX5449766
+Instance ID: i-00de72e54b68acb30
+Public DNS: ec2-18-236-178-199.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-236-178-199.us-west-2.compute.amazonaws.com,172.31.21.60' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 66
+Thu Jun 20 09:42:45 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: NCI-H2052 wgs SAMN10987937 SRR8652053 SRX5449847
+Instance ID: i-009283d6aeff37592
+Public DNS: ec2-54-149-141-111.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-149-141-111.us-west-2.compute.amazonaws.com,172.31.25.172' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 67
+Thu Jun 20 10:00:56 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: NCI-N87 wgs SAMN10987913 SRR8670703 SRX5466677
+Instance ID: i-08c5fdc1aebae9a34
+Public DNS: ec2-54-188-89-251.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-188-89-251.us-west-2.compute.amazonaws.com,172.31.19.220' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 68
+Thu Jun 20 10:19:08 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: NUGC-3 wgs SAMN10988359 SRR8670697 SRX5466683
+Instance ID: i-0cda127265cde8b0c
+Public DNS: ec2-34-216-223-118.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-216-223-118.us-west-2.compute.amazonaws.com,172.31.23.117' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 69
+Thu Jun 20 10:32:20 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: NUGC-4 wgs SAMN10987867 SRR8670738 SRX5466642
+Instance ID: i-0508e67f3bea5f15e
+Public DNS: ec2-54-186-60-197.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-186-60-197.us-west-2.compute.amazonaws.com,172.31.29.51' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 70
+Thu Jun 20 10:35:46 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OAW42 wgs SAMN10988015 SRR8670739 SRX5466641
+Instance ID: i-0a9e5a6c07d3c2750
+Public DNS: ec2-34-219-131-35.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-131-35.us-west-2.compute.amazonaws.com,172.31.16.166' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 71
+Thu Jun 20 10:38:53 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OCUM-1 wgs SAMN10987922 SRR8670736 SRX5466644
+Instance ID: i-0dcf5925beaea82bb
+Public DNS: ec2-54-245-189-171.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-245-189-171.us-west-2.compute.amazonaws.com,172.31.23.52' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 72
+Thu Jun 20 11:12:14 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OE19 wgs SAMN10988362 SRR8670737 SRX5466643
+Instance ID: i-0612a624ffbc3372c
+Public DNS: ec2-35-166-255-87.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-166-255-87.us-west-2.compute.amazonaws.com,172.31.20.83' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 73
+Thu Jun 20 11:15:29 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: ONS-76 wgs SAMN10988186 SRR8670742 SRX5466638
+Instance ID: i-0aaea4740e2f0c8db
+Public DNS: ec2-34-219-107-36.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-107-36.us-west-2.compute.amazonaws.com,172.31.20.37' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 74
+Thu Jun 20 11:18:36 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OV56 wgs SAMN10987613 SRR8670741 SRX5466639
+Instance ID: i-0800276182cefc407
+Public DNS: ec2-34-219-56-156.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-219-56-156.us-west-2.compute.amazonaws.com,172.31.30.225' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Launch instance # 75
+Thu Jun 20 11:26:45 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OV7 wgs SAMN10988013 SRR8670744 SRX5466636
+Instance ID: i-0bdb73a4c0033c021
+Public DNS: ec2-34-215-51-28.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-215-51-28.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-215-51-28.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.29.58'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:182
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 76
+Thu Jun 20 11:44:55 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OV-90 wgs SAMN10987765 SRR8670745 SRX5466635
+Instance ID: i-0e965b189fd398a36
+Public DNS: ec2-35-164-217-22.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-164-217-22.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-35-164-217-22.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.18.181'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1237
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Launch instance # 77
+Thu Jun 20 11:53:13 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OVCAR-3 wgs SAMN10987888 SRR8670698 SRX5466682
+Instance ID: i-0da8dc9f99630c210
+Public DNS: ec2-54-245-139-87.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-245-139-87.us-west-2.compute.amazonaws.com,172.31.28.18' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Launch instance # 78
+Thu Jun 20 12:01:22 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OVCAR-4 wgs SAMN10987768 SRR8670727 SRX5466653
+Instance ID: i-035991878d1a80d14
+Public DNS: ec2-52-43-248-237.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-43-248-237.us-west-2.compute.amazonaws.com,172.31.31.6' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 79
+Thu Jun 20 12:04:37 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OVCAR-8 wgs SAMN10988023 SRR8670726 SRX5466654
+Instance ID: i-0670c033b6fc531aa
+Public DNS: ec2-54-200-194-176.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-200-194-176.us-west-2.compute.amazonaws.com,172.31.26.81' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 80
+Thu Jun 20 12:07:45 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OVK18 wgs SAMN10987740 SRR8670729 SRX5466651
+Instance ID: i-0a57c4f23a102df8f
+Public DNS: ec2-54-218-70-158.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-218-70-158.us-west-2.compute.amazonaws.com,172.31.20.63' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 81
+Thu Jun 20 12:11:00 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: OVSAHO wgs SAMN10988236 SRR8670728 SRX5466652
+Instance ID: i-0e1a88e3190b0d4ca
+Public DNS: ec2-18-236-83-158.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-236-83-158.us-west-2.compute.amazonaws.com,172.31.18.42' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 82
+Thu Jun 20 12:14:08 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Panc.03.27 wgs SAMN10988317 SRR8670731 SRX5466649
+Instance ID: i-07411fb0dffbcf54e
+Public DNS: ec2-18-236-87-98.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-236-87-98.us-west-2.compute.amazonaws.com,172.31.26.137' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 83
+Thu Jun 20 12:42:21 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: Panc.10.05 wgs SAMN10988227 SRR8670730 SRX5466650
+Instance ID: i-0d8344d619dbc1ccf
+Public DNS: ec2-54-213-76-94.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-213-76-94.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-213-76-94.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.26.68'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:647
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 84
+Thu Jun 20 13:05:35 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: PANC-1 wgs SAMN10987682 SRR8670733 SRX5466647
+Instance ID: i-0fd3da0b956048687
+Public DNS: ec2-52-38-76-230.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-38-76-230.us-west-2.compute.amazonaws.com,172.31.29.211' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 85
+Thu Jun 20 13:08:47 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: PA-TU-8988T wgs SAMN10988386 SRR8670732 SRX5466648
+Instance ID: i-0b5b8b22ee40f19d3
+Public DNS: ec2-34-209-91-80.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-209-91-80.us-west-2.compute.amazonaws.com,172.31.18.20' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 86
+Thu Jun 20 14:27:15 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: PC-3 wgs SAMN10988356 SRR8670734 SRX5466646
+Instance ID: i-073dc6bd7eb337b4a
+Public DNS: ec2-54-202-152-255.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-202-152-255.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-202-152-255.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.26.248'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1122
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 87
+Thu Jun 20 16:00:38 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: QGP-1 wgs SAMN10988306 SRR8788983 SRX5578766
+Instance ID: i-0e4aea2404ad39619
+Public DNS: ec2-34-217-50-229.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-217-50-229.us-west-2.compute.amazonaws.com,172.31.22.229' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 46, wait.
+
+Reached max of 46, wait.
+
+Reached max of 46, wait.
+
+Reached max of 46, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 88
+Thu Jun 20 19:19:28 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: RERF-GC-1B wgs SAMN10987634 SRR8670759 SRX5466621
+Instance ID: i-0853063731bf6e622
+Public DNS: ec2-52-34-95-105.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-34-95-105.us-west-2.compute.amazonaws.com,172.31.18.66' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 89
+Thu Jun 20 21:38:15 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: RL95-2 wgs SAMN10987787 SRR8670763 SRX5466617
+Instance ID: i-001230824e3be51c1
+Public DNS: ec2-52-89-150-207.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-89-150-207.us-west-2.compute.amazonaws.com,172.31.31.161' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 90
+Thu Jun 20 21:41:23 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: RMG-I wgs SAMN10988355 SRR8670764 SRX5466616
+Instance ID: i-08f46a0780c34d3f7
+Public DNS: ec2-34-222-5-164.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-5-164.us-west-2.compute.amazonaws.com,172.31.21.246' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Launch instance # 91
+Thu Jun 20 21:49:31 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: RT-112 wgs SAMN10988358 SRR8670752 SRX5466628
+Instance ID: i-0043aa6dca2661b90
+Public DNS: ec2-34-220-178-18.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-220-178-18.us-west-2.compute.amazonaws.com,172.31.21.96' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 92
+Thu Jun 20 22:07:41 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SCaBER wgs SAMN10988312 SRR8670749 SRX5466631
+Instance ID: i-05a9f91d11100fd6c
+Public DNS: ec2-54-185-239-24.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-185-239-24.us-west-2.compute.amazonaws.com,172.31.30.235' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 93
+Thu Jun 20 22:35:55 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SCC-25 wgs SAMN10988425 SRR8670748 SRX5466632
+Instance ID: i-0dd4e57233393aab1
+Public DNS: ec2-34-215-130-42.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-215-130-42.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-215-130-42.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.24.134'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1191
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 94
+Thu Jun 20 22:39:02 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SCC-4 wgs SAMN10987944 SRR8670747 SRX5466633
+Instance ID: i-03af38278f3a32fbf
+Public DNS: ec2-34-217-130-34.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-217-130-34.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-217-130-34.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.24.130'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:1119
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Launch instance # 95
+Thu Jun 20 22:47:11 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SF-295 wgs SAMN10987772 SRR8670755 SRX5466625
+Instance ID: i-071538bd6f3f59476
+Public DNS: ec2-18-236-183-50.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-236-183-50.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-18-236-183-50.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.27.195'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:532
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 96
+Thu Jun 20 22:50:18 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SH-10-TC wgs SAMN10987814 SRR8670754 SRX5466626
+Instance ID: i-0f74e11c5cf53fe19
+Public DNS: ec2-34-222-43-81.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-43-81.us-west-2.compute.amazonaws.com,172.31.25.209' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 97
+Thu Jun 20 23:23:31 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SK-N-AS wgs SAMN10987940 SRR8670773 SRX5466607
+Instance ID: i-09474139f99f86693
+Public DNS: ec2-54-191-233-84.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-191-233-84.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-191-233-84.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.29.140'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:248
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 98
+Thu Jun 20 23:26:40 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SK-OV-3 wgs SAMN10987874 SRR8670772 SRX5466608
+Instance ID: i-0479f9dda7717ece5
+Public DNS: ec2-54-244-63-78.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-244-63-78.us-west-2.compute.amazonaws.com,172.31.19.100' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 99
+Thu Jun 20 23:29:49 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SNG-M wgs SAMN10987627 SRR8670774 SRX5466606
+Instance ID: i-0e4a59fef21f3df2d
+Public DNS: ec2-18-237-91-245.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-237-91-245.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-18-237-91-245.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.26.166'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:844
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 100
+Thu Jun 20 23:32:57 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SNU-1 wgs SAMN10988139 SRR8670770 SRX5466610
+Instance ID: i-0c64dcdeba26bb81a
+Public DNS: ec2-34-220-170-148.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-220-170-148.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-34-220-170-148.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.22.245'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:210
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 101
+Thu Jun 20 23:36:04 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SNU-119 wgs SAMN10987751 SRR8670769 SRX5466611
+Instance ID: i-0631ecd320c1bd6d5
+Public DNS: ec2-54-218-131-136.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-218-131-136.us-west-2.compute.amazonaws.com,172.31.19.248' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 102
+Thu Jun 20 23:54:13 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SNU-16 wgs SAMN10987911 SRR8670768 SRX5466612
+Instance ID: i-07ca120bad39214b0
+Public DNS: ec2-34-220-178-249.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-220-178-249.us-west-2.compute.amazonaws.com,172.31.31.70' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 103
+Fri Jun 21 00:17:35 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SUIT-2 wgs SAMN10988018 SRR8670709 SRX5466671
+Instance ID: i-0f704288fccd7fee4
+Public DNS: ec2-18-236-67-186.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-236-67-186.us-west-2.compute.amazonaws.com,172.31.27.10' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 104
+Fri Jun 21 00:50:48 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SW.1783 wgs SAMN10987670 SRR8670711 SRX5466669
+Instance ID: i-04c1a398c9c4d45c0
+Public DNS: ec2-54-201-145-21.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-201-145-21.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-54-201-145-21.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.25.140'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:693
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 105
+Fri Jun 21 01:09:21 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: SW.1990 wgs SAMN10987630 SRR8670712 SRX5466668
+Instance ID: i-0a1ec69ecc0980511
+Public DNS: ec2-34-212-35-5.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-212-35-5.us-west-2.compute.amazonaws.com,172.31.21.166' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 106
+Fri Jun 21 01:23:00 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: T24 wgs SAMN10987918 SRR8670667 SRX5466713
+Instance ID: i-0c3c85ae0c730e50f
+Public DNS: ec2-54-213-112-154.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-213-112-154.us-west-2.compute.amazonaws.com,172.31.16.245' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 107
+Fri Jun 21 01:26:10 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: TE-1 wgs SAMN10988294 SRR8670671 SRX5466709
+Instance ID: i-00f8f47aacec795f2
+Public DNS: ec2-54-212-4-84.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-212-4-84.us-west-2.compute.amazonaws.com,172.31.26.95' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 108
+Fri Jun 21 01:54:22 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: TE-11 wgs SAMN10988291 SRR8670672 SRX5466708
+Instance ID: i-0619a579abcbdcf14
+Public DNS: ec2-54-191-252-141.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-191-252-141.us-west-2.compute.amazonaws.com,172.31.20.39' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 109
+Fri Jun 21 01:57:31 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: TE-5 wgs SAMN10988298 SRR8670676 SRX5466704
+Instance ID: i-0cec5db0f6ad27e73
+Public DNS: ec2-54-191-15-165.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-191-15-165.us-west-2.compute.amazonaws.com,172.31.22.0' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 110
+Fri Jun 21 02:00:40 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: U-2.OS wgs SAMN10987914 SRR8670721 SRX5466659
+Instance ID: i-037cf47990aac5e1a
+Public DNS: ec2-50-112-77-228.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-50-112-77-228.us-west-2.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+Warning: the ECDSA host key for 'ec2-50-112-77-228.us-west-2.compute.amazonaws.com' differs from the key for the IP address '172.31.31.72'
+Offending key for IP in /home/ec2-user/.ssh/known_hosts:231
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 111
+Fri Jun 21 02:03:48 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: U-251.MG wgs SAMN10988290 SRR8670720 SRX5466660
+Instance ID: i-07f230f576fca826f
+Public DNS: ec2-54-149-223-19.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-149-223-19.us-west-2.compute.amazonaws.com,172.31.27.106' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Reached max of 45, wait.
+
+Reached max of 45, wait.
+
+Launch instance # 112
+Fri Jun 21 02:16:56 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: U-87.MG wgs SAMN10988360 SRR8670718 SRX5466662
+Instance ID: i-052514bf7815460d7
+Public DNS: ec2-35-166-243-168.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-35-166-243-168.us-west-2.compute.amazonaws.com,172.31.22.114' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+Launch instance # 113
+Fri Jun 21 02:20:04 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0b375c9c58cb4a7a2
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh
+Parameters: VM-CUB1 wgs SAMN10988492 SRR8670722 SRX5466658
+Instance ID: i-0d3d0dd84692e6cc0
+Public DNS: ec2-54-245-48-183.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-245-48-183.us-west-2.compute.amazonaws.com,172.31.23.133' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v4.ccle.sh to ./hgr1_align_v4.ccle.sh
+
+
+kec2-user@ip-172-31-31-245:~\[ec2-user@ip-172-31-31-245 ~]$ 

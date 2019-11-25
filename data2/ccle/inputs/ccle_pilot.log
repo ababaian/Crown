@@ -1,0 +1,58 @@
+kec2-user@ip-172-31-17-5:~\[?1034h[ec2-user@ip-172-31-17-5 ~]$ ls
+ccle_pilot.input  droneB.sh		 queenB.sh    sratoolkit.tar.gz
+CrownKey.pem	  hgr1_align_v3.ccle.sh  screenlog.0
+kec2-user@ip-172-31-17-5:~\[ec2-user@ip-172-31-17-5 ~]$ lsexit[2Plsrm *[2Pls -alh[Kbash queenB.sh ccle_pilot.input 
+Error 02 - Duplicate Sample ID detected in input
+ I hope you know what you're doing
+ script will not exit in this version
+ re-run with unique ID or outputs will overwrite
+
+Launch instance # 1
+Thu May 30 01:50:46 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0031fd61f932bdef9
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh
+Parameters: HCT116 rna SAMN10988251 SRR8615282 SRX5414471
+Instance ID: i-081e0951d2b25ecda
+Public DNS: ec2-54-245-171-125.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-245-171-125.us-west-2.compute.amazonaws.com,172.31.23.92' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh to ./hgr1_align_v3.ccle.sh
+
+
+Launch instance # 2
+Thu May 30 01:53:52 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0031fd61f932bdef9
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh
+Parameters: HCT116 wgs SAMN10988251 SRR8639145 SRX5437588
+Instance ID: i-02cfcc6f406eaecc7
+Public DNS: ec2-18-236-137-37.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-18-236-137-37.us-west-2.compute.amazonaws.com,172.31.17.192' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh to ./hgr1_align_v3.ccle.sh
+
+
+Launch instance # 3
+Thu May 30 01:56:59 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0031fd61f932bdef9
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh
+Parameters: HCT15 rna SAMN10987770 SRR8615281 SRX5414472
+Instance ID: i-00b89c1fc1b8f6c39
+Public DNS: ec2-54-188-15-75.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-54-188-15-75.us-west-2.compute.amazonaws.com,172.31.16.61' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh to ./hgr1_align_v3.ccle.sh
+
+
+Launch instance # 4
+Thu May 30 02:00:07 UTC 2019
+Instance Type: c4.xlarge
+AMI Image: ami-0031fd61f932bdef9
+Run Script: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh
+Parameters: HCT15 wgs SAMN10987770 SRR8639146 SRX5437587
+Instance ID: i-0bcafd6c172a8e2e4
+Public DNS: ec2-52-43-79-213.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-52-43-79-213.us-west-2.compute.amazonaws.com,172.31.18.102' (ECDSA) to the list of known hosts.
+download: s3://crownproject/ccle/scripts/hgr1_align_v3.ccle.sh to ./hgr1_align_v3.ccle.sh
+
+
+kec2-user@ip-172-31-17-5:~\[ec2-user@ip-172-31-17-5 ~]$ 

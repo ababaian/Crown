@@ -1,0 +1,870 @@
+---
+title: "ccle_1248macp"
+author: "ababaian"
+date: "June 15, 2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- Read the `gvcf/ccle-<PROJ>.18S.gvcf` files
+- - Parse VCF Files into data-frame of: DP, AD (T, C, G, A)  per sample for 1248'
+- - Parse for meta-data: CCLE, tissue of origin, cancer type 
+- - Join metadata and DP,AD
+
+```{r}
+# Create a list of input files
+file.list= system('cd gvcf; ls *.18S.gvcf; cd ..', intern = T)
+
+# Iterate through each project file
+for (file in file.list){
+  
+  project.code = strsplit(file, split = '\\.')[[1]][1]
+  
+  # Read the GVCF file to a df
+  GVCF = read.table( paste0("gvcf/",file) )
+    N.lib = ncol(GVCF) - 9 # Num. of libraries in cohort
+  
+  # Read the #CHROM header line from the GVCF (lib-name)
+  # parse to library name
+  lib.names = system( paste0('grep "#CHROM" gvcf/', file), intern = T)
+    lib.names = strsplit(lib.names, split="\t")[[1]][ 10:(N.lib + 9) ]
+    lib.names = sub("\\.hgr1.bam", "", lib.names) # Filename
+    lib.names = sub("\\.hgr1.se.bam", "", lib.names) # Filename
+    lib.code  = sub(".*-.*-.*-", "", lib.names) # TCGA sample code
+    lib.pt    = sub("[^-]*$","",lib.names) # TCGA pt id
+    lib.pt    = sub("-$","",lib.pt) # TCGA pt id
+
+  
+  # Extract 18S.1248U position (chr13 1004908)
+  MACP.tmp = GVCF[(GVCF$V2 == '1004908'), 10:(N.lib + 9) ]
+  
+  # Parse the vector of "DP:AD" characters to a matrix
+  MACP.tmp = strsplit(t(MACP.tmp), split = ":")
+  MACP.mat.tmp = matrix(unlist(MACP.tmp), ncol = 2, byrow = T)
+  DP = as.numeric(MACP.mat.tmp[,1])
+  
+  # Parse the vector of "AD" characters to a num matrix
+  MACP.AD.tmp = strsplit( t(MACP.mat.tmp[,2]), split = ",")
+  MACP.AD.tmp = matrix(unlist(MACP.AD.tmp), ncol = 4, byrow = T)
+  AD = MACP.AD.tmp
+  
+  if (exists("MACP")){
+    MACP = rbind(MACP,
+                 data.frame(project.code, lib.names, lib.code, lib.pt, DP, AD))
+  }else{
+    MACP = data.frame(project.code, lib.names, lib.code, lib.pt, DP, AD)
+  }
+}
+
+# Column Names for MACP matrix
+colnames(MACP) = c('cohort','lib.name','lib.code','pt','DP','T','C','G','A')
+
+# Convert AD values to numeric
+  MACP$T = as.numeric(as.character(MACP$T))
+  MACP$C = as.numeric(as.character(MACP$C))
+  MACP$G = as.numeric(as.character(MACP$G))
+  MACP$A = as.numeric(as.character(MACP$A))
+  
+  
+# MANUAL CLEANUP --------------------------------
+  MACP$pt = gsub('.rna', '', MACP$lib.name)
+  MACP$pt = gsub('.wgs', '', MACP$pt)
+  
+  MACP$lib.code = gsub('.*\\.', '', MACP$lib.name)
+  
+  
+# Clean-up variables
+rm(file, file.list, project.code, GVCF, N.lib, lib.names, lib.code, lib.pt)
+rm(MACP.tmp, MACP.mat.tmp, DP, MACP.AD.tmp, AD)
+
+# DP across all pt
+# plot(sort(log(MACP$DP,10), decreasing = F))
+
+save(MACP, file = 'ccle.macp.Rdata')
+
+```
+
+
+# Duplicate of MACP code to calculate VAF at other modified/detectable nucleotides
+
+m1A p Am
+chr13:1,009,269
+<hr>Total count: 1342
+A      : 303  (23%,     174+,   129- )
+C      : 77  (6%,     54+,   23- )
+G      : 264  (20%,     173+,   91- )
+T      : 698  (52%,     444+,   254- )
+N      : 0
+---------------
+DEL: 9
+INS: 0
+
+```{r}
+# M1A -----------------------------------------------------------
+# Create a list of input files
+file.list= system('cd gvcf; ls *.28S.gvcf; cd ..', intern = T)
+
+# Iterate through each project file
+for (file in file.list){
+  
+  project.code = strsplit(file, split = '\\.')[[1]][1]
+  
+  # Read the GVCF file to a df
+  GVCF = read.table( paste0("gvcf/",file) )
+    N.lib = ncol(GVCF) - 9 # Num. of libraries in cohort
+  
+  # Read the #CHROM header line from the GVCF (lib-name)
+  # parse to library name
+  lib.names = system( paste0('grep "#CHROM" gvcf/', file), intern = T)
+    lib.names = strsplit(lib.names, split="\t")[[1]][ 10:(N.lib + 9) ]
+    lib.names = sub("\\.hgr1.bam", "", lib.names) # Filename
+    lib.names = sub("\\.hgr1.se.bam", "", lib.names) # Filename
+    lib.code  = sub(".*-.*-.*-", "", lib.names) # TCGA sample code
+    lib.pt    = sub("[^-]*$","",lib.names) # TCGA pt id
+    lib.pt    = sub("-$","",lib.pt) # TCGA pt id
+
+  
+  # Extract 28S.1321A position (chr13 1009269)
+  M1A.tmp = GVCF[(GVCF$V2 == 1009269), 10:(N.lib + 9) ]
+  
+  # Parse the vector of "DP:AD" characters to a matrix
+  M1A.tmp = strsplit(t(M1A.tmp), split = ":")
+  M1A.mat.tmp = matrix(unlist(M1A.tmp), ncol = 2, byrow = T)
+  DP = as.numeric(M1A.mat.tmp[,1])
+  
+  # Parse the vector of "AD" characters to a num matrix
+  M1A.AD.tmp = strsplit( t(M1A.mat.tmp[,2]), split = ",")
+  M1A.AD.tmp = matrix(unlist(M1A.AD.tmp), ncol = 4, byrow = T)
+  AD = M1A.AD.tmp
+  
+  if (exists("M1A")){
+    M1A = rbind(M1A,
+                 data.frame(project.code, lib.names, lib.code, lib.pt, DP, AD))
+  }else{
+    M1A = data.frame(project.code, lib.names, lib.code, lib.pt, DP, AD)
+  }
+}
+
+# Column Names for M1A matrix
+colnames(M1A) = c('cohort','lib.name','lib.code','pt','DP','A','T','G','C')
+
+# Convert AD values to numeric
+  M1A$T = as.numeric(as.character(M1A$T))
+  M1A$C = as.numeric(as.character(M1A$C))
+  M1A$G = as.numeric(as.character(M1A$G))
+  M1A$A = as.numeric(as.character(M1A$A))
+  
+  
+# MANUAL CLEANUP --------------------------------
+  MACP$pt = gsub('.rna', '', MACP$lib.name)
+  MACP$pt = gsub('.wgs', '', MACP$pt)
+  
+  MACP$lib.code = gsub('.*\\.', '', MACP$lib.name)
+  
+# Clean-up variables
+rm(file, file.list, project.code, GVCF, N.lib, lib.names, lib.code, lib.pt)
+rm(M1A.tmp, M1A.mat.tmp, DP, M1A.AD.tmp, AD)
+
+# DP across all pt
+# plot(sort(log(M1A$DP,10), decreasing = F))
+
+save(M1A, file = 'ccle.m1a.Rdata')
+
+```
+
+
+m3U modification
+chr13:1,012,480
+<hr>Total count: 2901
+A      : 438  (15%,     265+,   173- )
+C      : 9  (0%,     4+,   5- )
+G      : 585  (20%,     334+,   251- )
+T      : 1869  (64%,     1072+,   797- )
+N      : 0
+---------------
+DEL: 82
+INS: 0
+
+```{r}
+# M3U -----------------------------------------------------------
+# Create a list of input files
+file.list= system('cd gvcf; ls *.28S.gvcf; cd ..', intern = T)
+
+# Iterate through each project file
+for (file in file.list){
+  
+  project.code = strsplit(file, split = '\\.')[[1]][1]
+  
+  # Read the GVCF file to a df
+  GVCF = read.table( paste0("gvcf/",file) )
+    N.lib = ncol(GVCF) - 9 # Num. of libraries in cohort
+  
+  # Read the #CHROM header line from the GVCF (lib-name)
+  # parse to library name
+  lib.names = system( paste0('grep "#CHROM" gvcf/', file), intern = T)
+    lib.names = strsplit(lib.names, split="\t")[[1]][ 10:(N.lib + 9) ]
+    lib.names = sub("\\.hgr1.bam", "", lib.names) # Filename
+    lib.names = sub("\\.hgr1.se.bam", "", lib.names) # Filename
+    lib.code  = sub(".*-.*-.*-", "", lib.names) # TCGA sample code
+    lib.pt    = sub("[^-]*$","",lib.names) # TCGA pt id
+    lib.pt    = sub("-$","",lib.pt) # TCGA pt id
+
+  # Extract 28S.1321A position (chr13 1009269)
+  M3U.tmp = GVCF[(GVCF$V2 == 1012480), 10:(N.lib + 9) ]
+  
+  # Parse the vector of "DP:AD" characters to a matrix
+  M3U.tmp = strsplit(t(M3U.tmp), split = ":")
+  M3U.mat.tmp = matrix(unlist(M3U.tmp), ncol = 2, byrow = T)
+  DP = as.numeric(M3U.mat.tmp[,1])
+  
+  # Parse the vector of "AD" characters to a num matrix
+  M3U.AD.tmp = strsplit( t(M3U.mat.tmp[,2]), split = ",")
+  M3U.AD.tmp = matrix(unlist(M3U.AD.tmp), ncol = 4, byrow = T)
+  AD = M3U.AD.tmp
+  
+  if (exists("M3U")){
+    M3U = rbind(M3U,
+                 data.frame(project.code, lib.names, lib.code, lib.pt, DP, AD))
+  }else{
+    M3U = data.frame(project.code, lib.names, lib.code, lib.pt, DP, AD)
+  }
+}
+
+# Column Names for M3U matrix
+colnames(M3U) = c('cohort','lib.name','lib.code','pt','DP','T','G','A','C')
+
+# Convert AD values to numeric
+  M3U$T = as.numeric(as.character(M3U$T))
+  M3U$C = as.numeric(as.character(M3U$C))
+  M3U$G = as.numeric(as.character(M3U$G))
+  M3U$A = as.numeric(as.character(M3U$A))
+  
+# MANUAL CLEANUP --------------------------------
+  MACP$pt = gsub('.rna', '', MACP$lib.name)
+  MACP$pt = gsub('.wgs', '', MACP$pt)
+  
+  MACP$lib.code = gsub('.*\\.', '', MACP$lib.name)
+  
+# Clean-up variables
+rm(file, file.list, project.code, GVCF, N.lib, lib.names, lib.code, lib.pt)
+rm(M3U.tmp, M3U.mat.tmp, DP, M3U.AD.tmp, AD)
+
+# DP across all pt
+# plot(sort(log(M3U$DP,10), decreasing = F))
+
+save(M3U, file = 'ccle.m3u.Rdata')
+
+```
+
+
+- Calculated values
+-- Per sample, calculate Reference Allele Frequency, Variant Allele Frequency
+-- Per Normal-Cancer pair, calculate delta-RAF
+
+```{r}
+load('ccle.macp.Rdata')
+load('ccle.m3u.Rdata')
+load('ccle.m1a.Rdata')
+
+# ====== SUBSET & BLACKLIST =========
+# Remove WGS data for now
+  MACP = MACP[ grepl( 'rna', MACP$'lib.code'), ]
+  M1A  = M1A[ grepl( 'rna', M1A$'lib.code'), ]
+  M3U  = M3U[ grepl( 'rna', M3U$'lib.code'), ]
+  
+# Subset data for analysis
+#Normals = which( grepl( '11', MACP$'lib.code'))
+#Cancers = which(!grepl( '11', MACP$'lib.code'))
+
+# ===== Calculated values ==========
+# RAF / VAF
+  MACP$RAF = MACP$T / MACP$DP
+  MACP$VAF = 1 - MACP$RAF
+
+  M3U$RAF = M3U$T / M3U$DP
+  M3U$VAF = 1 - M3U$RAF
+  
+  M1A$RAF = M1A$A / M1A$DP
+  M1A$VAF = 1 - M1A$RAF
+
+```
+
+- Create Plots / export data
+
+### Hypo-modification definition
+[For each collection of RNA-seq libraries, the hypo-macpPsi threshold was defined as three standard deviations (false discovery rate = 0.00135) below the average variant allele frequency of the normal libraries, or of all libraries if a normal control is not available. Hypo-m1a (at 28S:xxx) and hypo-m3u (at 28S:yyy) was defined similarily. Libraries which were triple-hypo for all three modifications were excluded from further analysis (xxx%), as this correlated with altered library preperation (such as FFPE samples).]
+
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(reshape2)
+
+# Calculate global "Normal" 99% quantile
+MACP = MACP[ order(MACP$VAF), ]
+
+q95 = quantile( MACP$VAF, 0.05)
+q99 = quantile( MACP$VAF, 0.01)
+
+sd2 = mean(MACP$VAF) - 2*sd(MACP$VAF)
+sd3 = mean(MACP$VAF) - 3*sd(MACP$VAF)
+
+# Quick plot
+#plot(sort(MACP$VAF), 1:length(MACP$VAF))
+#plot(MACP$VAF, M3U$VAF)
+#plot(MACP$VAF, M1A$VAF)
+
+MODS = data.frame(MACP$lib.name, MACP$VAF, M1A$VAF, M3U$VAF)
+  macp.sd3 = mean(MODS$MACP.VAF) - 3*sd(MODS$MACP.VAF)
+  m3u.sd3  = mean(MODS$M3U.VAF) - 3*sd(MODS$M3U.VAF)
+  m1a.sd3  = mean(MODS$M1A.VAF) - 3*sd(MODS$M1A.VAF)
+
+# Define hypo-mod libraries
+  MODS$hypo.macp = F
+  MODS$hypo.macp[which(MODS$MACP.VAF <= macp.sd3)] = T
+  
+  MODS$hypo.m3u = F
+  MODS$hypo.m3u[which(MODS$M3U.VAF <= m3u.sd3)] = T
+  
+  MODS$hypo = (MODS$hypo.macp | MODS$hypo.m3u)
+
+  MODS$hypo.m1a = F
+  MODS$hypo.m1a[which(MODS$M1A.VAF <= m1a.sd3)] = T
+  
+  MODS$hypo2 = (MODS$hypo.macp | MODS$hypo.m1a)
+  
+PLOT = ggplot(MODS, aes(MACP.VAF, M3U.VAF, color = hypo ))
+PLOT = PLOT + geom_point(show.legend = F)
+PLOT = PLOT + geom_rug(alpha = 0.1)
+PLOT = PLOT + xlim(c(0,max(MODS$MACP.VAF))) + ylim(c(0,max(MODS$M3U.VAF)))
+PLOT = PLOT + theme_bw() + scale_color_manual(values = c('gray80','red'))
+PLOT = PLOT + geom_vline(xintercept = macp.sd3 , color = 'red')
+PLOT = PLOT + geom_hline(yintercept = m3u.sd3  , color = 'red')
+PLOT
+
+PLOT = ggplot(MODS, aes(MACP.VAF, M1A.VAF, color = hypo2 ))
+PLOT = PLOT + geom_point(show.legend = F)
+PLOT = PLOT + geom_rug(alpha = 0.1)
+PLOT = PLOT + xlim(c(0,max(MODS$MACP.VAF))) + ylim(c(0,max(MODS$M1A.VAF)))
+PLOT = PLOT + theme_bw() + scale_color_manual(values = c('gray80','red'))
+PLOT = PLOT + geom_vline(xintercept = macp.sd3 , color = 'red')
+PLOT = PLOT + geom_hline(yintercept = m1a.sd3  , color = 'red')
+PLOT
+
+
+```
+
+```{r}
+# ====== Annotation =============
+lookup.in = function(input.element, lookup.vector){
+  # Lookup function to return the coordinate where
+  # input.element matches in lookup.vector
+  #
+  # returns first match only
+   return(which( input.element == lookup.vector)[1])
+}
+
+# alignment input table import for all libraries
+# subset on only RNA runs
+input.table = read.table('input.set.table', header = F, sep = '\t')
+  colnames(input.table) = c('lib.name','lib.code','sample','run','experiment')
+  input.table = input.table[ grepl("rna",input.table$lib.code), ]
+  input.table = input.table[!duplicated(input.table$run), ]
+
+
+macp.run.lookup = lapply(MACP$pt, lookup.in, lookup.vector = input.table$lib.name)
+macp.run.lookup = unlist(macp.run.lookup)
+
+#MACP$lib.test = input.table$lib.name[macp.run.lookup]
+MACP$run = input.table$run[macp.run.lookup]
+
+# temp - drop NA samples, requires manual fixing
+#MACP = MACP[ -is.na(MACP$lib.run), ]
+
+# SRA Table
+sra.table = read.table('ccle.sra.table', header = T, sep = '\t')
+  macp.sra.lookup = lapply(MACP$run, lookup.in, lookup.vector = sra.table$Run)
+  macp.sra.lookup = unlist(macp.sra.lookup)
+
+# Populate MACP data.frame with annotation from SRA table
+#MACP$age = sra.table$age[macp.sra.lookup]
+  MACP$disease = sra.table$disease[macp.sra.lookup]
+  MACP$tissue = sra.table$tissue[macp.sra.lookup]
+  
+# Assign Hypo-18S.1248macp status (binary)
+# to each patient
+# defined by less then Three Sigma of the normals/pop
+MACP$macp.status = '-' # no info
+MACP$macp.status[ which( MACP$VAF < sd3 ) ]  = 'hypo'
+MACP$macp.status[ which( MACP$VAF >= sd3 ) ] = 'normo'
+
+# cleanup
+rm(input.table, macp.run.lookup, lookup.in)
+```  
+  
+```{r}
+
+holder.tissue = MACP$tissue
+
+# Parse tissue of origins
+MACP$tissue = as.character(MACP$tissue)
+  MACP$tissue[ MACP$tissue == "autonomic_ganglia" ] = "CNS"
+  MACP$tissue[ MACP$tissue == "central_nervous_system" ] = "CNS"
+  
+  MACP$tissue[ MACP$tissue == "salivary_gland" ] = "Head/Neck"
+  MACP$tissue[ MACP$tissue == "oesophagus" ] = "Head/Neck"
+  MACP$tissue[ MACP$tissue == "upper_aerodigestive_tract" ] = "Head/Neck"
+  
+  MACP$tissue[ MACP$tissue == "large_intestine" ] = "GI"
+  MACP$tissue[ MACP$tissue == "small_intestine" ] = "GI"
+  MACP$tissue[ MACP$tissue == "stomach" ] = "GI"
+  MACP$tissue[ MACP$tissue == "biliary_tract" ] = "GI"
+  
+  MACP$tissue[ MACP$tissue == "bone" ] = "Bone"
+  MACP$tissue[ MACP$tissue == "haematopoietic_and_lymphoid_tissue" ] = "Blood/Lymph"
+  
+  MACP$tissue[ MACP$tissue == "liver" ] = "Liver"
+  MACP$tissue[ MACP$tissue == "lung" ] = "Lung"
+  MACP$tissue[ MACP$tissue == "kidney" ] = "Kidney"
+  MACP$tissue[ MACP$tissue == "pancreas" ] = "Pancreas"
+  MACP$tissue[ MACP$tissue == "prostate" ] = "Prostate"
+  MACP$tissue[ MACP$tissue == "thyroid" ] = "Thyroid"
+  
+  MACP$tissue[ MACP$tissue == "cervix" ] = "Reproductive"
+  MACP$tissue[ MACP$tissue == "endometrium" ] = "Reproductive"
+  MACP$tissue[ MACP$tissue == "urinary_tract" ] = "Reproductive"
+  MACP$tissue[ MACP$tissue == "ovary" ] = "Reproductive"
+  
+  MACP$tissue[ MACP$tissue == "pleura" ] = "Other"
+  MACP$tissue[ MACP$tissue == "soft_tissue" ] = "Other"
+  
+MACP$tissue = as.factor(MACP$tissue)
+
+# Adapt the script to look at each tissue instead of cohort in CCLE
+  MACP$cohort = MACP$tissue
+  MACP$tissue = holder.tissue
+
+# write.table(MACP[ MACP$cohort == "Blood/Lymph", ], file = "macp.blood.csv" ,quote = F, row.names = F, sep = "\t")
+
+# Initialize table of output
+ccle.results = data.frame( project_code = levels(MACP$cohort))
+  ccle.results$project_name = 'na'
+  ccle.results$N = -1
+  ccle.results$Nn = -1
+  ccle.results$Nc = -1
+  ccle.results$p_value = -1
+  ccle.results$corr_p = -1
+  ccle.results$can_hypo_99  = -1
+  ccle.results$norm_hypo_99 = -1
+
+# Paired Cancer vs. Normal Analysis
+  bonforonni.correction = length(unique(MACP$cohort))
+
+# Plot data from each TCGA sub-type
+for (tissue.code in levels(MACP$cohort)) {
+  #tissue.code = "TCGA-COAD"
+  
+  # Sub-set data to one project code
+  CCLE.plot = MACP[ which(MACP$cohort == tissue.code), ] 
+  N = length(CCLE.plot$pt)
+  Nn = 0
+  
+
+   if ( Nn > 5 ) { # require 5 normal libraries for statistics
+     # Does not apply
+     print(paste0("----",tissue.code,"----"))
+
+     
+     TEST = t.test( x = CCLE.plot$VAF[ grepl( 'Normal', CCLE.plot$'lib.code') ],
+                    y = CCLE.plot$VAF[ !grepl( 'Normal', CCLE.plot$'lib.code') ],
+                    alternative = "two.sided", paired = F )
+     pvalue      = TEST$p.value
+     corr.pvalue = min(1, TEST$p.value * bonforonni.correction)
+     
+     # Complete ccle.results summary data entries
+    entry = which(ccle.results$project_code == tissue.code)
+    ccle.results$N[entry] = N
+    ccle.results$Nc[entry] = N - Nn
+    ccle.results$Nn[entry] = Nn
+
+    ccle.results$p_value[entry] = TEST$p.value
+    ccle.results$corr_p[entry] = corr.pvalue
+    
+    ccle.results$can_hypo_99[entry]   = length(which(CCLE.plot$VAF[ which(CCLE.plot$lib.code != 'Normal')] < q99 ) ) / (N - Nn)
+    ccle.results$norm_hypo_99[entry]  = length(which(CCLE.plot$VAF[ which(CCLE.plot$lib.code == 'Normal')] < q99 ) ) / (Nn)
+    
+    
+    PLOT = ggplot( CCLE.plot, aes( factor(lib.code), VAF ) )
+    #PLOT = PLOT + geom_violin()
+    PLOT = PLOT + geom_boxplot(#fill = c('green','red'),
+                             #outlier.alpha = 0.5,
+                             outlier.shape = 1)
+    PLOT = PLOT + ylim(c(0, 1)) #max(MACP$VAF)))
+    PLOT = PLOT + ggtitle(tissue.code)
+    PLOT = PLOT + xlab('') + ylab('Variant Allele Frequency (%)')
+    #PLOT = PLOT + scale_x_discrete(limits = c('Normal', 'Cancer')) 
+    #PLOT = PLOT + theme_bw()
+    PLOT = PLOT + annotate("text", x = 1, y = 1.0, label = paste0("p_adj = ", signif(corr.pvalue, digits = 3)) )
+    PLOT = PLOT + annotate("text", x = 1, y = 0.95, label = paste0("N = ", N) )
+    #PLOT
+    print(PLOT)
+     
+  } else {
+  # Unpaired Cancer Analysis (use global)
+    print(paste0("----",tissue.code,": unpaired ----"))
+    
+    # Complete ccle.results summary data entries
+    entry = which(ccle.results$project_code == tissue.code)
+    ccle.results$N[entry] = N
+    ccle.results$Nc[entry] = N - Nn
+    ccle.results$Nn[entry] = Nn
+    
+    ccle.results$p_value[entry] = NA
+    ccle.results$corr_p[entry] = NA
+    
+    ccle.results$can_hypo_99[entry]   = length(which(CCLE.plot$VAF < sd3 ) ) / (N - Nn)
+    
+    PLOT = ggplot( CCLE.plot, aes( factor(lib.code), VAF ) )
+    #PLOT = PLOT + geom_violin()
+    PLOT = PLOT + geom_boxplot(#fill = c('green','red'),
+                             #outlier.alpha = 0.5,
+                             outlier.shape = 1)
+    PLOT = PLOT + ylim(c(0, 1)) #max(MACP$VAF)))
+    PLOT = PLOT + ggtitle(tissue.code)
+    PLOT = PLOT + xlab('') + ylab('Variant Allele Frequency (%)')
+    #PLOT = PLOT + scale_x_discrete(limits = c('Normal', 'Cancer')) 
+    #PLOT = PLOT + theme_bw()
+    PLOT = PLOT + annotate("text", x = 1.5, y = 60, label = "unpaired " )
+    PLOT = PLOT + annotate("text", x = 1.5, y = 55, label = paste0("N = ", N) )
+    #PLOT
+    print(PLOT)
+  }
+}
+  
+
+#cleanup
+rm(PLOT, CCLE.plot, entry, N, Nn, tissue.code)
+
+```
+
+```{r}
+# Text Summary of result table
+ccle.results = ccle.results[ order( ccle.results$can_hypo_99, decreasing = T) , ]
+ccle.results$norm_hypo_99[ (ccle.results$Nn < 5 ) ] = NaN # population level analysis only on N > 5
+
+ccle.results.plot = ccle.results[ , c('project_code','can_hypo_99')]
+  ccle.results.plot = cbind(ccle.results.plot, 'cell_line')
+  colnames(ccle.results.plot) = c('code','hypo', 'type')
+
+ccle.results.add  = ccle.results[ , c('project_code','norm_hypo_99')]
+  ccle.results.add = cbind(ccle.results.add, 'normal')
+  colnames(ccle.results.add)  = c('code','hypo', 'type')
+  
+ccle.results.plot = rbind( ccle.results.plot, ccle.results.add)
+ccle.results.plot$code = factor(ccle.results.plot$code, levels = ccle.results.plot$code[ ccle.results.plot$type == 'cell_line' ])
+ccle.results.plot$hypo = 100 * ccle.results.plot$hypo
+ccle.results.plot$hypo[ ccle.results.plot$hypo == 0 ] = -0.5 # distinguish 0% from n.d. by setting it to -0.5%
+
+  PLOT = ggplot( ccle.results.plot, aes(code, hypo))
+  PLOT = PLOT + geom_bar(position="dodge", stat = 'identity', show.legend = F)
+  PLOT = PLOT + scale_fill_manual(values = c('firebrick','darkgreen'))
+  PLOT = PLOT + theme_bw()
+  PLOT = PLOT + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  PLOT = PLOT + xlab('') + ylab('Hypo-macp ( % of Pts )')
+  PLOT = PLOT + geom_hline( yintercept = 0.0, color = 'black')
+  PLOT = PLOT + geom_hline( yintercept = 0.013  , color = 'blue')
+  PLOT
+  
+rm( PLOT, ccle.results.add, ccle.results.plot )
+```
+
+```{r}
+# Single plot output
+
+# Re-order project.code factor in tcga.df to the order defined
+# by corrected P-value of signifiance
+#MACP$cohort = factor( MACP$cohort, levels = ccle.results$cohort )
+
+MACP.plot = MACP
+
+# Re-convert factor to simplified table
+MACP.plot$lib.code = as.factor(as.character(MACP.plot$lib.code))
+
+# Colors
+# lib.defn = c('Tumor','Recurrent','Leukemia/Lymphoma','2nd.Tumor','Metastatic','2nd.Metastatic','Normal')
+#lib.col = c('red','darkred','orange','firebrick','pink','salmon','darkgreen')
+# 
+#   PLOT = ggplot( MACP.plot, aes( factor(lib.code), VAF, color = factor(lib.code)) )
+#   PLOT = PLOT + geom_jitter( alpha = 0.6, show.legend = F)
+#   PLOT = PLOT + geom_boxplot( fill = NA, color = 'black', outlier.shape = NA , show.legend = F)
+#   #PLOT = PLOT + scale_color_manual(values = lib.col)
+#   PLOT = PLOT + ylim(c(0, max(MACP.plot$VAF)))
+#   PLOT = PLOT + ggtitle("Cell Line Cancer Type")
+#   PLOT = PLOT + xlab('') + ylab('Variant Allele Frequency (%)')
+#   #PLOT = PLOT + scale_x_discrete(limits = c('Normal', 'Cancer')) 
+#   PLOT = PLOT + theme_bw()
+#   PLOT = PLOT + geom_hline(yintercept = sd3, color = 'red')
+#   PLOT = PLOT + facet_wrap(~disease )
+#   PLOT
+  
+  PLOT = ggplot( MACP.plot, aes( factor(tissue), VAF) )
+  PLOT = PLOT + geom_jitter( alpha = 0.6, color = 'gray80', show.legend = F)
+  PLOT = PLOT + geom_boxplot( fill = NA, color = 'black', outlier.shape = NA , show.legend = F)
+  PLOT = PLOT + ylim(c(0, max(MACP.plot$VAF)))
+  PLOT = PLOT + ggtitle("Cell Lines")
+  PLOT = PLOT + xlab('Tissue') + ylab('Variant Allele Frequency (%)')
+  PLOT = PLOT + theme_bw()
+  PLOT = PLOT + geom_hline(yintercept = sd3, color = 'red')
+  PLOT = PLOT + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  PLOT
+  
+  
+#rm(MACP.plot, PLOT, corr.pvalue, lib.col, lib.defn)  
+  
+```
+
+
+```{r}
+# Import clincial / exposure meta-data for the TCGA data-sets
+# this set has many duplicates
+clin.df = read.table(file = 'metadata/tcga_1_clinical.tsv', header = T,
+                     sep = '\t' )
+
+app.df = read.table(file = 'metadata/tcga_2_clinical.tsv', header = T,
+                     sep = '\t' )
+  clin.df = rbind(clin.df, app.df)
+
+app.df = read.table(file = 'metadata/tcga_3_clinical.tsv', header = T,
+                     sep = '\t' )
+  clin.df = rbind(clin.df, app.df)
+  
+app.df = read.table(file = 'metadata/tcga_4_clinical.tsv', header = T,
+                     sep = '\t' )
+  clin.df = rbind(clin.df, app.df)
+  
+app.df = read.table(file = 'metadata/tcga_5_clinical.tsv', header = T,
+                     sep = '\t' )
+  clin.df = rbind(clin.df, app.df)
+
+rm(app.df)
+
+clin.df = clin.df[order(clin.df$submitter_id),]
+clin.df = clin.df[which(!duplicated(clin.df$submitter_id)), ]
+
+# # Import  exposure meta-data for the TCGA data-sets
+# exp.df = read.table(file = 'metadata/tcga_1_exposure.tsv', header = T,
+#                      sep = '\t' )
+# 
+# app.df = read.table(file = 'metadata/tcga_2_exposure.tsv', header = T,
+#                      sep = '\t' )
+#   exp.df = rbind(exp.df, app.df)
+# 
+# app.df = read.table(file = 'metadata/tcga_3_exposure.tsv', header = T,
+#                      sep = '\t' )
+#   exp.df = rbind(exp.df, app.df)
+# 
+# rm(app.df)
+
+
+# clin.df Lookup per patient
+  MACP$clin_lookup = lapply(MACP$pt, grep, x = clin.df$submitter_id)
+#  MACP$exp_lookup = lapply(MACP$patient_code, grep, x = exp.df$submitter_id)
+
+
+# # Add relevant data
+  MACP$uuid = clin.df$case_id[ unlist(MACP$clin_lookup) ]
+
+#   MACP$vital = clin.df$vital_status[ unlist(MACP$clin_lookup) ]
+#   MACP$age = clin.df$days_to_birth[ unlist(MACP$clin_lookup) ]
+#   MACP$diagnosis = clin.df$age_at_diagnosis[ unlist(MACP$clin_lookup) ]
+#   MACP$death = clin.df$days_to_death[ unlist(MACP$clin_lookup) ]
+
+```
+
+```{r}
+# Kaplan Meyer Survival Curves for TCGA Data
+#
+# Install
+# library(BiocInstaller)
+# options("download.file.method"="wget")
+# install.packages('survminer')
+# biocLite("RTCGA.clinical") # data for examples
+#biocLite("RTCGA.rnaseq") # data for examples
+
+library(survminer)
+library(RTCGA.clinical)
+library(RTCGA.rnaseq)
+library(survival)
+
+# Lookup table for MACP dataframe in
+# RTCGA data frames
+# <Clinical Dataframe> <Row in that DF>
+
+MACP$RTCGA.clinical = '-' #initialize empy vector
+
+for (tcga.code in tcga.project_codes$cohort){
+  # For each tcga.code
+  # add the respective TCGA.clinical string as
+  # of the respective RTCGA dataframe
+  # to MACP
+  studyName = tcga.project_codes$RTCGA.clinical[ which(tcga.project_codes$cohort == tcga.code) ]
+  
+  studyLookup = which( MACP$cohort == tcga.code )
+ 
+  if (length(studyLookup) > 0){
+    MACP$RTCGA.clinical[ studyLookup ] = studyName
+  }
+}
+
+MACP$RTCGA.clinical.row = 0
+
+clinical.row.lookup = function( inputROW ){
+    inputUUID = as.character(inputROW$uuid)
+    
+    clinical.row = which( inputUUID == get(inputROW$RTCGA.clinical), 
+                          arr.ind = T)[, 1]
+     
+    return( clinical.row )
+        
+}
+
+MACP$RTCGA.clinical.row = apply(MACP, 1, clinical.row.lookup)
+
+# ---------------------------------------------------------
+
+```
+
+```{r}
+# Assign hypo-MACP status (based on 99th percentile)
+# to the data in the clinical data.frames
+
+# Go through each cohort in the MACP dataset
+for (tcga.code in levels(MACP$cohort)){
+   #tcga.code = 'TCGA-ACC'
+   
+   RTCGA.get = tcga.project_codes$RTCGA.clinical[ which(tcga.project_codes$cohort == tcga.code) ]
+   assign.macp.status = rep('-',  length(get(RTCGA.get)[,1]))
+  
+  # Create a subset of MACP matrix for this cohort
+  # to map to the RTCGA dataset
+  TCGA.subset = MACP[ which( MACP$cohort == tcga.code ), ]
+  TCGA.subset = TCGA.subset[ which(!is.na(TCGA.subset$RTCGA.clinical.row > 0)), ]
+  TCGA.subset$RTCGA.clinical.row = as.vector(unlist(TCGA.subset$RTCGA.clinical.row))
+  
+  for (tcga.sample.N in 1:length(TCGA.subset$lib.name)){
+   
+    # For each row in MACP, go-through matching tcga.code projects
+    # and set macp astatus to assign.macp.status vector
+    # for every MACP sub-set
+    clinical.row = TCGA.subset$RTCGA.clinical.row[ tcga.sample.N ]
+    macp.status  = TCGA.subset$macp.status[ tcga.sample.N ]
+    
+    assign.macp.status[ clinical.row ] = macp.status 
+  }
+
+   # In each TCGA.clinical data.frame: create a null vector for macp.status
+   assign(RTCGA.get, `[<-`(get(RTCGA.get), 'macp.status', value = assign.macp.status))
+}
+# ---------------------------------------------------------
+```
+
+```{r}
+# Plot Survival Data for each RTCGA data-set based on macp.status
+for (RTCGA.get in tcga.project_codes$RTCGA.clinical){
+#RTCGA.get = "ACC.clinical"
+  
+  # Exclude non-code project codes
+  if ( RTCGA.get != '-' ){
+    
+    # Only consider non-empty clincial dataframes
+    if ( length(get(RTCGA.get)$macp.status) != 0 ){
+      
+      # Make Survival Information DF  
+      survInfo =  survivalTCGA(get(RTCGA.get),
+                   extract.cols = "macp.status")
+      
+      # Drop non-status patients
+      survInfo = survInfo[ !(survInfo$macp.status == "-") , ]
+    
+      
+      fit <- survfit(Surv(times, patient.vital_status) ~ macp.status,
+                     data = survInfo)
+      # Require at least 1 normo - 1 macp for statistical test
+      if ( length(levels(factor((survInfo$macp.status)))) > 1){
+        # Visualize with survminer
+        PLOT = 
+          ggsurvplot(fit,  size = 1,  # change line size
+                     linetype = "strata", # change line type by groups
+                     break.time.by = 365, # break time axis by 250
+                     palette = c("#E7B800", "#2E9FDF",'#7f7f7f'), # custom color palette
+                     #conf.int = TRUE, # Add confidence interval
+                     pval = TRUE # Add p-value
+                     ) + ggtitle(RTCGA.get)
+        print(PLOT)
+      }
+    }
+  }
+}
+
+rm(fit, PLOT, survInfo, clin.df)
+rm(assign.macp.status, bonforonni.correction, clinical.row, macp.status,RTCGA.get, studyLookup,
+   studyName, tcga.code, tcga.sample.N, clinical.row.lookup)
+
+```
+
+```{r}
+library('ggplot2')
+
+# Compare MACP modification levels to other modifications
+load('tcga.macp.Rdata')
+load('tcga.m1a.Rdata')
+load('tcga.m3u.Rdata')
+
+# RAF / VAF
+  MACP$RAF = MACP$T / MACP$DP
+  MACP$VAF = 1 - MACP$RAF
+
+  M1A$RAF = M1A$A / M1A$DP
+  M1A$VAF = 1 - M1A$RAF
+  
+  M3U$RAF = M3U$T / M3U$DP
+  M3U$VAF = 1 - M3U$RAF
+
+# Sub-set data
+  #selection = which(MACP$cohort == "TCGA-COAD")
+  #selection = which(grepl('1',MACP$lib.code))
+  selection = which(grepl('TCGA',MACP$cohort))
+
+  SET = MACP[selection, ]
+    M1A = M1A$VAF[selection]
+    M3U = M3U$VAF[selection]
+    SET = cbind(SET, M1A, M3U)
+
+PLOT = ggplot(SET, aes(M1A, M3U, color = VAF, alpha = 0.5))
+PLOT = PLOT + geom_point()
+PLOT = PLOT + facet_wrap(~lib.code )
+#PLOT = PLOT + facet_wrap(~cohort )
+PLOT
+    
+```
+
+```{r}
+# # Filter down to only patient-matched data
+# # (contains a normal sample)
+# 
+# # For every lib.code Normal, return the unique patient identifier as a character
+# Norm.ID = as.character( unique( MACP$pt[ which( MACP$lib.code == 'Normal' ) ] ) )
+# 
+# MACP.matched = MACP[ which(MACP$pt %in% Norm.ID), ]
+# 
+# MACP.COAD.matched = MACP.matched[ MACP.matched$cohort == "TCGA-COAD", ]
+# MACP.COAD.matched = MACP.COAD.matched[order(MACP.COAD.matched$lib.code),   ]
+# write.table(as.matrix(MACP.COAD.matched), file = 'MACP.COAD.matched.csv', quote = F, sep = '\t', col.names = F)
+# 
+# MACP.READ.matched = MACP.matched[ MACP.matched$cohort == "TCGA-READ", ]
+# MACP.READ.matched = MACP.READ.matched[order(MACP.READ.matched$lib.code),   ]
+# write.table(as.matrix(MACP.READ.matched), file = 'MACP.READ.matched.csv', quote = F, sep = '\t', col.names = F)
+
+```

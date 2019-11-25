@@ -1,0 +1,44 @@
+[01;32mubuntu@ip-172-31-14-64[00m:[01;34m~/ccle[00m$ cd ~[K[K[K[Kbash ~/ADcalc_ccle3.sh 
+Analyzing ccle.rna2...
+Started processing 18S
+[mpileup] 420 samples in 420 input files
+Warning: Potential memory hog, up to 42000000M reads in the pileup!
+Done with 18S 
+chr13:1003660-1005529
+Started processing 18SE
+[mpileup] 420 samples in 420 input files
+Warning: Potential memory hog, up to 42000000M reads in the pileup!
+Done with 18SE 
+chr13:1005529-1005629
+Started processing 5S
+[mpileup] 420 samples in 420 input files
+Warning: Potential memory hog, up to 42000000M reads in the pileup!
+Done with 5S 
+chr13:10219-10340
+Started processing 5.8S
+[mpileup] 420 samples in 420 input files
+Warning: Potential memory hog, up to 42000000M reads in the pileup!
+Done with 5.8S 
+chr13:1006622-1006779
+Started processing 28S
+[mpileup] 420 samples in 420 input files
+Warning: Potential memory hog, up to 42000000M reads in the pileup!
+Done with 28S 
+chr13:1007948-1013018
+rm: cannot remove 'bam.list.tmp': No such file or directory
+upload: ./ccle.rna.bamlist to s3://crownproject/ccle/gvcf/ccle.rna.bamlist
+Completed 1 of 23 part(s) with 12 file(s) remainingCompleted 2 of 23 part(s) with 12 file(s) remainingupload: ./ccle.rna1.18SE.gvcf to s3://crownproject/ccle/gvcf/ccle.rna1.18SE.gvcf
+Completed 3 of 23 part(s) with 11 file(s) remainingCompleted 4 of 23 part(s) with 11 file(s) remainingupload: ./ccle.rna1.5S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna1.5S.gvcf
+Completed 5 of 23 part(s) with 10 file(s) remainingupload: ./ccle.rna1.5.8S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna1.5.8S.gvcf
+Completed 6 of 23 part(s) with 9 file(s) remainingupload: ./ccle.rna1.bamlist to s3://crownproject/ccle/gvcf/ccle.rna1.bamlist
+Completed 7 of 23 part(s) with 8 file(s) remainingCompleted 8 of 23 part(s) with 8 file(s) remainingCompleted 9 of 23 part(s) with 8 file(s) remainingCompleted 10 of 23 part(s) with 8 file(s) remainingCompleted 11 of 23 part(s) with 8 file(s) remainingCompleted 12 of 23 part(s) with 8 file(s) remainingupload: ./ccle.rna2.18SE.gvcf to s3://crownproject/ccle/gvcf/ccle.rna2.18SE.gvcf
+Completed 13 of 23 part(s) with 7 file(s) remainingCompleted 14 of 23 part(s) with 7 file(s) remainingupload: ./ccle.rna1.18S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna1.18S.gvcf
+Completed 14 of 23 part(s) with 6 file(s) remainingCompleted 15 of 23 part(s) with 6 file(s) remainingupload: ./ccle.rna1.28S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna1.28S.gvcf
+Completed 15 of 23 part(s) with 5 file(s) remainingCompleted 16 of 23 part(s) with 5 file(s) remainingupload: ./ccle.rna2.5.8S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna2.5.8S.gvcf
+Completed 17 of 23 part(s) with 4 file(s) remainingupload: ./ccle.rna2.18S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna2.18S.gvcf
+Completed 17 of 23 part(s) with 3 file(s) remainingupload: ./ccle.rna2.bamlist to s3://crownproject/ccle/gvcf/ccle.rna2.bamlist
+Completed 18 of 23 part(s) with 2 file(s) remainingupload: ./ccle.rna2.5S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna2.5S.gvcf
+Completed 19 of 23 part(s) with 1 file(s) remainingCompleted 20 of 23 part(s) with 1 file(s) remainingCompleted 21 of 23 part(s) with 1 file(s) remainingCompleted 22 of 23 part(s) with 1 file(s) remainingCompleted 23 of 23 part(s) with 1 file(s) remainingupload: ./ccle.rna2.28S.gvcf to s3://crownproject/ccle/gvcf/ccle.rna2.28S.gvcf
+Run Complete -- Instance is online.
+[01;32mubuntu@ip-172-31-14-64[00m:[01;34m~/ccle[00m$ [K[01;32mubuntu@ip-172-31-14-64[00m:[01;34m~/ccle[00m$ exit
+exit

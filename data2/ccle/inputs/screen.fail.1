@@ -1,0 +1,39 @@
+Completed 1 of 10 part(s) with 1 file(s) remainingCompleted 2 of 10 part(s) with 1 file(s) remainingCompleted 3 of 10 part(s) with 1 file(s) remainingCompleted 4 of 10 part(s) with 1 file(s) remainingCompleted 5 of 10 part(s) with 1 file(s) remainingCompleted 6 of 10 part(s) with 1 file(s) remainingCompleted 7 of 10 part(s) with 1 file(s) remainingCompleted 8 of 10 part(s) with 1 file(s) remainingCompleted 9 of 10 part(s) with 1 file(s) remainingCompleted 10 of 10 part(s) with 1 file(s) remainingdownload: s3://crownproject/ccle/scripts/sratoolkit.tar.gz to ./sratoolkit.tar.gz
+ -- hgr1 Alignment Pipeline -- 
+ version: 190528 build -- CCLE 
+ ami:     crown-180813 - ami-0031fd61f932bdef9  
+ s3:      s3://crownproject/ccle  
+ library: HCT116 -- rna
+ date:    Thu May 30 01:53:55 UTC 2019
+
+Initializing ...
+Download fastq files: SRR8615282
+  cmd: /home/ubuntu/sratoolkit.2.9.6-1-ubuntu64/bin/fastq-dump --gzip --split-files SRR8615282
+2019-05-30T03:19:06 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T03:46:09 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T04:01:24 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T04:05:53 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T06:20:39 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:39 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T06:20:40 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:40 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T06:20:41 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:41 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T06:20:43 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:43 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T07:15:40 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:40 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000249.1'
+2019-05-30T07:15:44 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:44 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000240.1'
+2019-05-30T07:15:45 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:45 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000241.1'
+2019-05-30T07:15:56 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:56 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000227.1'
+Read 83894908 spots for SRR8615282
+Written 83894908 spots for SRR8615282
+ls: cannot access '*_0.fastq.gz': No such file or directory
+  fastq_1: SRR8615282_1.fastq.gz
+  fastq_2: SRR8615282_2.fastq.gz
+Single-end Reads Detected.
+
+ERROR

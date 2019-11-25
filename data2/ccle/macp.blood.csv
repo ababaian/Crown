@@ -1,0 +1,166 @@
+cohort	lib.name	lib.code	pt	DP	T	C	G	A	RAF	VAF	run	disease	tissue	macp.status
+Blood/Lymph	KMS11.rna	rna	KMS11	2529	2044	472	2	11	0.808224594701463	0.191775405298537	SRR8615354	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	hypo
+Blood/Lymph	DB.rna	rna	DB	3254	2048	1178	5	23	0.629379225568531	0.370620774431469	SRR8615952	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	hypo
+Blood/Lymph	HEL92.1.7.rna	rna	HEL92.1.7	1764	1000	750	5	9	0.566893424036281	0.433106575963719	SRR8615628	haematopoietic_neoplasm (acute_myeloid_leukaemia, M6)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCIMY5.rna	rna	OCIMY5	7987	4177	3431	255	124	0.522974834105421	0.477025165894579	SRR8615223	NA	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HPBALL.rna	rna	HPBALL	21253	11075	9254	642	282	0.52110290311956	0.47889709688044	SRR8616210	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCIAML5.rna	rna	OCIAML5	8391	4267	3760	238	126	0.508521034441664	0.491478965558336	SRR8615510	haematopoietic_neoplasm (acute_myeloid_leukaemia, M4)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	PEER.rna	rna	PEER	10149	5077	4618	320	134	0.500246329687654	0.499753670312346	SRR8615304	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SKNO1.rna	rna	SKNO1	17569	8673	8071	576	249	0.493653594399226	0.506346405600774	SRR8615496	haematopoietic_neoplasm (acute_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	GRANTA519.rna	rna	GRANTA519	3919	1933	1832	97	57	0.493238070936463	0.506761929063537	SRR8615380	lymphoid_neoplasm (mantle_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NAMALWA.rna	rna	NAMALWA	32699	16073	15238	902	486	0.491544083916939	0.508455916083061	SRR8615345	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Loucy.rna	rna	Loucy	7559	3684	3535	245	95	0.487366053710808	0.512633946289192	SRR8615549	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	BCP1.rna	rna	BCP1	14187	6908	6617	431	231	0.486924649326849	0.513075350673151	SRR8615772	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OPM2.rna	rna	OPM2	11679	5680	5529	295	175	0.486343008819248	0.513656991180752	SRR8615877	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCILY3.rna	rna	OCILY3	36967	17951	17281	1189	546	0.485595260637866	0.514404739362134	SRR8615263	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HuT78.rna	rna	HuT78	6095	2957	2847	194	97	0.485151763740771	0.514848236259229	SRR8615850	lymphoid_neoplasm (mycosis_fungoides-Sezary_syndrome)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	L540.rna	rna	L540	11939	5789	5591	365	194	0.484881480861044	0.515118519138956	SRR8615683	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS34.rna	rna	KMS34	26883	13032	12729	725	397	0.484767325075326	0.515232674924674	SRR8615941	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLT13.rna	rna	MOLT13	59748	28764	28051	2019	914	0.481421972283591	0.518578027716409	SRR8616061	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia, L2)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OPM1.rna	rna	OPM1	11332	5455	5367	320	190	0.481380162372044	0.518619837627956	SRR8615543	NA	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	L1236.rna	rna	L1236	12739	6132	6018	424	165	0.481356464400659	0.518643535599341	SRR8615479	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JURLMK1.rna	rna	JURLMK1	6409	3067	3060	195	87	0.478545794975815	0.521454205024185	SRR8615713	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMM1.rna	rna	KMM1	13934	6665	6573	492	204	0.478326395866226	0.521673604133774	SRR8615903	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	PLB985.rna	rna	PLB985	20383	9654	9745	661	323	0.473629985772457	0.526370014227542	SRR8615967	haematopoietic_neoplasm (acute_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	CI1.rna	rna	CI1	7084	3351	3412	218	103	0.473037831733484	0.526962168266516	SRR8616137	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS27.rna	rna	KMS27	15356	7203	7421	503	229	0.469067465485804	0.530932534514196	SRR8615348	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCIMY7.rna	rna	OCIMY7	16583	7749	8007	571	256	0.467285774588434	0.532714225411566	SRR8615224	NA	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	U937.rna	rna	U937	18742	8696	9096	647	303	0.463984633443603	0.536015366556397	SRR8615754	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	697.rna	rna	697	17763	8239	8726	514	284	0.463829308112368	0.536170691887632	SRR8616164	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NUDUL1.rna	rna	NUDUL1	9901	4592	4862	303	144	0.463791536208464	0.536208463791536	SRR8615441	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS20.rna	rna	KMS20	8146	3778	4009	230	129	0.463785907193715	0.536214092806285	SRR8615349	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMH2.rna	rna	KMH2	9322	4323	4417	428	154	0.463741686333405	0.536258313666595	SRR8615908	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	INA6.rna	rna	INA6	10666	4920	5247	338	161	0.46127882992687	0.53872117007313	SRR8615492	NA	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCIAML2.rna	rna	OCIAML2	9326	4301	4625	265	135	0.46118378726142	0.53881621273858	SRR8615512	haematopoietic_neoplasm (acute_myeloid_leukaemia, M4)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS18.rna	rna	KMS18	16828	7729	8247	563	289	0.459294033753268	0.540705966246732	SRR8615352	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	C8166.rna	rna	C8166	3663	1682	1850	60	71	0.459186459186459	0.540813540813541	SRR8616202	NA	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUDHL5.rna	rna	SUDHL5	7925	3638	3898	260	129	0.459053627760252	0.540946372239748	SRR8615368	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	THP1.rna	rna	THP1	12269	5629	6058	372	210	0.458798598092754	0.541201401907246	SRR8616091	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Daudi.rna	rna	Daudi	9848	4508	4779	383	178	0.457757920389927	0.542242079610073	SRR8615961	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NB4.rna	rna	NB4	15468	7042	7691	472	263	0.45526247737264	0.54473752262736	SRR8615343	haematopoietic_neoplasm (acute_myeloid_leukaemia, M3)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KO52.rna	rna	KO52	18022	8129	8890	702	301	0.451059815780712	0.548940184219288	SRR8615707	haematopoietic_neoplasm (acute_myeloid_leukaemia, M2)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JK1.rna	rna	JK1	19141	8582	9539	729	291	0.44835693014994	0.55164306985006	SRR8615556	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	DEL.rna	rna	DEL	5649	2514	2846	197	92	0.445034519383962	0.554965480616038	SRR8616006	lymphoid_neoplasm	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	BDCM.rna	rna	BDCM	27304	12127	13789	927	461	0.444147377673601	0.555852622326399	SRR8615770	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	K562.rna	rna	K562	14546	6456	7368	520	202	0.443833356249141	0.556166643750859	SRR8615717	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia, Ph_positive)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	TF1.rna	rna	TF1	20414	9060	10239	790	325	0.443813069462134	0.556186930537866	SRR8616093	haematopoietic_neoplasm (acute_myeloid_leukaemia, M6)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUDHL1.rna	rna	SUDHL1	17172	7620	8615	653	284	0.443745632424878	0.556254367575122	SRR8615448	lymphoid_neoplasm (anaplastic_large_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HH.rna	rna	HH	12898	5709	6523	446	220	0.442626763839355	0.557373236160645	SRR8616134	lymphoid_neoplasm (adult_T_cell_lymphoma-leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	L363.rna	rna	L363	22215	9822	11408	662	323	0.442133693450371	0.557866306549629	SRR8615485	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUPM2.rna	rna	SUPM2	25924	11461	13134	913	416	0.442099984570282	0.557900015429718	SRR8615928	lymphoid_neoplasm (anaplastic_large_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SKM1.rna	rna	SKM1	6712	2967	3345	286	114	0.442044100119189	0.557955899880811	SRR8616051	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUDHL10.rna	rna	SUDHL10	56647	25006	28312	2295	1034	0.441435557046269	0.558564442953731	SRR8615376	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HEL.rna	rna	HEL	12644	5561	6419	446	218	0.439813350205631	0.560186649794369	SRR8615630	haematopoietic_neoplasm (acute_myeloid_leukaemia, M6)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KU812.rna	rna	KU812	9169	4032	4672	337	128	0.439742610971753	0.560257389028247	SRR8616080	haematopoietic_neoplasm (chronic_myeloid_leukaemia, Ph_positive)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JVM2.rna	rna	JVM2	8313	3655	4239	286	133	0.439672801635992	0.560327198364008	SRR8615710	lymphoid_neoplasm (chronic_lymphocytic_leukaemia-small_lymphocytic_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KOPN8.rna	rna	KOPN8	25827	11348	13280	812	387	0.439385139582607	0.560614860417393	SRR8615706	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS26.rna	rna	KMS26	23837	10473	12373	633	358	0.439358979737383	0.560641020262617	SRR8615347	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Reh.rna	rna	Reh	7358	3212	3736	277	133	0.436531666213645	0.563468333786355	SRR8615597	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	BV173.rna	rna	BV173	4232	1834	2196	147	55	0.433364839319471	0.566635160680529	SRR8616198	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	BL70.rna	rna	BL70	6683	2894	3429	241	119	0.433039054316924	0.566960945683076	SRR8616118	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JVM3.rna	rna	JVM3	8999	3896	4652	309	142	0.432936992999222	0.567063007000778	SRR8615711	lymphoid_neoplasm (chronic_lymphocytic_leukaemia-small_lymphocytic_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MJ.rna	rna	MJ	23033	9955	11835	859	384	0.432205965354057	0.567794034645943	SRR8615517	lymphoid_neoplasm (mycosis_fungoides-Sezary_syndrome)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	EJM.rna	rna	EJM	20270	8757	10608	590	315	0.432017760236803	0.567982239763197	SRR8615285	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	LAMA84.rna	rna	LAMA84	9142	3944	4780	275	143	0.431415445197987	0.568584554802013	SRR8615684	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	RL.rna	rna	RL	20364	8783	10479	742	360	0.431300333922609	0.568699666077392	SRR8615747	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KE97.rna	rna	KE97	24812	10697	12835	854	426	0.431122037723682	0.568877962276318	SRR8615358	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MV411.rna	rna	MV411	39288	16916	20217	1483	672	0.430564039910405	0.569435960089595	SRR8615687	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	EB1.rna	rna	EB1	22397	9642	11492	876	387	0.430504085368576	0.569495914631424	SRR8615635	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HT.rna	rna	HT	10710	4610	5570	360	170	0.430438842203548	0.569561157796452	SRR8615667	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Mino.rna	rna	Mino	14933	6420	7719	544	250	0.429920310721221	0.570079689278779	SRR8615520	lymphoid_neoplasm (mantle_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCIM1.rna	rna	OCIM1	31103	13337	16090	1139	537	0.428801080281645	0.571198919718355	SRR8615262	haematopoietic_neoplasm (acute_myeloid_leukaemia, M6)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	PF382.rna	rna	PF382	5071	2171	2642	172	86	0.428120686255177	0.571879313744823	SRR8615303	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KiJK.rna	rna	KiJK	14165	6058	7330	552	225	0.427673843981645	0.572326156018355	SRR8615912	lymphoid_neoplasm (anaplastic_large_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KARPAS299.rna	rna	KARPAS299	9920	4241	5170	354	155	0.427520161290323	0.572479838709677	SRR8615715	lymphoid_neoplasm (anaplastic_large_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	GDM1.rna	rna	GDM1	9811	4186	5101	372	152	0.42666394862909	0.57333605137091	SRR8615385	haematopoietic_neoplasm (acute_myeloid_leukaemia, M4)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Toledo.rna	rna	Toledo	34315	14635	17660	1438	582	0.42648987323328	0.57351012676672	SRR8616084	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	CA46.rna	rna	CA46	8283	3530	4322	298	133	0.426174091512737	0.573825908487263	SRR8616193	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HL60.rna	rna	HL60	23733	10110	12707	511	405	0.425989129060801	0.574010870939199	SRR8616133	haematopoietic_neoplasm (acute_myeloid_leukaemia, M2)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KARPAS422.rna	rna	KARPAS422	11757	4974	6159	429	195	0.423067108956366	0.576932891043634	SRR8615704	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	F36P.rna	rna	F36P	31681	13382	16850	936	513	0.422398282882485	0.577601717117515	SRR8616216	haematopoietic_neoplasm (acute_myeloid_leukaemia, M6)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SEM.rna	rna	SEM	10060	4248	5310	348	154	0.422266401590457	0.577733598409543	SRR8615750	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KE37.rna	rna	KE37	7487	3159	3911	289	128	0.421931347669293	0.578068652330707	SRR8615367	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	EHEB.rna	rna	EHEB	11645	4909	6107	423	206	0.42155431515672	0.57844568484328	SRR8615288	lymphoid_neoplasm (chronic_lymphocytic_leukaemia-small_lymphocytic_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HuNS1.rna	rna	HuNS1	14227	5995	7458	497	277	0.421381879524847	0.578618120475153	SRR8615660	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Blood/Lymph	SR786.rna	rna	SR786	19370	8106	10052	844	368	0.418482188951988	0.581517811048012	SRR8615372	lymphoid_neoplasm (anaplastic_large_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SIGM5.rna	rna	SIGM5	8343	3488	4455	276	124	0.418075032961764	0.581924967038236	SRR8615673	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5a)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HNT34.rna	rna	HNT34	6142	2561	3270	218	93	0.416965157929013	0.583034842070987	SRR8616208	NA	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUPB15.rna	rna	SUPB15	14772	6148	7807	606	211	0.416192797183861	0.583807202816139	SRR8615929	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HDMYZ.rna	rna	HDMYZ	39338	16369	20858	1428	683	0.416111647770603	0.583888352229397	SRR8615279	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	P3HR1.rna	rna	P3HR1	7432	3092	3955	252	133	0.416038751345533	0.583961248654467	SRR8616151	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Set2.rna	rna	Set2	20687	8597	10984	781	325	0.415574998791512	0.584425001208488	SRR8615749	haematopoietic_neoplasm (essential_thrombocythaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	GA10.rna	rna	GA10	9391	3900	4960	373	158	0.415291236290065	0.584708763709935	SRR8615741	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MONOMAC1.rna	rna	MONOMAC1	15877	6580	8576	471	250	0.414435976569881	0.585564023430119	SRR8615695	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	DOHH2.rna	rna	DOHH2	13443	5570	7121	519	233	0.41434203674775	0.58565796325225	SRR8615631	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLM6.rna	rna	MOLM6	18204	7541	9653	719	291	0.414249615469128	0.585750384530872	SRR8616063	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MHHCALL4.rna	rna	MHHCALL4	4136	1709	2216	129	82	0.413201160541586	0.586798839458414	SRR8615524	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUDHL6.rna	rna	SUDHL6	24452	10081	12814	1150	407	0.412277114346475	0.587722885653525	SRR8615369	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	RPMI8226.rna	rna	RPMI8226	10164	4188	5448	354	174	0.412042502951594	0.587957497048406	SRR8616028	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JM1.rna	rna	JM1	23437	9644	12338	1016	439	0.411486111703716	0.588513888296284	SRR8615560	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	CMLT1.rna	rna	CMLT1	8737	3592	4621	380	144	0.411125100148792	0.588874899851207	SRR8616144	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	REC1.rna	rna	REC1	15249	6268	8076	648	257	0.411043347104728	0.588956652895272	SRR8615594	lymphoid_neoplasm (mantle_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCILY19.rna	rna	OCILY19	21698	8910	11600	801	387	0.410636925062218	0.589363074937782	SRR8615509	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	AML193.rna	rna	AML193	5231	2147	2857	147	80	0.410437774804053	0.589562225195947	SRR8615409	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	P12ICHIKAWA.rna	rna	P12ICHIKAWA	15221	6245	8134	594	248	0.410288417318179	0.589711582681821	SRR8616149	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MUTZ3.rna	rna	MUTZ3	29192	11977	15895	853	467	0.410283639353247	0.589716360646753	SRR8615701	haematopoietic_neoplasm (acute_myeloid_leukaemia, M4)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUPT11.rna	rna	SUPT11	33270	13632	17606	1439	593	0.409738503155996	0.590261496844004	SRR8615927	lymphoid_neoplasm (peripheral_T_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS28BM.rna	rna	KMS28BM	28989	11866	15457	1121	545	0.40932767601504	0.59067232398496	SRR8615942	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MHHCALL2.rna	rna	MHHCALL2	10294	4212	5517	386	179	0.409170390518749	0.590829609481251	SRR8615239	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUDHL4.rna	rna	SUDHL4	48027	19599	25601	2065	762	0.408082953338747	0.591917046661253	SRR8615378	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Hs611.T.rna	rna	Hs611.T	11336	4619	6102	440	175	0.407462949894143	0.592537050105857	SRR8615966	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MONOMAC6.rna	rna	MONOMAC6	10112	4115	5462	376	159	0.406942246835443	0.593057753164557	SRR8615696	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NOMO1.rna	rna	NOMO1	17592	7128	9607	563	294	0.405184174624829	0.594815825375171	SRR8615443	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	BL41.rna	rna	BL41	5116	2071	2756	190	99	0.404808444096951	0.595191555903049	SRR8616119	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KASUMI2.rna	rna	KASUMI2	9428	3816	5082	365	165	0.404751803139584	0.595248196860416	SRR8615360	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia, L2)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	ST486.rna	rna	ST486	14479	5845	7774	658	202	0.403688100006907	0.596311899993093	SRR8615373	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLT16.rna	rna	MOLT16	11455	4621	6191	451	192	0.403404626800524	0.596595373199476	SRR8616060	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JURKAT.rna	rna	JURKAT	12376	4985	6731	434	226	0.402795733678087	0.597204266321913	SRR8615712	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	L428.rna	rna	L428	16292	6555	8835	617	285	0.402344709059661	0.597655290940339	SRR8615486	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	U266B1.rna	rna	U266B1	17652	7076	9324	980	272	0.40086109222751	0.59913890777249	SRR8615896	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JJN3.rna	rna	JJN3	11091	4442	6122	353	174	0.400504913894148	0.599495086105852	SRR8615557	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HuT102.rna	rna	HuT102	14086	5625	7686	505	270	0.399332670736902	0.600667329263098	SRR8615849	lymphoid_neoplasm (mycosis_fungoides-Sezary_syndrome)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KMS21BM.rna	rna	KMS21BM	22037	8796	12050	834	357	0.399146889322503	0.600853110677497	SRR8615350	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Kasumi6.rna	rna	Kasumi6	10089	4026	5486	370	207	0.3990484686292	0.6009515313708	SRR8615363	haematopoietic_neoplasm (acute_myeloid_leukaemia, M2)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KG1.rna	rna	KG1	9889	3936	5399	367	187	0.398017999797755	0.601982000202245	SRR8615910	haematopoietic_neoplasm (acute_myeloid_leukaemia, M6)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KYO1.rna	rna	KYO1	23276	9241	12768	816	451	0.397018388039182	0.602981611960818	SRR8615943	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUDHL8.rna	rna	SUDHL8	45853	18189	24831	2051	782	0.39668069701001	0.60331930298999	SRR8615947	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NALM1.rna	rna	NALM1	8772	3478	4859	285	150	0.396488828089375	0.603511171910625	SRR8615314	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	JeKo1.rna	rna	JeKo1	32627	12923	17830	1318	556	0.396082998743372	0.603917001256628	SRR8615489	lymphoid_neoplasm (mantle_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SUPT1.rna	rna	SUPT1	25730	10191	13926	1151	462	0.396074621064905	0.603925378935095	SRR8615926	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	CMK.rna	rna	CMK	10046	3975	5534	364	173	0.395679872586104	0.604320127413896	SRR8616143	haematopoietic_neoplasm (acute_myeloid_leukaemia, M7)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	OCIAML3.rna	rna	OCIAML3	22308	8822	12321	711	454	0.395463510848126	0.604536489151874	SRR8615242	haematopoietic_neoplasm (acute_myeloid_leukaemia, M4)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KARPAS620.rna	rna	KARPAS620	18917	7467	10106	929	415	0.394724322038378	0.605275677961622	SRR8615705	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	WSUDLCL2.rna	rna	WSUDLCL2	19047	7476	10416	818	337	0.392502756339581	0.607497243660419	SRR8618307	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KCL22.rna	rna	KCL22	15251	5970	8416	595	270	0.39144974100059	0.60855025899941	SRR8615365	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	RCHACV.rna	rna	RCHACV	35706	13971	19700	1425	610	0.391278776676189	0.608721223323811	SRR8615965	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	RPMI8402.rna	rna	RPMI8402	7518	2934	4123	300	161	0.390263367916999	0.609736632083001	SRR8615435	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KASUMI1.rna	rna	KASUMI1	25506	9952	13934	1155	465	0.390182702109308	0.609817297890692	SRR8615361	haematopoietic_neoplasm (acute_myeloid_leukaemia, M2)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	TALL1.rna	rna	TALL1	12319	4795	6735	601	188	0.389236139297021	0.610763860702979	SRR8615831	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	SKMM2.rna	rna	SKMM2	7896	3068	4351	323	154	0.38855116514691	0.61144883485309	SRR8615503	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	ALLSIL.rna	rna	ALLSIL	15436	5982	8631	585	238	0.387535630992485	0.612464369007515	SRR8615411	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	HDLM2.rna	rna	HDLM2	18754	7259	10279	865	351	0.387064092993495	0.612935907006505	SRR8615280	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLM13.rna	rna	MOLM13	17642	6825	9837	668	312	0.386860900124702	0.613139099875298	SRR8616069	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5a)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	LP1.rna	rna	LP1	16833	6510	9487	565	271	0.386740331491713	0.613259668508287	SRR8615397	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NUDHL1.rna	rna	NUDHL1	16841	6513	9410	646	272	0.386734754468262	0.613265245531738	SRR8615440	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Raji.rna	rna	Raji	10108	3906	5611	400	191	0.386426592797784	0.613573407202216	SRR8615972	lymphoid_neoplasm (Burkitt_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLM16.rna	rna	MOLM16	28454	10982	15917	1063	492	0.385956280312083	0.614043719687917	SRR8616064	haematopoietic_neoplasm (acute_myeloid_leukaemia, M0)	haematopoietic_and_lymphoid_tissue	normo
+NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Blood/Lymph	KMS12BM.rna	rna	KMS12BM	18721	7200	10501	711	309	0.38459484001923	0.61540515998077	SRR8615351	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	EOL1.rna	rna	EOL1	15749	6012	8851	625	261	0.381738523080831	0.618261476919169	SRR8616218	haematopoietic_neoplasm (acute_myeloid_leukaemia, M5)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NCIH929.rna	rna	NCIH929	28758	10947	16290	1059	462	0.380659294804924	0.619340705195076	SRR8615498	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	PL21.rna	rna	PL21	10075	3835	5668	409	163	0.380645161290323	0.619354838709677	SRR8615970	haematopoietic_neoplasm (acute_myeloid_leukaemia, M3)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Pfeiffer.rna	rna	Pfeiffer	23343	8884	13084	941	434	0.380585186137172	0.619414813862828	SRR8615302	lymphoid_neoplasm (diffuse_large_B_cell_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	RI1.rna	rna	RI1	29354	11143	16468	1196	547	0.379607549226681	0.620392450773319	SRR8615801	lymphoid_neoplasm (B_cell_lymphoma_unspecified)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NCO2.rna	rna	NCO2	11760	4456	6632	463	209	0.37891156462585	0.62108843537415	SRR8615446	haematopoietic_neoplasm (chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLP2.rna	rna	MOLP2	38916	14689	22104	1430	693	0.377454003494707	0.622545996505294	SRR8616066	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	AMO1.rna	rna	AMO1	22869	8585	13015	837	432	0.375399011762648	0.624600988237352	SRR8615408	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MUTZ5.rna	rna	MUTZ5	22787	8550	12914	936	387	0.375213937771536	0.624786062228464	SRR8615686	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	KHM1B.rna	rna	KHM1B	18197	6799	10419	648	331	0.37363301643128	0.62636698356872	SRR8615913	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Hs751.T.rna	rna	Hs751.T	27433	10110	15576	1178	569	0.368534247074691	0.631465752925309	SRR8615319	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	MOLP8.rna	rna	MOLP8	34659	12773	19886	1361	639	0.368533425661444	0.631466574338556	SRR8616065	lymphoid_neoplasm (plasma_cell_myeloma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	TO175.T.rna	rna	TO175.T	25159	9233	14446	1020	460	0.366985969235661	0.633014030764339	SRR8616087	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	NALM19.rna	rna	NALM19	34393	12520	19990	1278	605	0.364027563748437	0.635972436251563	SRR8615318	lymphoid_neoplasm (acute_lymphoblastic_B_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	EM2.rna	rna	EM2	14904	5326	8700	610	268	0.357353730542136	0.642646269457864	SRR8615293	haematopoietic_neoplasm (blast_phase_chronic_myeloid_leukaemia)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	Hs616.T.rna	rna	Hs616.T	35402	12650	20676	1408	668	0.357324444946613	0.642675555053387	SRR8615424	lymphoid_neoplasm (Hodgkin_lymphoma)	haematopoietic_and_lymphoid_tissue	normo
+Blood/Lymph	DND41.rna	rna	DND41	15852	5649	9116	794	293	0.356358819076457	0.643641180923543	SRR8615632	lymphoid_neoplasm (acute_lymphoblastic_T_cell_leukaemia)	haematopoietic_and_lymphoid_tissue	normo

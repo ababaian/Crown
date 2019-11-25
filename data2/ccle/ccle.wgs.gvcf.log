@@ -1,0 +1,37 @@
+[01;32mubuntu@ip-172-31-13-131[00m:[01;34m~[00m$ bash D[KADcalc_ccle2.sh 
+Analyzing ccle.wgs...
+Started processing 18S
+[mpileup] 328 samples in 328 input files
+Warning: Potential memory hog, up to 32800000M reads in the pileup!
+Done with 18S 
+chr13:1003660-1005529
+Started processing 18SE
+[mpileup] 328 samples in 328 input files
+Warning: Potential memory hog, up to 32800000M reads in the pileup!
+Done with 18SE 
+chr13:1005529-1005629
+Started processing 5S
+[mpileup] 328 samples in 328 input files
+Warning: Potential memory hog, up to 32800000M reads in the pileup!
+Done with 5S 
+chr13:10219-10340
+Started processing 5.8S
+[mpileup] 328 samples in 328 input files
+Warning: Potential memory hog, up to 32800000M reads in the pileup!
+Done with 5.8S 
+chr13:1006622-1006779
+Started processing 28S
+[mpileup] 328 samples in 328 input files
+Warning: Potential memory hog, up to 32800000M reads in the pileup!
+Done with 28S 
+chr13:1007948-1013018
+upload: ./ccle.wgs.18SE.gvcf to s3://crownproject/ccle/gvcf/ccle.wgs.18SE.gvcf
+Completed 1 of 10 part(s) with 5 file(s) remainingCompleted 2 of 10 part(s) with 5 file(s) remainingCompleted 3 of 10 part(s) with 5 file(s) remainingupload: ./ccle.wgs.5S.gvcf to s3://crownproject/ccle/gvcf/ccle.wgs.5S.gvcf
+Completed 4 of 10 part(s) with 4 file(s) remainingupload: ./ccle.wgs.bamlist to s3://crownproject/ccle/gvcf/ccle.wgs.bamlist
+Completed 5 of 10 part(s) with 3 file(s) remainingupload: ./ccle.wgs.5.8S.gvcf to s3://crownproject/ccle/gvcf/ccle.wgs.5.8S.gvcf
+Completed 6 of 10 part(s) with 2 file(s) remainingCompleted 7 of 10 part(s) with 2 file(s) remainingCompleted 8 of 10 part(s) with 2 file(s) remainingCompleted 9 of 10 part(s) with 2 file(s) remainingCompleted 10 of 10 part(s) with 2 file(s) remainingupload: ./ccle.wgs.18S.gvcf to s3://crownproject/ccle/gvcf/ccle.wgs.18S.gvcf
+Completed 10 of 10 part(s) with 1 file(s) remainingupload: ./ccle.wgs.28S.gvcf to s3://crownproject/ccle/gvcf/ccle.wgs.28S.gvcf
+Run Complete -- Instance is online.
+[01;32mubuntu@ip-172-31-13-131[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-13-131[00m:[01;34m~[00m$ ls
+[0m[01;32mADcalc_ccle2.sh[0m  [01;34mbin[0m  [01;34mccle[0m  [01;34mdata[0m  [01;34mlogs[0m  [01;34mncbi[0m  [01;34mresources[0m  screenlog.0  [01;34mscripts[0m  [01;34msoftware[0m  [01;34mtmp[0m  [01;34mwgs[0m
+[01;32mubuntu@ip-172-31-13-131[00m:[01;34m~[00m$ 

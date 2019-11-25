@@ -1,0 +1,933 @@
+[1m[7m%[27m[1m[0m                                                                                       ]1;~/Desktop]2;artem@glitch[~/Desktop][0m[27m[24m[Jartem@glitch[Desktop] [K[55C[1m[ 6:53PM][0m[64D[?1h=[?2004hssh -i "~/.ssh/CrownKey.pem" ubuntu@ec2-54-212-204-255.us-west-2.compute.amazonaws.com[K[?1l>[?2004l
+^C
+[1m[7m%[27m[1m[0m                                                                                       ]1;~/Desktop]2;artem@glitch[~/Desktop][0m[27m[24m[Jartem@glitch[Desktop] [K[55C[1m[ 6:54PM][0m[64D[?1h=[?2004hssh -i "~/.ssh/CrownKey.pem" ubuntu@ec2-54-212-204-255.us-west-2.compute.amazonaws.com[K[K                  c [K[A[86C[K[1B[K[A[86C         [K[1C[1m[ 6:54PM][0m[10D                  ec2-54-245-171-125.[Kus-west-2. [Kccompute.amazonaws.com[?1l>[?2004l
+Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-130-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+171 packages can be updated.
+1 update is a security update.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu May 30 01:52:00 2019 from 75.155.240.245
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  hct116.rna             [01;34mncbi[0m       screenlog.0  [01;34msratoolkit.2.9.6-1-ubuntu64[0m
+[01;34mbin[0m    [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mresources[0m  [01;34msoftware[0m     [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ screen -r
+[!p[?3;4l[4l>[?1049h[4l[?1h=[0m(B[1;46r[H[2J[H[2J[23Bdownload: s3://crownproject/ccle/scripts/sratoolkit.tar.gz to ./sratoolkit.tar.gzd
+-- hgr1 Alignment Pipeline -- 
+version: 190528 build -- CCLE 
+ami:[5Ccrown-180813 - ami-0031fd61f932bdef9 
+s3:[6Cs3://crownproject/ccle 
+library: HCT116 -- rna 
+date:[4CThu May 30 01:53:55 UTC 2019
+
+Initializing ...
+Download fastq files: SRR8615282Do
+cmd: /home/ubuntu/sratoolkit.2.9.6-1-ubuntu64/bin/fastq-dump --gzip --split-files SRR8615282
+2019-05-30T03:19:06 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T03:46:09 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T04:01:24 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T04:05:53 fastq-dump.2.9.6 sys: timeout exhausted while reading file within network system module - mbedtls_ssl_read returned -76 ( NET - Reading information from the socket failed )
+2019-05-30T06:20:39 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:39 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T06:20:40 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:40 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T06:20:41 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:41 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T06:20:43 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T06:20:43 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/CM000681.1'
+2019-05-30T07:15:40 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:40 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000249.1'
+2019-05-30T07:15:44 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:44 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000240.1'
+2019-05-30T07:15:45 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:45 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000241.1'
+2019-05-30T07:15:56 fastq-dump.2.9.6 sys: connection not found while validating within network system module - Failed to Make Connection in KClientHttpOpen to 'sra-download-internal.ncbi.nlm.nih.gov:443'
+2019-05-30T07:15:56 fastq-dump.2.9.6 err: connection not found while validating within network system module - error with https open 'https://sra-download-internal.ncbi.nlm.nih.gov/traces/refseq/GL000227.1'
+Read 83894908 spots for SRR8615282
+Written 83894908 spots for SRR8615282
+ls: cannot access '*_0.fastq.gz': No such file or directory
+  fastq_1: SRR8615282_1.fastq.gz
+  fastq_2: SRR8615282_2.fastq.gz
+Single-end Reads Detected.
+
+ERROR
+[?1l>[46;1H
+[?1049l[screen is terminating]
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  hct116.rna             [01;34mncbi[0m       screenlog.0  [01;34msratoolkit.2.9.6-1-ubuntu64[0m
+[01;34mbin[0m    [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mresources[0m  [01;34msoftware[0m     [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ cd align/
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ ls
+hgr1.1.bt2  hgr1.3.bt2  hgr1.fa      hgr1.rev.1.bt2  [0m[01;31mSRR8615282_1.fastq.gz[0m
+hgr1.2.bt2  hgr1.4.bt2  hgr1.fa.fai  hgr1.rev.2.bt2  [01;31mSRR8615282_2.fastq.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ screen -r
+There is no screen to be resumed.
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ ls
+hgr1.1.bt2  hgr1.3.bt2  hgr1.fa      hgr1.rev.1.bt2  [0m[01;31mSRR8615282_1.fastq.gz[0m
+hgr1.2.bt2  hgr1.4.bt2  hgr1.fa.fai  hgr1.rev.2.bt2  [01;31mSRR8615282_2.fastq.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ ls -alh
+total 9.9G
+drwxrwxr-x  2 ubuntu ubuntu 4.0K May 30 01:54 [0m[01;34m.[0m
+drwxr-xr-x 12 ubuntu ubuntu 4.0K May 30 02:20 [01;34m..[0m
+-rw-rw-r--  1 ubuntu ubuntu 4.1M May 30 01:53 hgr1.1.bt2
+-rw-rw-r--  1 ubuntu ubuntu 4.0K May 30 01:53 hgr1.2.bt2
+-rw-rw-r--  1 ubuntu ubuntu   71 May 30 01:53 hgr1.3.bt2
+-rw-rw-r--  1 ubuntu ubuntu 4.0K May 30 01:53 hgr1.4.bt2
+-rw-rw-r--  1 ubuntu ubuntu 1.1M May 30 01:53 hgr1.fa
+-rw-rw-r--  1 ubuntu ubuntu  16K May 30 01:53 hgr1.fa.fai
+-rw-rw-r--  1 ubuntu ubuntu 4.1M May 30 01:53 hgr1.rev.1.bt2
+-rw-rw-r--  1 ubuntu ubuntu 4.0K May 30 01:53 hgr1.rev.2.bt2
+-rw-rw-r--  1 ubuntu ubuntu 4.7G May 30 08:02 [01;31mSRR8615282_1.fastq.gz[0m
+-rw-rw-r--  1 ubuntu ubuntu 5.2G May 30 08:02 [01;31mSRR8615282_2.fastq.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ aws s3 cp SRR8615282_* [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ cd ..
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  hct116.rna             [01;34mncbi[0m       screenlog.0  [01;34msratoolkit.2.9.6-1-ubuntu64[0m
+[01;34mbin[0m    [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mresources[0m  [01;34msoftware[0m     [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ vim hr[Kgr1_align_v3.ccle.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;46r[?12;25h[?12l[?25h[27m[24m[0m[H[2J[?25l[46;1H"hgr1_align_v3.ccle.sh" 185L, 5305C[1;1H[34m#!/bin/bash
+# hgr1_align_v3.ccle.sh
+# rDNA alignment pipeline - SRA version[0m
+[36mPIPE_VERSION[0m=[38;5;130m'[0m[31m190528 build -- CCLE[0m[38;5;130m'[0m
+[36mAMI_VERSION[0m=[38;5;130m'[0m[31mcrown-180813 - ami-0031fd61f932bdef9[0m[38;5;130m'[0m
+[34m# EC2: c4.2xlarge (8cpu / 15 gb)
+# EC2: c4.xlarge  (4cpu / 8  gb)
+# Storage: 200 Gb
+#
+
+# Input Requirements --------------------------
+
+## get SRA toolkit
+# wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.9.6-1/sratoolkit.2.9.6-1-ubuntu64.taa[15;1Hr.gz
+# aws s3 cp sratoolkit.2.9.6-1-ubuntu64.tar.gz s3://crownproject/ccle/scripts/sratoolkii[17;1Ht.tar.gz[0m
+aws s[31m3[0m cp s[31m3[0m://crownproject/ccle/scripts/sratoolkit.tar.gz ./
+gzip [35m-dc[0m sratoolkit.tar.gz | tar [35m-xf[0m -
+[36mSRABIN[0m=[38;5;130m"[0m[35m$HOME[0m[31m/sratoolkit.2.9.6-1-ubuntu64/bin[0m[38;5;130m"[0m [34m# binary path
+
+# $1 : Library name + Output name(unique)
+# $2 : Seq-read type (wgs|rna)
+# $3 : BioSample ID
+# $4 : Library SRA Accession
+
+# Control Panel -------------------------------
+# Amazon AWS S3 Home URL[0m
+  [36mS3URL[0m=[38;5;130m'[0m[31ms3://crownproject/ccle[0m[38;5;130m'[0m
+
+[34m# CPU[0m[32;9H[36mTHREADS[0m=[38;5;130m'[0m[31m3[0m[38;5;130m'[0m
+
+[34m# Terminate instances upon completion (for debuggin)[0m
+  [36mTERMINATE[0m=[38;5;130m'[0m[31mTRUE[0m[38;5;130m'[0m
+
+[34m# Read Group Data[0m
+  [36mLIBRARY[0m=[35m$1[0m    [34m# Library Name / File prefix[0m
+  [36mTYPE[0m=[35m$2[0m[7C[34m# wgs OR rna data-type[0m[40;9H[36mRGPO[0m=[38;5;130m'[0m[31mccle[0m[38;5;130m'[0m   [34m# Patient Population - CCLE[0m[41;9H[36mRGSM[0m=[35m$3[0m[7C[34m# Sample / Patient Identifer[0m[42;9H[36mRGID[0m=[35m$4[0m[7C[34m# Read Group ID. SRA Accession Number[0m
+  [36mRGLB[0m=[35m$LIBRARY[0m [34m# Library Name. Accession Number[0m
+  [36mRGPL[0m=[38;5;130m'[0m[31mILLUMINA[0m[38;5;130m'[0m [34m# Seq Platform[0m
+  [36mRGPU[0m=[35m$5[0m[7C[34m# Read Group. Platform Unit (SRA Experiment)[0m[46;70H1,1[11CTop[1;1H[?12l[?25h[?25l[46;70H2[2;1H[?12l[?25h[?25l[46;70H3[3;1H[?12l[?25h[?25l[46;70H4[4;1H[?12l[?25h[?25l[46;70H5[5;1H[?12l[?25h[?25l[46;70H6[6;1H[?12l[?25h[?25l[46;70H7[7;1H[?12l[?25h[?25l[46;70H8[8;1H[?12l[?25h[?25l[46;70H9[9;1H[?12l[?25h[?25l[46;70H10,0-1[10;1H[?12l[?25h[?25l[46;71H1,1  [11;1H[?12l[?25h[?25l[46;71H2,0-1[12;1H[?12l[?25h[?25l[46;71H3,1  [13;1H[?12l[?25h[?25l[46;71H4[14;1H[?12l[?25h[?25l[46;71H5[16;1H[?12l[?25h[?25l[46;71H6[18;1H[?12l[?25h[?25l[46;71H7[19;1H[?12l[?25h[?25l[46;71H8[20;1H[?12l[?25h[?25l[46;71H9,0-1[21;1H[?12l[?25h[?25l[46;70H20,1  [22;1H[?12l[?25h[?25l[46;71H1[23;1H[?12l[?25h[?25l[46;71H2[24;1H[?12l[?25h[?25l[46;71H3[25;1H[?12l[?25h[?25l[46;71H4,0-1[26;1H[?12l[?25h[?25l[46;71H5,1  [27;1H[?12l[?25h[?25l[46;71H6[28;1H[?12l[?25h[?25l[46;71H7[29;1H[?12l[?25h[?25l[46;71H8,0-1[30;1H[?12l[?25h[?25l[46;71H9,1  [31;1H[?12l[?25h[?25l[46;70H30,1-8[32;8H[?12l[?25h[?25l[46;71H1,0-1[33;1H[?12l[?25h[?25l[46;71H2,1  [34;1H[?12l[?25h[?25l[46;71H3[35;1H[?12l[?25h[?25l[46;71H4[36;1H[?12l[?25h[?25l[46;71H5[37;1H[?12l[?25h[?25l[46;71H6[38;1H[?12l[?25h[?25l[46;71H7[39;1H[?12l[?25h[?25l[46;71H8,1-8[40;8H[?12l[?25h[?25l[46;71H9[41;8H[?12l[?25h[?25l[46;70H40[42;8H[?12l[?25h[?25l[46;71H1,1  [43;1H[?12l[?25h[?25l[46;71H2[44;1H[?12l[?25h[?25l[46;71H3[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;1H[K[46;70H44,0-1[9C0%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H45,0-1[9C1%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[36mSRA[0m=[35m$4[0m[46;70H[K[46;70H46,1[11C2%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[36mOUTPUT[0m=[38;5;130m"[0m[35m$LIBRARY[0m[31m.[0m[35m$TYPE[0m[38;5;130m"[0m [34m# Output filename[0m[46;70H[K[46;70H47,1[11C2%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H48,0-1[9C3%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[34m# Fastq files from fastq-dump[0m[46;70H[K[46;70H49,1[11C4%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[34m# FQ1=<SRR>_1.fastq.gz[0m[46;70H[K[46;70H50,1[11C4%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[34m# FQ2=<SRR>_2.fastq.gz[0m[46;70H[K[46;70H51,1[11C5%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H52,0-1[9C6%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m -- hgr1 Alignment Pipeline -- [0m[38;5;130m"[0m[46;70H[K[46;70H53,1[11C7%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m version: [0m[35m$PIPE_VERSION[0m[31m [0m[38;5;130m"[0m[46;70H[K[46;70H54,1[11C7%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m ami:     [0m[35m$AMI_VERSION[0m[31m  [0m[38;5;130m"[0m[46;70H[K[46;70H55,1[11C8%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m s3:      [0m[35m$S3URL[0m[31m  [0m[38;5;130m"[0m[46;70H[K[46;70H56,1[11C9%[45;1H[?12l[?25h[?25l[1;45r[1;1H[2M[1;46r[44;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m library: [0m[35m$LIBRARY[0m[31m -- [0m[35m$TYPE[0m[38;5;130m"
+echo[0m[31m [0m[38;5;130m"[0m[31m date:    [0m[35m$(date)[0m[38;5;130m"[0m[46;70H[K[46;70H57,1[11C9%[44;1H[?12l[?25h[?25l[46;71H8[45;1H[?12l[?25h[?25l[1;45r[1;1H[2M[1;46r[44;1H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[46;70H[K[46;70H59,1[10C10%[44;1H[?12l[?25h[?25l[46;70H60,0-1[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Initialize wordir ---------------------------[0m[46;70H[K[46;70H61,1[10C11%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m'[0m[31mInitializing ...[0m[38;5;130m'[0m[46;70H[K[46;70H62,1[10C12%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H63,0-1[8C12%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Make working directory[0m[46;70H[K[46;70H64,1[10C13%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[38;5;130mmkdir[0m [35m-p[0m align; [38;5;130mcd[0m align[46;70H[K[46;70H65,1[10C14%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H66,0-1[8C15%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Copy hgrX genome and create bowtie2 index[0m[46;70H[K[46;70H67,1[10C15%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3Hcp ~/resources/hgr[31m1[0m/* ./[46;70H[K[46;70H68,1[10C16%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H69,0-1[8C17%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Load updated GDC token to instance[0m[46;70H[K[46;70H70,1[10C17%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m#aws s3 cp $S3URL/scripts/gdc.token gdc.token[0m[46;70H[K[46;70H71,1[10C18%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m#chmod 600 gdc.token[0m[46;70H[K[46;70H72,1[10C19%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H73,0-1[8C20%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mDownload fastq files: [0m[35m$SRA[0m[38;5;130m"[0m[46;70H[K[46;70H74,1[10C20%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  cmd: [0m[35m$SRABIN[0m[31m/fastq-dump --gzip --split-files [0m[35m$SRA[0m[38;5;130m"[0m[46;70H[K[46;70H75,1[10C21%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H76,0-1[8C22%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[35m$SRABIN[0m/fastq-dump [35m--gzip[0m [35m--split-files[0m [35m$SRA[0m[46;70H[K[46;70H77,1[10C22%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H78,0-1[8C23%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[36mFQ1[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m1[0m[35m.fastq.gz)[0m[46;70H[K[46;70H79,1[10C24%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[36mFQ2[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m2[0m[35m.fastq.gz)[0m[46;70H[K[46;70H80,1[10C25%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[36mFQ0[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m0[0m[35m.fastq.gz)[0m[46;70H[K[46;70H81,1[10C25%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H82,0-1[8C26%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  fastq_1: [0m[35m$FQ1[0m[38;5;130m"[0m[31m  [0m[46;70H[K[46;70H83,1[10C27%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  fastq_2: [0m[35m$FQ2[0m[38;5;130m"[0m[46;70H[K[46;70H84,1[10C27%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H85,0-1[8C28%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# SINGLE END READS ====================================================[0m[46;70H[K[46;70H86,1[10C29%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H87,0-1[8C30%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mif [[0m [38;5;130m-s[0m [35m$FQ0[0m [38;5;130m][0m[46;70H[K[46;70H88,1[10C30%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mthen[0m[46;70H[K[46;70H89,1[10C31%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mSingle-end Reads Detected.[0m[38;5;130m"[0m[46;70H[K[46;70H90,1[10C32%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[46;70H[K[46;70H91,1[10C32%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mERROR[0m[38;5;130m"[0m[46;70H[K[46;70H92,1[10C33%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mexit[0m [31m666[0m[46;70H[K[46;70H93,1[10C34%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mfi[0m[46;70H[K[46;70H94,1[10C35%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H95,0-1[8C35%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# PAIRED END READS ====================================================[0m[46;70H[K[46;70H96,1[10C36%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H97,0-1[8C37%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mif [[0m [38;5;130m-s[0m [35m$FQ1[0m [38;5;130m][0m[46;70H[K[46;70H98,1[10C37%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mthen[0m[46;70H[K[46;70H99,1[10C38%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mPaired-end Reads Detected.[0m[38;5;130m"[0m[46;70H[K[46;70H100,1[9C39%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[46;70H[K[46;70H101,1[9C40%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mStarting hgr1 alignment[0m[38;5;130m"[0m[46;70H[K[46;70H102,1[9C40%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[34m# Paired-End Extracted Reads Alignment[0m[46;70H[K[46;70H103,1[9C41%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H104,0-1[7C42%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[34m# Bowtie2: align to genome[0m[46;70H[K[46;70H105,1[9C42%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5Hbowtie[31m2[0m [35m--very-sensitive-local[0m [38;5;130m-p[0m [35m$THREADS[0m \[46;70H[K[46;70H106,1[9C43%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;7H[35m--rg-id[0m [35m$RGID[0m [35m--rg[0m LB:[35m$RGLB[0m [35m--rg[0m SM:[35m$RGSM[0m \[46;70H[K[46;70H107,1[9C44%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;7H[35m--rg[0m PL:[35m$RGPL[0m [35m--rg[0m PU:[35m$RGPU[0m \[46;70H[K[46;70H108,1[9C45%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;7H[38;5;130m-x[0m hgr[31m1[0m [31m-1[0m [35m$FQ1[0m [31m-2[0m [35m$FQ2[0m [38;5;130m|[0m \[46;70H[K[46;70H109,1[9C45%[45;1H[?12l[?25h[?25l
+Type  :quit<Enter>  to exit Vim[46;70H[K[46;70H109,1[9C45%[45;1H[?12l[?25h[?25l[46;74H7[45;7H[?12l[?25h[?25l[46;74H6[45;6H[?12l[?25h[?25l[46;1H[K[46;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[46;1H[K[46;1H[?1l>[?12l[?25h[?1049l[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  hct116.rna             [01;34mncbi[0m       screenlog.0  [01;34msratoolkit.2.9.6-1-ubuntu64[0m
+[01;34mbin[0m    [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mresources[0m  [01;34msoftware[0m     [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ec2-18-236-137-37.us-west-2.compute.amazonaws.com^C
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls _9[K0
+ls: cannot access '_0': No such file or directory
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls *_*[K0
+ls: cannot access '*_0': No such file or directory
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls *_0[1@t[1@e[1@s[1@t[1@=[1@$[1@([C[C[C[C[C[C)
+ls: cannot access '*_0': No such file or directory
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ echo $test
+
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ if ([Kecho $testtest=$(ls *_0)[8Pls *_0[1P_0[Kvim hgr1_align_v3.ccle.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;46r[?12;25h[?12l[?25h[27m[24m[0m[H[2J[?25l[46;1H"hgr1_align_v3.ccle.sh" 185L, 5305C[1;1H[34m#!/bin/bash
+# hgr1_align_v3.ccle.sh
+# rDNA alignment pipeline - SRA version[0m
+[36mPIPE_VERSION[0m=[38;5;130m'[0m[31m190528 build -- CCLE[0m[38;5;130m'[0m
+[36mAMI_VERSION[0m=[38;5;130m'[0m[31mcrown-180813 - ami-0031fd61f932bdef9[0m[38;5;130m'[0m
+[34m# EC2: c4.2xlarge (8cpu / 15 gb)
+# EC2: c4.xlarge  (4cpu / 8  gb)
+# Storage: 200 Gb
+#
+
+# Input Requirements --------------------------
+
+## get SRA toolkit
+# wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.9.6-1/sratoolkit.2.9.6-1-ubuntu64.taa[15;1Hr.gz
+# aws s3 cp sratoolkit.2.9.6-1-ubuntu64.tar.gz s3://crownproject/ccle/scripts/sratoolkii[17;1Ht.tar.gz[0m
+aws s[31m3[0m cp s[31m3[0m://crownproject/ccle/scripts/sratoolkit.tar.gz ./
+gzip [35m-dc[0m sratoolkit.tar.gz | tar [35m-xf[0m -
+[36mSRABIN[0m=[38;5;130m"[0m[35m$HOME[0m[31m/sratoolkit.2.9.6-1-ubuntu64/bin[0m[38;5;130m"[0m [34m# binary path
+
+# $1 : Library name + Output name(unique)
+# $2 : Seq-read type (wgs|rna)
+# $3 : BioSample ID
+# $4 : Library SRA Accession
+
+# Control Panel -------------------------------
+# Amazon AWS S3 Home URL[0m
+  [36mS3URL[0m=[38;5;130m'[0m[31ms3://crownproject/ccle[0m[38;5;130m'[0m
+
+[34m# CPU[0m[32;9H[36mTHREADS[0m=[38;5;130m'[0m[31m3[0m[38;5;130m'[0m
+
+[34m# Terminate instances upon completion (for debuggin)[0m
+  [36mTERMINATE[0m=[38;5;130m'[0m[31mTRUE[0m[38;5;130m'[0m
+
+[34m# Read Group Data[0m
+  [36mLIBRARY[0m=[35m$1[0m    [34m# Library Name / File prefix[0m
+  [36mTYPE[0m=[35m$2[0m[7C[34m# wgs OR rna data-type[0m[40;9H[36mRGPO[0m=[38;5;130m'[0m[31mccle[0m[38;5;130m'[0m   [34m# Patient Population - CCLE[0m[41;9H[36mRGSM[0m=[35m$3[0m[7C[34m# Sample / Patient Identifer[0m[42;9H[36mRGID[0m=[35m$4[0m[7C[34m# Read Group ID. SRA Accession Number[0m
+  [36mRGLB[0m=[35m$LIBRARY[0m [34m# Library Name. Accession Number[0m
+  [36mRGPL[0m=[38;5;130m'[0m[31mILLUMINA[0m[38;5;130m'[0m [34m# Seq Platform[0m
+  [36mRGPU[0m=[35m$5[0m[7C[34m# Read Group. Platform Unit (SRA Experiment)[0m[46;70H1,1[11CTop[1;1H[?12l[?25h[?25l[46;70H2[2;1H[?12l[?25h[?25l[46;70H3[3;1H[?12l[?25h[?25l[46;70H4[4;1H[?12l[?25h[?25l[46;70H5[5;1H[?12l[?25h[?25l[46;70H6[6;1H[?12l[?25h[?25l[46;70H7[7;1H[?12l[?25h[?25l[46;70H8[8;1H[?12l[?25h[?25l[46;70H9[9;1H[?12l[?25h[?25l[46;70H10,0-1[10;1H[?12l[?25h[?25l[46;71H1,1  [11;1H[?12l[?25h[?25l[46;71H2,0-1[12;1H[?12l[?25h[?25l[46;71H3,1  [13;1H[?12l[?25h[?25l[46;71H4[14;1H[?12l[?25h[?25l[46;71H5[16;1H[?12l[?25h[?25l[46;71H6[18;1H[?12l[?25h[?25l[46;71H7[19;1H[?12l[?25h[?25l[46;71H8[20;1H[?12l[?25h[?25l[46;71H9,0-1[21;1H[?12l[?25h[?25l[46;70H20,1  [22;1H[?12l[?25h[?25l[46;71H1[23;1H[?12l[?25h[?25l[46;71H2[24;1H[?12l[?25h[?25l[46;71H3[25;1H[?12l[?25h[?25l[46;71H4,0-1[26;1H[?12l[?25h[?25l[46;71H5,1  [27;1H[?12l[?25h[?25l[46;71H6[28;1H[?12l[?25h[?25l[46;71H7[29;1H[?12l[?25h[?25l[46;71H8,0-1[30;1H[?12l[?25h[?25l[46;71H9,1  [31;1H[?12l[?25h[?25l[46;70H30,1-8[32;8H[?12l[?25h[?25l[46;71H1,0-1[33;1H[?12l[?25h[?25l[46;71H2,1  [34;1H[?12l[?25h[?25l[46;71H3[35;1H[?12l[?25h[?25l[46;71H4[36;1H[?12l[?25h[?25l[46;71H5[37;1H[?12l[?25h[?25l[46;71H6[38;1H[?12l[?25h[?25l[46;71H7[39;1H[?12l[?25h[?25l[46;71H8,1-8[40;8H[?12l[?25h[?25l[46;71H9[41;8H[?12l[?25h[?25l[46;70H40[42;8H[?12l[?25h[?25l[46;71H1,1  [43;1H[?12l[?25h[?25l[46;71H2[44;1H[?12l[?25h[?25l[46;71H3[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;1H[K[46;70H44,0-1[9C0%[45;1H[?12l[?25h[?25l[46;71H3,1  [44;1H[?12l[?25h[?25l[46;71H4,0-1[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H45,0-1[9C1%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[36mSRA[0m=[35m$4[0m[46;70H[K[46;70H46,1[11C2%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[36mOUTPUT[0m=[38;5;130m"[0m[35m$LIBRARY[0m[31m.[0m[35m$TYPE[0m[38;5;130m"[0m [34m# Output filename[0m[46;70H[K[46;70H47,1[11C2%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H48,0-1[9C3%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[34m# Fastq files from fastq-dump[0m[46;70H[K[46;70H49,1[11C4%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[34m# FQ1=<SRR>_1.fastq.gz[0m[46;70H[K[46;70H50,1[11C4%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[34m# FQ2=<SRR>_2.fastq.gz[0m[46;70H[K[46;70H51,1[11C5%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H52,0-1[9C6%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m -- hgr1 Alignment Pipeline -- [0m[38;5;130m"[0m[46;70H[K[46;70H53,1[11C7%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m version: [0m[35m$PIPE_VERSION[0m[31m [0m[38;5;130m"[0m[46;70H[K[46;70H54,1[11C7%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m ami:     [0m[35m$AMI_VERSION[0m[31m  [0m[38;5;130m"[0m[46;70H[K[46;70H55,1[11C8%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m s3:      [0m[35m$S3URL[0m[31m  [0m[38;5;130m"[0m[46;70H[K[46;70H56,1[11C9%[45;1H[?12l[?25h[?25l[1;45r[1;1H[2M[1;46r[44;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m library: [0m[35m$LIBRARY[0m[31m -- [0m[35m$TYPE[0m[38;5;130m"
+echo[0m[31m [0m[38;5;130m"[0m[31m date:    [0m[35m$(date)[0m[38;5;130m"[0m[46;70H[K[46;70H57,1[11C9%[44;1H[?12l[?25h[?25l[46;71H8[45;1H[?12l[?25h[?25l[1;45r[1;1H[2M[1;46r[44;1H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[46;70H[K[46;70H59,1[10C10%[44;1H[?12l[?25h[?25l[46;70H60,0-1[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Initialize wordir ---------------------------[0m[46;70H[K[46;70H61,1[10C11%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m'[0m[31mInitializing ...[0m[38;5;130m'[0m[46;70H[K[46;70H62,1[10C12%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H63,0-1[8C12%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Make working directory[0m[46;70H[K[46;70H64,1[10C13%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3H[38;5;130mmkdir[0m [35m-p[0m align; [38;5;130mcd[0m align[46;70H[K[46;70H65,1[10C14%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H66,0-1[8C15%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Copy hgrX genome and create bowtie2 index[0m[46;70H[K[46;70H67,1[10C15%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;3Hcp ~/resources/hgr[31m1[0m/* ./[46;70H[K[46;70H68,1[10C16%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H69,0-1[8C17%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# Load updated GDC token to instance[0m[46;70H[K[46;70H70,1[10C17%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m#aws s3 cp $S3URL/scripts/gdc.token gdc.token[0m[46;70H[K[46;70H71,1[10C18%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m#chmod 600 gdc.token[0m[46;70H[K[46;70H72,1[10C19%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H73,0-1[8C20%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mDownload fastq files: [0m[35m$SRA[0m[38;5;130m"[0m[46;70H[K[46;70H74,1[10C20%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  cmd: [0m[35m$SRABIN[0m[31m/fastq-dump --gzip --split-files [0m[35m$SRA[0m[38;5;130m"[0m[46;70H[K[46;70H75,1[10C21%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H76,0-1[8C22%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[35m$SRABIN[0m/fastq-dump [35m--gzip[0m [35m--split-files[0m [35m$SRA[0m[46;70H[K[46;70H77,1[10C22%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H78,0-1[8C23%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[36mFQ1[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m1[0m[35m.fastq.gz)[0m[46;70H[K[46;70H79,1[10C24%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[36mFQ2[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m2[0m[35m.fastq.gz)[0m[46;70H[K[46;70H80,1[10C25%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[36mFQ0[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m0[0m[35m.fastq.gz)[0m[46;70H[K[46;70H81,1[10C25%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H82,0-1[8C26%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  fastq_1: [0m[35m$FQ1[0m[38;5;130m"[0m[31m  [0m[46;70H[K[46;70H83,1[10C27%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  fastq_2: [0m[35m$FQ2[0m[38;5;130m"[0m[46;70H[K[46;70H84,1[10C27%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H85,0-1[8C28%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[34m# SINGLE END READS ====================================================[0m[46;70H[K[46;70H86,1[10C29%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[46;70H[K[46;70H87,0-1[8C30%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mif [[0m [38;5;130m-s[0m [35m$FQ0[0m [38;5;130m][0m[46;70H[K[46;70H88,1[10C30%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;1H[38;5;130mthen[0m[46;70H[K[46;70H89,1[10C31%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mSingle-end Reads Detected.[0m[38;5;130m"[0m[46;70H[K[46;70H90,1[10C32%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[46;70H[K[46;70H91,1[10C32%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mERROR[0m[38;5;130m"[0m[46;70H[K[46;70H92,1[10C33%[45;1H[?12l[?25h[?25l[1;45r[45;1H
+[1;46r[45;5H[38;5;130mexit[0m [31m666[0m[46;70H[K[46;70H93,1[10C34%[45;1H[?12l[?25h[?25l[46;70H[K[46;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[46;1H[K[46;1H[?1l>[?12l[?25h[?1049l[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ if [ -s $tr[Kest ] [K; then echo hi; fi
+hi
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ehco [K[K[K[Kcho $test
+
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ echo $testif [ -s $test ]; then echo hi; fi[C[1P[1@z
+hi
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ if [ -z $test ]; then echo hi; fi[1P[1@e
+hi
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ if [ -e $test ]; then echo hi; fi[1@'[1@ [1@'[1@ [C[C[1@q
+-bash: [:  : unary operator expected
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ if [ ' ' -eq $test ]; then echo hi; fi[C[1P[1P[1P[1@"[1@"
+-bash: [: : unary operator expected
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ if [ "" -eq $test ]; then echo hi; fi[C[C[C[C[C[C[1@"[C[C[C[C[C[1@"
+-bash: [: : integer expression expected
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls -alh
+total 81M
+drwxr-xr-x 12 ubuntu ubuntu 4.0K May 30 16:07 [0m[01;34m.[0m
+drwxr-xr-x  3 root   root   4.0K Nov  6  2016 [01;34m..[0m
+drwxrwxr-x  2 ubuntu ubuntu 4.0K May 30 01:54 [01;34malign[0m
+drwxrwxr-x  2 ubuntu ubuntu 4.0K Nov  6  2016 [01;34m.aws[0m
+-rw-------  1 ubuntu ubuntu 6.9K May 30 16:03 .bash_history
+-rw-r--r--  1 ubuntu ubuntu  220 Aug 31  2015 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu 3.9K Nov  6  2016 .bashrc
+drwxrwxr-x  2 ubuntu ubuntu 4.0K Aug 13  2018 [01;34mbin[0m
+drwx------  2 ubuntu ubuntu 4.0K Nov  6  2016 [01;34m.cache[0m
+drwxrwxr-x 19 ubuntu ubuntu 4.0K Aug 13  2018 [01;34m.ccache[0m
+-rw-rw-r--  1 ubuntu ubuntu    0 May 30 01:52 hct116.rna
+-rwxrwxrwx  1 ubuntu ubuntu 5.2K May 30 01:47 [01;32mhgr1_align_v3.ccle.sh[0m
+drwxrwxr-x  3 ubuntu ubuntu 4.0K May 30 01:53 [01;34mncbi[0m
+-rw-r--r--  1 ubuntu ubuntu  655 Jun 24  2016 .profile
+drwxrwxr-x  5 ubuntu ubuntu 4.0K Jul 30  2018 [01;34mresources[0m
+-rw-rw-r--  1 ubuntu ubuntu 5.2K May 30 08:02 screenlog.0
+drwxrwxr-x  6 ubuntu ubuntu 4.0K Aug 13  2018 [01;34msoftware[0m
+drwxrwxr-x  5 ubuntu ubuntu 4.0K Mar 18 18:59 [01;34msratoolkit.2.9.6-1-ubuntu64[0m
+-rw-rw-r--  1 ubuntu ubuntu  81M May 28 20:22 [01;31msratoolkit.tar.gz[0m
+drwx------  2 ubuntu ubuntu 4.0K Nov  6  2016 [01;34m.ssh[0m
+-rw-r--r--  1 ubuntu ubuntu    0 Nov  6  2016 .sudo_as_admin_successful
+-rw-------  1 ubuntu ubuntu 6.6K May 30 16:07 .viminfo
+-rw-rw-r--  1 ubuntu ubuntu  206 Aug 13  2018 .wget-hsts
+-rw-------  1 ubuntu ubuntu  553 May 30 02:20 .Xauthority
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ cd align/
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ ls
+hgr1.1.bt2  hgr1.3.bt2  hgr1.fa      hgr1.rev.1.bt2  [0m[01;31mSRR8615282_1.fastq.gz[0m
+hgr1.2.bt2  hgr1.4.bt2  hgr1.fa.fai  hgr1.rev.2.bt2  [01;31mSRR8615282_2.fastq.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ aws s3 cp SRR8615282_* ~/[Ks[K[Ks3://crownproject/ccle/fq/[C[1P s3://crownproject/ccle/fq/1 s3://crownproject/ccle/fq/.fastq.gz s3://crownproject/ccle/ffq/[A[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Completed 1 of 602 part(s) with 1 file(s) remainingCompleted 2 of 602 part(s) with 1 file(s) remainingCompleted 3 of 602 part(s) with 1 file(s) remainingCompleted 4 of 602 part(s) with 1 file(s) remainingCompleted 5 of 602 part(s) with 1 file(s) remainingCompleted 6 of 602 part(s) with 1 file(s) remainingCompleted 7 of 602 part(s) with 1 file(s) remainingCompleted 8 of 602 part(s) with 1 file(s) remainingCompleted 9 of 602 part(s) with 1 file(s) remainingCompleted 10 of 602 part(s) with 1 file(s) remainingCompleted 11 of 602 part(s) with 1 file(s) remainingCompleted 12 of 602 part(s) with 1 file(s) remainingCompleted 13 of 602 part(s) with 1 file(s) remainingCompleted 14 of 602 part(s) with 1 file(s) remainingCompleted 15 of 602 part(s) with 1 file(s) remainingCompleted 16 of 602 part(s) with 1 file(s) remainingCompleted 17 of 602 part(s) with 1 file(s) remainingCompleted 18 of 602 part(s) with 1 file(s) remainingCompleted 19 of 602 part(s) with 1 file(s) remainingCompleted 20 of 602 part(s) with 1 file(s) remainingCompleted 21 of 602 part(s) with 1 file(s) remainingCompleted 22 of 602 part(s) with 1 file(s) remainingCompleted 23 of 602 part(s) with 1 file(s) remainingCompleted 24 of 602 part(s) with 1 file(s) remainingCompleted 25 of 602 part(s) with 1 file(s) remainingCompleted 26 of 602 part(s) with 1 file(s) remainingCompleted 27 of 602 part(s) with 1 file(s) remainingCompleted 28 of 602 part(s) with 1 file(s) remainingCompleted 29 of 602 part(s) with 1 file(s) remainingCompleted 30 of 602 part(s) with 1 file(s) remainingCompleted 31 of 602 part(s) with 1 file(s) remainingCompleted 32 of 602 part(s) with 1 file(s) remainingCompleted 33 of 602 part(s) with 1 file(s) remainingCompleted 34 of 602 part(s) with 1 file(s) remainingCompleted 35 of 602 part(s) with 1 file(s) remainingCompleted 36 of 602 part(s) with 1 file(s) remainingCompleted 37 of 602 part(s) with 1 file(s) remainingCompleted 38 of 602 part(s) with 1 file(s) remainingCompleted 39 of 602 part(s) with 1 file(s) remainingCompleted 40 of 602 part(s) with 1 file(s) remainingCompleted 41 of 602 part(s) with 1 file(s) remainingCompleted 42 of 602 part(s) with 1 file(s) remainingCompleted 43 of 602 part(s) with 1 file(s) remainingCompleted 44 of 602 part(s) with 1 file(s) remainingCompleted 45 of 602 part(s) with 1 file(s) remainingCompleted 46 of 602 part(s) with 1 file(s) remainingCompleted 47 of 602 part(s) with 1 file(s) remainingCompleted 48 of 602 part(s) with 1 file(s) remainingCompleted 49 of 602 part(s) with 1 file(s) remainingCompleted 50 of 602 part(s) with 1 file(s) remainingCompleted 51 of 602 part(s) with 1 file(s) remainingCompleted 52 of 602 part(s) with 1 file(s) remainingCompleted 53 of 602 part(s) with 1 file(s) remainingCompleted 54 of 602 part(s) with 1 file(s) remainingCompleted 55 of 602 part(s) with 1 file(s) remainingCompleted 56 of 602 part(s) with 1 file(s) remainingCompleted 57 of 602 part(s) with 1 file(s) remainingCompleted 58 of 602 part(s) with 1 file(s) remainingCompleted 59 of 602 part(s) with 1 file(s) remainingCompleted 60 of 602 part(s) with 1 file(s) remainingCompleted 61 of 602 part(s) with 1 file(s) remainingCompleted 62 of 602 part(s) with 1 file(s) remainingCompleted 63 of 602 part(s) with 1 file(s) remainingCompleted 64 of 602 part(s) with 1 file(s) remainingCompleted 65 of 602 part(s) with 1 file(s) remainingCompleted 66 of 602 part(s) with 1 file(s) remainingCompleted 67 of 602 part(s) with 1 file(s) remainingCompleted 68 of 602 part(s) with 1 file(s) remainingCompleted 69 of 602 part(s) with 1 file(s) remainingCompleted 70 of 602 part(s) with 1 file(s) remainingCompleted 71 of 602 part(s) with 1 file(s) remainingCompleted 72 of 602 part(s) with 1 file(s) remainingCompleted 73 of 602 part(s) with 1 file(s) remainingCompleted 74 of 602 part(s) with 1 file(s) remainingCompleted 75 of 602 part(s) with 1 file(s) remainingCompleted 76 of 602 part(s) with 1 file(s) remainingCompleted 77 of 602 part(s) with 1 file(s) remainingCompleted 78 of 602 part(s) with 1 file(s) remainingCompleted 79 of 602 part(s) with 1 file(s) remainingCompleted 80 of 602 part(s) with 1 file(s) remainingCompleted 81 of 602 part(s) with 1 file(s) remainingCompleted 82 of 602 part(s) with 1 file(s) remainingCompleted 83 of 602 part(s) with 1 file(s) remainingCompleted 84 of 602 part(s) with 1 file(s) remainingCompleted 85 of 602 part(s) with 1 file(s) remainingCompleted 86 of 602 part(s) with 1 file(s) remainingCompleted 87 of 602 part(s) with 1 file(s) remainingCompleted 88 of 602 part(s) with 1 file(s) remainingCompleted 89 of 602 part(s) with 1 file(s) remainingCompleted 90 of 602 part(s) with 1 file(s) remainingCompleted 91 of 602 part(s) with 1 file(s) remainingCompleted 92 of 602 part(s) with 1 file(s) remainingCompleted 93 of 602 part(s) with 1 file(s) remainingCompleted 94 of 602 part(s) with 1 file(s) remainingCompleted 95 of 602 part(s) with 1 file(s) remainingCompleted 96 of 602 part(s) with 1 file(s) remainingCompleted 97 of 602 part(s) with 1 file(s) remainingCompleted 98 of 602 part(s) with 1 file(s) remainingCompleted 99 of 602 part(s) with 1 file(s) remainingCompleted 100 of 602 part(s) with 1 file(s) remainingCompleted 101 of 602 part(s) with 1 file(s) remainingCompleted 102 of 602 part(s) with 1 file(s) remainingCompleted 103 of 602 part(s) with 1 file(s) remainingCompleted 104 of 602 part(s) with 1 file(s) remainingCompleted 105 of 602 part(s) with 1 file(s) remainingCompleted 106 of 602 part(s) with 1 file(s) remainingCompleted 107 of 602 part(s) with 1 file(s) remainingCompleted 108 of 602 part(s) with 1 file(s) remainingCompleted 109 of 602 part(s) with 1 file(s) remainingCompleted 110 of 602 part(s) with 1 file(s) remainingCompleted 111 of 602 part(s) with 1 file(s) remainingCompleted 112 of 602 part(s) with 1 file(s) remainingCompleted 113 of 602 part(s) with 1 file(s) remainingCompleted 114 of 602 part(s) with 1 file(s) remainingCompleted 115 of 602 part(s) with 1 file(s) remainingCompleted 116 of 602 part(s) with 1 file(s) remainingCompleted 117 of 602 part(s) with 1 file(s) remainingCompleted 118 of 602 part(s) with 1 file(s) remainingCompleted 119 of 602 part(s) with 1 file(s) remainingCompleted 120 of 602 part(s) with 1 file(s) remainingCompleted 121 of 602 part(s) with 1 file(s) remainingCompleted 122 of 602 part(s) with 1 file(s) remainingCompleted 123 of 602 part(s) with 1 file(s) remainingCompleted 124 of 602 part(s) with 1 file(s) remainingCompleted 125 of 602 part(s) with 1 file(s) remainingCompleted 126 of 602 part(s) with 1 file(s) remainingCompleted 127 of 602 part(s) with 1 file(s) remainingCompleted 128 of 602 part(s) with 1 file(s) remainingCompleted 129 of 602 part(s) with 1 file(s) remainingCompleted 130 of 602 part(s) with 1 file(s) remainingCompleted 131 of 602 part(s) with 1 file(s) remainingCompleted 132 of 602 part(s) with 1 file(s) remainingCompleted 133 of 602 part(s) with 1 file(s) remainingCompleted 134 of 602 part(s) with 1 file(s) remainingCompleted 135 of 602 part(s) with 1 file(s) remainingCompleted 136 of 602 part(s) with 1 file(s) remainingCompleted 137 of 602 part(s) with 1 file(s) remainingCompleted 138 of 602 part(s) with 1 file(s) remainingCompleted 139 of 602 part(s) with 1 file(s) remainingCompleted 140 of 602 part(s) with 1 file(s) remainingCompleted 141 of 602 part(s) with 1 file(s) remainingCompleted 142 of 602 part(s) with 1 file(s) remainingCompleted 143 of 602 part(s) with 1 file(s) remainingCompleted 144 of 602 part(s) with 1 file(s) remainingCompleted 145 of 602 part(s) with 1 file(s) remainingCompleted 146 of 602 part(s) with 1 file(s) remainingCompleted 147 of 602 part(s) with 1 file(s) remainingCompleted 148 of 602 part(s) with 1 file(s) remainingCompleted 149 of 602 part(s) with 1 file(s) remainingCompleted 150 of 602 part(s) with 1 file(s) remainingCompleted 151 of 602 part(s) with 1 file(s) remainingCompleted 152 of 602 part(s) with 1 file(s) remainingCompleted 153 of 602 part(s) with 1 file(s) remainingCompleted 154 of 602 part(s) with 1 file(s) remainingCompleted 155 of 602 part(s) with 1 file(s) remainingCompleted 156 of 602 part(s) with 1 file(s) remainingCompleted 157 of 602 part(s) with 1 file(s) remainingCompleted 158 of 602 part(s) with 1 file(s) remainingCompleted 159 of 602 part(s) with 1 file(s) remainingCompleted 160 of 602 part(s) with 1 file(s) remainingCompleted 161 of 602 part(s) with 1 file(s) remainingCompleted 162 of 602 part(s) with 1 file(s) remainingCompleted 163 of 602 part(s) with 1 file(s) remainingCompleted 164 of 602 part(s) with 1 file(s) remainingCompleted 165 of 602 part(s) with 1 file(s) remainingCompleted 166 of 602 part(s) with 1 file(s) remainingCompleted 167 of 602 part(s) with 1 file(s) remainingCompleted 168 of 602 part(s) with 1 file(s) remainingCompleted 169 of 602 part(s) with 1 file(s) remainingCompleted 170 of 602 part(s) with 1 file(s) remainingCompleted 171 of 602 part(s) with 1 file(s) remainingCompleted 172 of 602 part(s) with 1 file(s) remainingCompleted 173 of 602 part(s) with 1 file(s) remainingCompleted 174 of 602 part(s) with 1 file(s) remainingCompleted 175 of 602 part(s) with 1 file(s) remainingCompleted 176 of 602 part(s) with 1 file(s) remainingCompleted 177 of 602 part(s) with 1 file(s) remainingCompleted 178 of 602 part(s) with 1 file(s) remainingCompleted 179 of 602 part(s) with 1 file(s) remainingCompleted 180 of 602 part(s) with 1 file(s) remainingCompleted 181 of 602 part(s) with 1 file(s) remainingCompleted 182 of 602 part(s) with 1 file(s) remainingCompleted 183 of 602 part(s) with 1 file(s) remainingCompleted 184 of 602 part(s) with 1 file(s) remainingCompleted 185 of 602 part(s) with 1 file(s) remainingCompleted 186 of 602 part(s) with 1 file(s) remainingCompleted 187 of 602 part(s) with 1 file(s) remainingCompleted 188 of 602 part(s) with 1 file(s) remainingCompleted 189 of 602 part(s) with 1 file(s) remainingCompleted 190 of 602 part(s) with 1 file(s) remainingCompleted 191 of 602 part(s) with 1 file(s) remainingCompleted 192 of 602 part(s) with 1 file(s) remainingCompleted 193 of 602 part(s) with 1 file(s) remainingCompleted 194 of 602 part(s) with 1 file(s) remainingCompleted 195 of 602 part(s) with 1 file(s) remainingCompleted 196 of 602 part(s) with 1 file(s) remainingCompleted 197 of 602 part(s) with 1 file(s) remainingCompleted 198 of 602 part(s) with 1 file(s) remainingCompleted 199 of 602 part(s) with 1 file(s) remainingCompleted 200 of 602 part(s) with 1 file(s) remainingCompleted 201 of 602 part(s) with 1 file(s) remainingCompleted 202 of 602 part(s) with 1 file(s) remainingCompleted 203 of 602 part(s) with 1 file(s) remainingCompleted 204 of 602 part(s) with 1 file(s) remainingCompleted 205 of 602 part(s) with 1 file(s) remainingCompleted 206 of 602 part(s) with 1 file(s) remainingCompleted 207 of 602 part(s) with 1 file(s) remainingCompleted 208 of 602 part(s) with 1 file(s) remainingCompleted 209 of 602 part(s) with 1 file(s) remainingCompleted 210 of 602 part(s) with 1 file(s) remainingCompleted 211 of 602 part(s) with 1 file(s) remainingCompleted 212 of 602 part(s) with 1 file(s) remainingCompleted 213 of 602 part(s) with 1 file(s) remainingCompleted 214 of 602 part(s) with 1 file(s) remainingCompleted 215 of 602 part(s) with 1 file(s) remainingCompleted 216 of 602 part(s) with 1 file(s) remainingCompleted 217 of 602 part(s) with 1 file(s) remainingCompleted 218 of 602 part(s) with 1 file(s) remainingCompleted 219 of 602 part(s) with 1 file(s) remainingCompleted 220 of 602 part(s) with 1 file(s) remainingCompleted 221 of 602 part(s) with 1 file(s) remainingCompleted 222 of 602 part(s) with 1 file(s) remainingCompleted 223 of 602 part(s) with 1 file(s) remainingCompleted 224 of 602 part(s) with 1 file(s) remainingCompleted 225 of 602 part(s) with 1 file(s) remainingCompleted 226 of 602 part(s) with 1 file(s) remainingCompleted 227 of 602 part(s) with 1 file(s) remainingCompleted 228 of 602 part(s) with 1 file(s) remainingCompleted 229 of 602 part(s) with 1 file(s) remainingCompleted 230 of 602 part(s) with 1 file(s) remainingCompleted 231 of 602 part(s) with 1 file(s) remainingCompleted 232 of 602 part(s) with 1 file(s) remainingCompleted 233 of 602 part(s) with 1 file(s) remainingCompleted 234 of 602 part(s) with 1 file(s) remainingCompleted 235 of 602 part(s) with 1 file(s) remainingCompleted 236 of 602 part(s) with 1 file(s) remainingCompleted 237 of 602 part(s) with 1 file(s) remainingCompleted 238 of 602 part(s) with 1 file(s) remainingCompleted 239 of 602 part(s) with 1 file(s) remainingCompleted 240 of 602 part(s) with 1 file(s) remainingCompleted 241 of 602 part(s) with 1 file(s) remainingCompleted 242 of 602 part(s) with 1 file(s) remainingCompleted 243 of 602 part(s) with 1 file(s) remainingCompleted 244 of 602 part(s) with 1 file(s) remainingCompleted 245 of 602 part(s) with 1 file(s) remainingCompleted 246 of 602 part(s) with 1 file(s) remainingCompleted 247 of 602 part(s) with 1 file(s) remainingCompleted 248 of 602 part(s) with 1 file(s) remainingCompleted 249 of 602 part(s) with 1 file(s) remainingCompleted 250 of 602 part(s) with 1 file(s) remainingCompleted 251 of 602 part(s) with 1 file(s) remainingCompleted 252 of 602 part(s) with 1 file(s) remainingCompleted 253 of 602 part(s) with 1 file(s) remainingCompleted 254 of 602 part(s) with 1 file(s) remainingCompleted 255 of 602 part(s) with 1 file(s) remainingCompleted 256 of 602 part(s) with 1 file(s) remainingCompleted 257 of 602 part(s) with 1 file(s) remainingCompleted 258 of 602 part(s) with 1 file(s) remainingCompleted 259 of 602 part(s) with 1 file(s) remainingCompleted 260 of 602 part(s) with 1 file(s) remainingCompleted 261 of 602 part(s) with 1 file(s) remainingCompleted 262 of 602 part(s) with 1 file(s) remainingCompleted 263 of 602 part(s) with 1 file(s) remainingCompleted 264 of 602 part(s) with 1 file(s) remainingCompleted 265 of 602 part(s) with 1 file(s) remainingCompleted 266 of 602 part(s) with 1 file(s) remainingCompleted 267 of 602 part(s) with 1 file(s) remainingCompleted 268 of 602 part(s) with 1 file(s) remainingCompleted 269 of 602 part(s) with 1 file(s) remainingCompleted 270 of 602 part(s) with 1 file(s) remainingCompleted 271 of 602 part(s) with 1 file(s) remainingCompleted 272 of 602 part(s) with 1 file(s) remainingCompleted 273 of 602 part(s) with 1 file(s) remainingCompleted 274 of 602 part(s) with 1 file(s) remainingCompleted 275 of 602 part(s) with 1 file(s) remainingCompleted 276 of 602 part(s) with 1 file(s) remainingCompleted 277 of 602 part(s) with 1 file(s) remainingCompleted 278 of 602 part(s) with 1 file(s) remainingCompleted 279 of 602 part(s) with 1 file(s) remainingCompleted 280 of 602 part(s) with 1 file(s) remainingCompleted 281 of 602 part(s) with 1 file(s) remainingCompleted 282 of 602 part(s) with 1 file(s) remainingCompleted 283 of 602 part(s) with 1 file(s) remainingCompleted 284 of 602 part(s) with 1 file(s) remainingCompleted 285 of 602 part(s) with 1 file(s) remainingCompleted 286 of 602 part(s) with 1 file(s) remainingCompleted 287 of 602 part(s) with 1 file(s) remainingCompleted 288 of 602 part(s) with 1 file(s) remainingCompleted 289 of 602 part(s) with 1 file(s) remainingCompleted 290 of 602 part(s) with 1 file(s) remainingCompleted 291 of 602 part(s) with 1 file(s) remainingCompleted 292 of 602 part(s) with 1 file(s) remainingCompleted 293 of 602 part(s) with 1 file(s) remainingCompleted 294 of 602 part(s) with 1 file(s) remainingCompleted 295 of 602 part(s) with 1 file(s) remainingCompleted 296 of 602 part(s) with 1 file(s) remainingCompleted 297 of 602 part(s) with 1 file(s) remainingCompleted 298 of 602 part(s) with 1 file(s) remainingCompleted 299 of 602 part(s) with 1 file(s) remainingCompleted 300 of 602 part(s) with 1 file(s) remainingCompleted 301 of 602 part(s) with 1 file(s) remainingCompleted 302 of 602 part(s) with 1 file(s) remainingCompleted 303 of 602 part(s) with 1 file(s) remainingCompleted 304 of 602 part(s) with 1 file(s) remainingCompleted 305 of 602 part(s) with 1 file(s) remainingCompleted 306 of 602 part(s) with 1 file(s) remainingCompleted 307 of 602 part(s) with 1 file(s) remainingCompleted 308 of 602 part(s) with 1 file(s) remainingCompleted 309 of 602 part(s) with 1 file(s) remainingCompleted 310 of 602 part(s) with 1 file(s) remainingCompleted 311 of 602 part(s) with 1 file(s) remainingCompleted 312 of 602 part(s) with 1 file(s) remainingCompleted 313 of 602 part(s) with 1 file(s) remainingCompleted 314 of 602 part(s) with 1 file(s) remainingCompleted 315 of 602 part(s) with 1 file(s) remainingCompleted 316 of 602 part(s) with 1 file(s) remainingCompleted 317 of 602 part(s) with 1 file(s) remainingCompleted 318 of 602 part(s) with 1 file(s) remainingCompleted 319 of 602 part(s) with 1 file(s) remainingCompleted 320 of 602 part(s) with 1 file(s) remainingCompleted 321 of 602 part(s) with 1 file(s) remainingCompleted 322 of 602 part(s) with 1 file(s) remainingCompleted 323 of 602 part(s) with 1 file(s) remainingCompleted 324 of 602 part(s) with 1 file(s) remainingCompleted 325 of 602 part(s) with 1 file(s) remainingCompleted 326 of 602 part(s) with 1 file(s) remainingCompleted 327 of 602 part(s) with 1 file(s) remainingCompleted 328 of 602 part(s) with 1 file(s) remainingCompleted 329 of 602 part(s) with 1 file(s) remainingCompleted 330 of 602 part(s) with 1 file(s) remainingCompleted 331 of 602 part(s) with 1 file(s) remainingCompleted 332 of 602 part(s) with 1 file(s) remainingCompleted 333 of 602 part(s) with 1 file(s) remainingCompleted 334 of 602 part(s) with 1 file(s) remainingCompleted 335 of 602 part(s) with 1 file(s) remainingCompleted 336 of 602 part(s) with 1 file(s) remainingCompleted 337 of 602 part(s) with 1 file(s) remainingCompleted 338 of 602 part(s) with 1 file(s) remainingCompleted 339 of 602 part(s) with 1 file(s) remainingCompleted 340 of 602 part(s) with 1 file(s) remainingCompleted 341 of 602 part(s) with 1 file(s) remainingCompleted 342 of 602 part(s) with 1 file(s) remainingCompleted 343 of 602 part(s) with 1 file(s) remainingCompleted 344 of 602 part(s) with 1 file(s) remainingCompleted 345 of 602 part(s) with 1 file(s) remainingCompleted 346 of 602 part(s) with 1 file(s) remainingCompleted 347 of 602 part(s) with 1 file(s) remainingCompleted 348 of 602 part(s) with 1 file(s) remainingCompleted 349 of 602 part(s) with 1 file(s) remainingCompleted 350 of 602 part(s) with 1 file(s) remainingCompleted 351 of 602 part(s) with 1 file(s) remainingCompleted 352 of 602 part(s) with 1 file(s) remainingCompleted 353 of 602 part(s) with 1 file(s) remainingCompleted 354 of 602 part(s) with 1 file(s) remainingCompleted 355 of 602 part(s) with 1 file(s) remainingCompleted 356 of 602 part(s) with 1 file(s) remainingCompleted 357 of 602 part(s) with 1 file(s) remainingCompleted 358 of 602 part(s) with 1 file(s) remainingCompleted 359 of 602 part(s) with 1 file(s) remainingCompleted 360 of 602 part(s) with 1 file(s) remainingCompleted 361 of 602 part(s) with 1 file(s) remainingCompleted 362 of 602 part(s) with 1 file(s) remainingCompleted 363 of 602 part(s) with 1 file(s) remainingCompleted 364 of 602 part(s) with 1 file(s) remainingCompleted 365 of 602 part(s) with 1 file(s) remainingCompleted 366 of 602 part(s) with 1 file(s) remainingCompleted 367 of 602 part(s) with 1 file(s) remainingCompleted 368 of 602 part(s) with 1 file(s) remainingCompleted 369 of 602 part(s) with 1 file(s) remainingCompleted 370 of 602 part(s) with 1 file(s) remainingCompleted 371 of 602 part(s) with 1 file(s) remainingCompleted 372 of 602 part(s) with 1 file(s) remainingCompleted 373 of 602 part(s) with 1 file(s) remainingCompleted 374 of 602 part(s) with 1 file(s) remainingCompleted 375 of 602 part(s) with 1 file(s) remainingCompleted 376 of 602 part(s) with 1 file(s) remainingCompleted 377 of 602 part(s) with 1 file(s) remainingCompleted 378 of 602 part(s) with 1 file(s) remainingCompleted 379 of 602 part(s) with 1 file(s) remainingCompleted 380 of 602 part(s) with 1 file(s) remainingCompleted 381 of 602 part(s) with 1 file(s) remainingCompleted 382 of 602 part(s) with 1 file(s) remainingCompleted 383 of 602 part(s) with 1 file(s) remainingCompleted 384 of 602 part(s) with 1 file(s) remainingCompleted 385 of 602 part(s) with 1 file(s) remainingCompleted 386 of 602 part(s) with 1 file(s) remainingCompleted 387 of 602 part(s) with 1 file(s) remainingCompleted 388 of 602 part(s) with 1 file(s) remainingCompleted 389 of 602 part(s) with 1 file(s) remainingCompleted 390 of 602 part(s) with 1 file(s) remainingCompleted 391 of 602 part(s) with 1 file(s) remainingCompleted 392 of 602 part(s) with 1 file(s) remainingCompleted 393 of 602 part(s) with 1 file(s) remainingCompleted 394 of 602 part(s) with 1 file(s) remainingCompleted 395 of 602 part(s) with 1 file(s) remainingCompleted 396 of 602 part(s) with 1 file(s) remainingCompleted 397 of 602 part(s) with 1 file(s) remainingCompleted 398 of 602 part(s) with 1 file(s) remainingCompleted 399 of 602 part(s) with 1 file(s) remainingCompleted 400 of 602 part(s) with 1 file(s) remainingCompleted 401 of 602 part(s) with 1 file(s) remainingCompleted 402 of 602 part(s) with 1 file(s) remainingCompleted 403 of 602 part(s) with 1 file(s) remainingCompleted 404 of 602 part(s) with 1 file(s) remainingCompleted 405 of 602 part(s) with 1 file(s) remainingCompleted 406 of 602 part(s) with 1 file(s) remainingCompleted 407 of 602 part(s) with 1 file(s) remainingCompleted 408 of 602 part(s) with 1 file(s) remainingCompleted 409 of 602 part(s) with 1 file(s) remainingCompleted 410 of 602 part(s) with 1 file(s) remainingCompleted 411 of 602 part(s) with 1 file(s) remainingCompleted 412 of 602 part(s) with 1 file(s) remainingCompleted 413 of 602 part(s) with 1 file(s) remainingCompleted 414 of 602 part(s) with 1 file(s) remainingCompleted 415 of 602 part(s) with 1 file(s) remainingCompleted 416 of 602 part(s) with 1 file(s) remainingCompleted 417 of 602 part(s) with 1 file(s) remainingCompleted 418 of 602 part(s) with 1 file(s) remainingCompleted 419 of 602 part(s) with 1 file(s) remainingCompleted 420 of 602 part(s) with 1 file(s) remainingCompleted 421 of 602 part(s) with 1 file(s) remainingCompleted 422 of 602 part(s) with 1 file(s) remainingCompleted 423 of 602 part(s) with 1 file(s) remainingCompleted 424 of 602 part(s) with 1 file(s) remainingCompleted 425 of 602 part(s) with 1 file(s) remainingCompleted 426 of 602 part(s) with 1 file(s) remainingCompleted 427 of 602 part(s) with 1 file(s) remainingCompleted 428 of 602 part(s) with 1 file(s) remainingCompleted 429 of 602 part(s) with 1 file(s) remainingCompleted 430 of 602 part(s) with 1 file(s) remainingCompleted 431 of 602 part(s) with 1 file(s) remainingCompleted 432 of 602 part(s) with 1 file(s) remainingCompleted 433 of 602 part(s) with 1 file(s) remainingCompleted 434 of 602 part(s) with 1 file(s) remainingCompleted 435 of 602 part(s) with 1 file(s) remainingCompleted 436 of 602 part(s) with 1 file(s) remainingCompleted 437 of 602 part(s) with 1 file(s) remainingCompleted 438 of 602 part(s) with 1 file(s) remainingCompleted 439 of 602 part(s) with 1 file(s) remainingCompleted 440 of 602 part(s) with 1 file(s) remainingCompleted 441 of 602 part(s) with 1 file(s) remainingCompleted 442 of 602 part(s) with 1 file(s) remainingCompleted 443 of 602 part(s) with 1 file(s) remainingCompleted 444 of 602 part(s) with 1 file(s) remainingCompleted 445 of 602 part(s) with 1 file(s) remainingCompleted 446 of 602 part(s) with 1 file(s) remainingCompleted 447 of 602 part(s) with 1 file(s) remainingCompleted 448 of 602 part(s) with 1 file(s) remainingCompleted 449 of 602 part(s) with 1 file(s) remainingCompleted 450 of 602 part(s) with 1 file(s) remainingCompleted 451 of 602 part(s) with 1 file(s) remainingCompleted 452 of 602 part(s) with 1 file(s) remainingCompleted 453 of 602 part(s) with 1 file(s) remainingCompleted 454 of 602 part(s) with 1 file(s) remainingCompleted 455 of 602 part(s) with 1 file(s) remainingCompleted 456 of 602 part(s) with 1 file(s) remainingCompleted 457 of 602 part(s) with 1 file(s) remainingCompleted 458 of 602 part(s) with 1 file(s) remainingCompleted 459 of 602 part(s) with 1 file(s) remainingCompleted 460 of 602 part(s) with 1 file(s) remainingCompleted 461 of 602 part(s) with 1 file(s) remainingCompleted 462 of 602 part(s) with 1 file(s) remainingCompleted 463 of 602 part(s) with 1 file(s) remainingCompleted 464 of 602 part(s) with 1 file(s) remainingCompleted 465 of 602 part(s) with 1 file(s) remainingCompleted 466 of 602 part(s) with 1 file(s) remainingCompleted 467 of 602 part(s) with 1 file(s) remainingCompleted 468 of 602 part(s) with 1 file(s) remainingCompleted 469 of 602 part(s) with 1 file(s) remainingCompleted 470 of 602 part(s) with 1 file(s) remainingCompleted 471 of 602 part(s) with 1 file(s) remainingCompleted 472 of 602 part(s) with 1 file(s) remainingCompleted 473 of 602 part(s) with 1 file(s) remainingCompleted 474 of 602 part(s) with 1 file(s) remainingCompleted 475 of 602 part(s) with 1 file(s) remainingCompleted 476 of 602 part(s) with 1 file(s) remainingCompleted 477 of 602 part(s) with 1 file(s) remainingCompleted 478 of 602 part(s) with 1 file(s) remainingCompleted 479 of 602 part(s) with 1 file(s) remainingCompleted 480 of 602 part(s) with 1 file(s) remainingCompleted 481 of 602 part(s) with 1 file(s) remainingCompleted 482 of 602 part(s) with 1 file(s) remainingCompleted 483 of 602 part(s) with 1 file(s) remainingCompleted 484 of 602 part(s) with 1 file(s) remainingCompleted 485 of 602 part(s) with 1 file(s) remainingCompleted 486 of 602 part(s) with 1 file(s) remainingCompleted 487 of 602 part(s) with 1 file(s) remainingCompleted 488 of 602 part(s) with 1 file(s) remainingCompleted 489 of 602 part(s) with 1 file(s) remainingCompleted 490 of 602 part(s) with 1 file(s) remainingCompleted 491 of 602 part(s) with 1 file(s) remainingCompleted 492 of 602 part(s) with 1 file(s) remainingCompleted 493 of 602 part(s) with 1 file(s) remainingCompleted 494 of 602 part(s) with 1 file(s) remainingCompleted 495 of 602 part(s) with 1 file(s) remainingCompleted 496 of 602 part(s) with 1 file(s) remainingCompleted 497 of 602 part(s) with 1 file(s) remainingCompleted 498 of 602 part(s) with 1 file(s) remainingCompleted 499 of 602 part(s) with 1 file(s) remainingCompleted 500 of 602 part(s) with 1 file(s) remainingCompleted 501 of 602 part(s) with 1 file(s) remainingCompleted 502 of 602 part(s) with 1 file(s) remainingCompleted 503 of 602 part(s) with 1 file(s) remainingCompleted 504 of 602 part(s) with 1 file(s) remainingCompleted 505 of 602 part(s) with 1 file(s) remainingCompleted 506 of 602 part(s) with 1 file(s) remainingCompleted 507 of 602 part(s) with 1 file(s) remainingCompleted 508 of 602 part(s) with 1 file(s) remainingCompleted 509 of 602 part(s) with 1 file(s) remainingCompleted 510 of 602 part(s) with 1 file(s) remainingCompleted 511 of 602 part(s) with 1 file(s) remainingCompleted 512 of 602 part(s) with 1 file(s) remainingCompleted 513 of 602 part(s) with 1 file(s) remainingCompleted 514 of 602 part(s) with 1 file(s) remainingCompleted 515 of 602 part(s) with 1 file(s) remainingCompleted 516 of 602 part(s) with 1 file(s) remainingCompleted 517 of 602 part(s) with 1 file(s) remainingCompleted 518 of 602 part(s) with 1 file(s) remainingCompleted 519 of 602 part(s) with 1 file(s) remainingCompleted 520 of 602 part(s) with 1 file(s) remainingCompleted 521 of 602 part(s) with 1 file(s) remainingCompleted 522 of 602 part(s) with 1 file(s) remainingCompleted 523 of 602 part(s) with 1 file(s) remainingCompleted 524 of 602 part(s) with 1 file(s) remainingCompleted 525 of 602 part(s) with 1 file(s) remainingCompleted 526 of 602 part(s) with 1 file(s) remainingCompleted 527 of 602 part(s) with 1 file(s) remainingCompleted 528 of 602 part(s) with 1 file(s) remainingCompleted 529 of 602 part(s) with 1 file(s) remainingCompleted 530 of 602 part(s) with 1 file(s) remainingCompleted 531 of 602 part(s) with 1 file(s) remainingCompleted 532 of 602 part(s) with 1 file(s) remainingCompleted 533 of 602 part(s) with 1 file(s) remainingCompleted 534 of 602 part(s) with 1 file(s) remainingCompleted 535 of 602 part(s) with 1 file(s) remainingCompleted 536 of 602 part(s) with 1 file(s) remainingCompleted 537 of 602 part(s) with 1 file(s) remainingCompleted 538 of 602 part(s) with 1 file(s) remainingCompleted 539 of 602 part(s) with 1 file(s) remainingCompleted 540 of 602 part(s) with 1 file(s) remainingCompleted 541 of 602 part(s) with 1 file(s) remainingCompleted 542 of 602 part(s) with 1 file(s) remainingCompleted 543 of 602 part(s) with 1 file(s) remainingCompleted 544 of 602 part(s) with 1 file(s) remainingCompleted 545 of 602 part(s) with 1 file(s) remainingCompleted 546 of 602 part(s) with 1 file(s) remainingCompleted 547 of 602 part(s) with 1 file(s) remainingCompleted 548 of 602 part(s) with 1 file(s) remainingCompleted 549 of 602 part(s) with 1 file(s) remainingCompleted 550 of 602 part(s) with 1 file(s) remainingCompleted 551 of 602 part(s) with 1 file(s) remainingCompleted 552 of 602 part(s) with 1 file(s) remainingCompleted 553 of 602 part(s) with 1 file(s) remainingCompleted 554 of 602 part(s) with 1 file(s) remainingCompleted 555 of 602 part(s) with 1 file(s) remainingCompleted 556 of 602 part(s) with 1 file(s) remainingCompleted 557 of 602 part(s) with 1 file(s) remainingCompleted 558 of 602 part(s) with 1 file(s) remainingCompleted 559 of 602 part(s) with 1 file(s) remainingCompleted 560 of 602 part(s) with 1 file(s) remainingCompleted 561 of 602 part(s) with 1 file(s) remainingCompleted 562 of 602 part(s) with 1 file(s) remainingCompleted 563 of 602 part(s) with 1 file(s) remainingCompleted 564 of 602 part(s) with 1 file(s) remainingCompleted 565 of 602 part(s) with 1 file(s) remainingCompleted 566 of 602 part(s) with 1 file(s) remainingCompleted 567 of 602 part(s) with 1 file(s) remainingCompleted 568 of 602 part(s) with 1 file(s) remainingCompleted 569 of 602 part(s) with 1 file(s) remainingCompleted 570 of 602 part(s) with 1 file(s) remainingCompleted 571 of 602 part(s) with 1 file(s) remainingCompleted 572 of 602 part(s) with 1 file(s) remainingCompleted 573 of 602 part(s) with 1 file(s) remainingCompleted 574 of 602 part(s) with 1 file(s) remainingCompleted 575 of 602 part(s) with 1 file(s) remainingCompleted 576 of 602 part(s) with 1 file(s) remainingCompleted 577 of 602 part(s) with 1 file(s) remainingCompleted 578 of 602 part(s) with 1 file(s) remainingCompleted 579 of 602 part(s) with 1 file(s) remainingCompleted 580 of 602 part(s) with 1 file(s) remainingCompleted 581 of 602 part(s) with 1 file(s) remainingCompleted 582 of 602 part(s) with 1 file(s) remainingCompleted 583 of 602 part(s) with 1 file(s) remainingCompleted 584 of 602 part(s) with 1 file(s) remainingCompleted 585 of 602 part(s) with 1 file(s) remainingCompleted 586 of 602 part(s) with 1 file(s) remainingCompleted 587 of 602 part(s) with 1 file(s) remainingCompleted 588 of 602 part(s) with 1 file(s) remainingCompleted 589 of 602 part(s) with 1 file(s) remainingCompleted 590 of 602 part(s) with 1 file(s) remainingCompleted 591 of 602 part(s) with 1 file(s) remainingCompleted 592 of 602 part(s) with 1 file(s) remainingCompleted 593 of 602 part(s) with 1 file(s) remainingCompleted 594 of 602 part(s) with 1 file(s) remainingCompleted 595 of 602 part(s) with 1 file(s) remainingCompleted 596 of 602 part(s) with 1 file(s) remainingCompleted 597 of 602 part(s) with 1 file(s) remainingCompleted 598 of 602 part(s) with 1 file(s) remainingCompleted 599 of 602 part(s) with 1 file(s) remainingCompleted 600 of 602 part(s) with 1 file(s) remainingCompleted 601 of 602 part(s) with 1 file(s) remainingCompleted 602 of 602 part(s) with 1 file(s) remainingupload: ./SRR8615282_1.fastq.gz to s3://crownproject/ccle/fq/SRR8615282_1.fastq.gz
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ aws s3 cp SRR8615282_1.fastq.gz s3://crownproject/ccle/ffq/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.fastq.gz s3://crownproject/ccle/fq[1P/[A[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.fastq.gz s3://crownproject/ccle/fq/[A[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Completed 1 of 654 part(s) with 1 file(s) remainingCompleted 2 of 654 part(s) with 1 file(s) remainingCompleted 3 of 654 part(s) with 1 file(s) remainingCompleted 4 of 654 part(s) with 1 file(s) remainingCompleted 5 of 654 part(s) with 1 file(s) remainingCompleted 6 of 654 part(s) with 1 file(s) remainingCompleted 7 of 654 part(s) with 1 file(s) remainingCompleted 8 of 654 part(s) with 1 file(s) remainingCompleted 9 of 654 part(s) with 1 file(s) remainingCompleted 10 of 654 part(s) with 1 file(s) remainingCompleted 11 of 654 part(s) with 1 file(s) remainingCompleted 12 of 654 part(s) with 1 file(s) remainingCompleted 13 of 654 part(s) with 1 file(s) remainingCompleted 14 of 654 part(s) with 1 file(s) remainingCompleted 15 of 654 part(s) with 1 file(s) remainingCompleted 16 of 654 part(s) with 1 file(s) remainingCompleted 17 of 654 part(s) with 1 file(s) remainingCompleted 18 of 654 part(s) with 1 file(s) remainingCompleted 19 of 654 part(s) with 1 file(s) remainingCompleted 20 of 654 part(s) with 1 file(s) remainingCompleted 21 of 654 part(s) with 1 file(s) remainingCompleted 22 of 654 part(s) with 1 file(s) remainingCompleted 23 of 654 part(s) with 1 file(s) remainingCompleted 24 of 654 part(s) with 1 file(s) remainingCompleted 25 of 654 part(s) with 1 file(s) remainingCompleted 26 of 654 part(s) with 1 file(s) remainingCompleted 27 of 654 part(s) with 1 file(s) remainingCompleted 28 of 654 part(s) with 1 file(s) remainingCompleted 29 of 654 part(s) with 1 file(s) remainingCompleted 30 of 654 part(s) with 1 file(s) remainingCompleted 31 of 654 part(s) with 1 file(s) remainingCompleted 32 of 654 part(s) with 1 file(s) remainingCompleted 33 of 654 part(s) with 1 file(s) remainingCompleted 34 of 654 part(s) with 1 file(s) remainingCompleted 35 of 654 part(s) with 1 file(s) remainingCompleted 36 of 654 part(s) with 1 file(s) remainingCompleted 37 of 654 part(s) with 1 file(s) remainingCompleted 38 of 654 part(s) with 1 file(s) remainingCompleted 39 of 654 part(s) with 1 file(s) remainingCompleted 40 of 654 part(s) with 1 file(s) remainingCompleted 41 of 654 part(s) with 1 file(s) remainingCompleted 42 of 654 part(s) with 1 file(s) remainingCompleted 43 of 654 part(s) with 1 file(s) remainingCompleted 44 of 654 part(s) with 1 file(s) remainingCompleted 45 of 654 part(s) with 1 file(s) remainingCompleted 46 of 654 part(s) with 1 file(s) remainingCompleted 47 of 654 part(s) with 1 file(s) remainingCompleted 48 of 654 part(s) with 1 file(s) remainingCompleted 49 of 654 part(s) with 1 file(s) remainingCompleted 50 of 654 part(s) with 1 file(s) remainingCompleted 51 of 654 part(s) with 1 file(s) remainingCompleted 52 of 654 part(s) with 1 file(s) remainingCompleted 53 of 654 part(s) with 1 file(s) remainingCompleted 54 of 654 part(s) with 1 file(s) remainingCompleted 55 of 654 part(s) with 1 file(s) remainingCompleted 56 of 654 part(s) with 1 file(s) remainingCompleted 57 of 654 part(s) with 1 file(s) remainingCompleted 58 of 654 part(s) with 1 file(s) remainingCompleted 59 of 654 part(s) with 1 file(s) remainingCompleted 60 of 654 part(s) with 1 file(s) remainingCompleted 61 of 654 part(s) with 1 file(s) remainingCompleted 62 of 654 part(s) with 1 file(s) remainingCompleted 63 of 654 part(s) with 1 file(s) remainingCompleted 64 of 654 part(s) with 1 file(s) remainingCompleted 65 of 654 part(s) with 1 file(s) remainingCompleted 66 of 654 part(s) with 1 file(s) remainingCompleted 67 of 654 part(s) with 1 file(s) remainingCompleted 68 of 654 part(s) with 1 file(s) remainingCompleted 69 of 654 part(s) with 1 file(s) remainingCompleted 70 of 654 part(s) with 1 file(s) remainingCompleted 71 of 654 part(s) with 1 file(s) remainingCompleted 72 of 654 part(s) with 1 file(s) remainingCompleted 73 of 654 part(s) with 1 file(s) remainingCompleted 74 of 654 part(s) with 1 file(s) remainingCompleted 75 of 654 part(s) with 1 file(s) remainingCompleted 76 of 654 part(s) with 1 file(s) remainingCompleted 77 of 654 part(s) with 1 file(s) remainingCompleted 78 of 654 part(s) with 1 file(s) remainingCompleted 79 of 654 part(s) with 1 file(s) remainingCompleted 80 of 654 part(s) with 1 file(s) remainingCompleted 81 of 654 part(s) with 1 file(s) remainingCompleted 82 of 654 part(s) with 1 file(s) remainingCompleted 83 of 654 part(s) with 1 file(s) remainingCompleted 84 of 654 part(s) with 1 file(s) remainingCompleted 85 of 654 part(s) with 1 file(s) remainingCompleted 86 of 654 part(s) with 1 file(s) remainingCompleted 87 of 654 part(s) with 1 file(s) remainingCompleted 88 of 654 part(s) with 1 file(s) remainingCompleted 89 of 654 part(s) with 1 file(s) remainingCompleted 90 of 654 part(s) with 1 file(s) remainingCompleted 91 of 654 part(s) with 1 file(s) remainingCompleted 92 of 654 part(s) with 1 file(s) remainingCompleted 93 of 654 part(s) with 1 file(s) remainingCompleted 94 of 654 part(s) with 1 file(s) remainingCompleted 95 of 654 part(s) with 1 file(s) remainingCompleted 96 of 654 part(s) with 1 file(s) remainingCompleted 97 of 654 part(s) with 1 file(s) remainingCompleted 98 of 654 part(s) with 1 file(s) remainingCompleted 99 of 654 part(s) with 1 file(s) remainingCompleted 100 of 654 part(s) with 1 file(s) remainingCompleted 101 of 654 part(s) with 1 file(s) remainingCompleted 102 of 654 part(s) with 1 file(s) remainingCompleted 103 of 654 part(s) with 1 file(s) remainingCompleted 104 of 654 part(s) with 1 file(s) remainingCompleted 105 of 654 part(s) with 1 file(s) remainingCompleted 106 of 654 part(s) with 1 file(s) remainingCompleted 107 of 654 part(s) with 1 file(s) remainingCompleted 108 of 654 part(s) with 1 file(s) remainingCompleted 109 of 654 part(s) with 1 file(s) remainingCompleted 110 of 654 part(s) with 1 file(s) remainingCompleted 111 of 654 part(s) with 1 file(s) remainingCompleted 112 of 654 part(s) with 1 file(s) remainingCompleted 113 of 654 part(s) with 1 file(s) remainingCompleted 114 of 654 part(s) with 1 file(s) remainingCompleted 115 of 654 part(s) with 1 file(s) remainingCompleted 116 of 654 part(s) with 1 file(s) remainingCompleted 117 of 654 part(s) with 1 file(s) remainingCompleted 118 of 654 part(s) with 1 file(s) remainingCompleted 119 of 654 part(s) with 1 file(s) remainingCompleted 120 of 654 part(s) with 1 file(s) remainingCompleted 121 of 654 part(s) with 1 file(s) remainingCompleted 122 of 654 part(s) with 1 file(s) remainingCompleted 123 of 654 part(s) with 1 file(s) remainingCompleted 124 of 654 part(s) with 1 file(s) remainingCompleted 125 of 654 part(s) with 1 file(s) remainingCompleted 126 of 654 part(s) with 1 file(s) remainingCompleted 127 of 654 part(s) with 1 file(s) remainingCompleted 128 of 654 part(s) with 1 file(s) remainingCompleted 129 of 654 part(s) with 1 file(s) remainingCompleted 130 of 654 part(s) with 1 file(s) remainingCompleted 131 of 654 part(s) with 1 file(s) remainingCompleted 132 of 654 part(s) with 1 file(s) remainingCompleted 133 of 654 part(s) with 1 file(s) remainingCompleted 134 of 654 part(s) with 1 file(s) remainingCompleted 135 of 654 part(s) with 1 file(s) remainingCompleted 136 of 654 part(s) with 1 file(s) remainingCompleted 137 of 654 part(s) with 1 file(s) remainingCompleted 138 of 654 part(s) with 1 file(s) remainingCompleted 139 of 654 part(s) with 1 file(s) remainingCompleted 140 of 654 part(s) with 1 file(s) remainingCompleted 141 of 654 part(s) with 1 file(s) remainingCompleted 142 of 654 part(s) with 1 file(s) remainingCompleted 143 of 654 part(s) with 1 file(s) remainingCompleted 144 of 654 part(s) with 1 file(s) remainingCompleted 145 of 654 part(s) with 1 file(s) remainingCompleted 146 of 654 part(s) with 1 file(s) remainingCompleted 147 of 654 part(s) with 1 file(s) remainingCompleted 148 of 654 part(s) with 1 file(s) remainingCompleted 149 of 654 part(s) with 1 file(s) remainingCompleted 150 of 654 part(s) with 1 file(s) remainingCompleted 151 of 654 part(s) with 1 file(s) remainingCompleted 152 of 654 part(s) with 1 file(s) remainingCompleted 153 of 654 part(s) with 1 file(s) remainingCompleted 154 of 654 part(s) with 1 file(s) remainingCompleted 155 of 654 part(s) with 1 file(s) remainingCompleted 156 of 654 part(s) with 1 file(s) remainingCompleted 157 of 654 part(s) with 1 file(s) remainingCompleted 158 of 654 part(s) with 1 file(s) remainingCompleted 159 of 654 part(s) with 1 file(s) remainingCompleted 160 of 654 part(s) with 1 file(s) remainingCompleted 161 of 654 part(s) with 1 file(s) remainingCompleted 162 of 654 part(s) with 1 file(s) remainingCompleted 163 of 654 part(s) with 1 file(s) remainingCompleted 164 of 654 part(s) with 1 file(s) remainingCompleted 165 of 654 part(s) with 1 file(s) remainingCompleted 166 of 654 part(s) with 1 file(s) remainingCompleted 167 of 654 part(s) with 1 file(s) remainingCompleted 168 of 654 part(s) with 1 file(s) remainingCompleted 169 of 654 part(s) with 1 file(s) remainingCompleted 170 of 654 part(s) with 1 file(s) remainingCompleted 171 of 654 part(s) with 1 file(s) remainingCompleted 172 of 654 part(s) with 1 file(s) remainingCompleted 173 of 654 part(s) with 1 file(s) remainingCompleted 174 of 654 part(s) with 1 file(s) remainingCompleted 175 of 654 part(s) with 1 file(s) remainingCompleted 176 of 654 part(s) with 1 file(s) remainingCompleted 177 of 654 part(s) with 1 file(s) remainingCompleted 178 of 654 part(s) with 1 file(s) remainingCompleted 179 of 654 part(s) with 1 file(s) remainingCompleted 180 of 654 part(s) with 1 file(s) remainingCompleted 181 of 654 part(s) with 1 file(s) remainingCompleted 182 of 654 part(s) with 1 file(s) remainingCompleted 183 of 654 part(s) with 1 file(s) remainingCompleted 184 of 654 part(s) with 1 file(s) remainingCompleted 185 of 654 part(s) with 1 file(s) remainingCompleted 186 of 654 part(s) with 1 file(s) remainingCompleted 187 of 654 part(s) with 1 file(s) remainingCompleted 188 of 654 part(s) with 1 file(s) remainingCompleted 189 of 654 part(s) with 1 file(s) remainingCompleted 190 of 654 part(s) with 1 file(s) remainingCompleted 191 of 654 part(s) with 1 file(s) remainingCompleted 192 of 654 part(s) with 1 file(s) remainingCompleted 193 of 654 part(s) with 1 file(s) remainingCompleted 194 of 654 part(s) with 1 file(s) remainingCompleted 195 of 654 part(s) with 1 file(s) remainingCompleted 196 of 654 part(s) with 1 file(s) remainingCompleted 197 of 654 part(s) with 1 file(s) remainingCompleted 198 of 654 part(s) with 1 file(s) remainingCompleted 199 of 654 part(s) with 1 file(s) remainingCompleted 200 of 654 part(s) with 1 file(s) remainingCompleted 201 of 654 part(s) with 1 file(s) remainingCompleted 202 of 654 part(s) with 1 file(s) remainingCompleted 203 of 654 part(s) with 1 file(s) remainingCompleted 204 of 654 part(s) with 1 file(s) remainingCompleted 205 of 654 part(s) with 1 file(s) remainingCompleted 206 of 654 part(s) with 1 file(s) remainingCompleted 207 of 654 part(s) with 1 file(s) remainingCompleted 208 of 654 part(s) with 1 file(s) remainingCompleted 209 of 654 part(s) with 1 file(s) remainingCompleted 210 of 654 part(s) with 1 file(s) remainingCompleted 211 of 654 part(s) with 1 file(s) remainingCompleted 212 of 654 part(s) with 1 file(s) remainingCompleted 213 of 654 part(s) with 1 file(s) remainingCompleted 214 of 654 part(s) with 1 file(s) remainingCompleted 215 of 654 part(s) with 1 file(s) remainingCompleted 216 of 654 part(s) with 1 file(s) remainingCompleted 217 of 654 part(s) with 1 file(s) remainingCompleted 218 of 654 part(s) with 1 file(s) remainingCompleted 219 of 654 part(s) with 1 file(s) remainingCompleted 220 of 654 part(s) with 1 file(s) remainingCompleted 221 of 654 part(s) with 1 file(s) remainingCompleted 222 of 654 part(s) with 1 file(s) remainingCompleted 223 of 654 part(s) with 1 file(s) remainingCompleted 224 of 654 part(s) with 1 file(s) remainingCompleted 225 of 654 part(s) with 1 file(s) remainingCompleted 226 of 654 part(s) with 1 file(s) remainingCompleted 227 of 654 part(s) with 1 file(s) remainingCompleted 228 of 654 part(s) with 1 file(s) remainingCompleted 229 of 654 part(s) with 1 file(s) remainingCompleted 230 of 654 part(s) with 1 file(s) remainingCompleted 231 of 654 part(s) with 1 file(s) remainingCompleted 232 of 654 part(s) with 1 file(s) remainingCompleted 233 of 654 part(s) with 1 file(s) remainingCompleted 234 of 654 part(s) with 1 file(s) remainingCompleted 235 of 654 part(s) with 1 file(s) remainingCompleted 236 of 654 part(s) with 1 file(s) remainingCompleted 237 of 654 part(s) with 1 file(s) remainingCompleted 238 of 654 part(s) with 1 file(s) remainingCompleted 239 of 654 part(s) with 1 file(s) remainingCompleted 240 of 654 part(s) with 1 file(s) remainingCompleted 241 of 654 part(s) with 1 file(s) remainingCompleted 242 of 654 part(s) with 1 file(s) remainingCompleted 243 of 654 part(s) with 1 file(s) remainingCompleted 244 of 654 part(s) with 1 file(s) remainingCompleted 245 of 654 part(s) with 1 file(s) remainingCompleted 246 of 654 part(s) with 1 file(s) remainingCompleted 247 of 654 part(s) with 1 file(s) remainingCompleted 248 of 654 part(s) with 1 file(s) remainingCompleted 249 of 654 part(s) with 1 file(s) remainingCompleted 250 of 654 part(s) with 1 file(s) remainingCompleted 251 of 654 part(s) with 1 file(s) remainingCompleted 252 of 654 part(s) with 1 file(s) remainingCompleted 253 of 654 part(s) with 1 file(s) remainingCompleted 254 of 654 part(s) with 1 file(s) remainingCompleted 255 of 654 part(s) with 1 file(s) remainingCompleted 256 of 654 part(s) with 1 file(s) remainingCompleted 257 of 654 part(s) with 1 file(s) remainingCompleted 258 of 654 part(s) with 1 file(s) remainingCompleted 259 of 654 part(s) with 1 file(s) remainingCompleted 260 of 654 part(s) with 1 file(s) remainingCompleted 261 of 654 part(s) with 1 file(s) remainingCompleted 262 of 654 part(s) with 1 file(s) remainingCompleted 263 of 654 part(s) with 1 file(s) remainingCompleted 264 of 654 part(s) with 1 file(s) remainingCompleted 265 of 654 part(s) with 1 file(s) remainingCompleted 266 of 654 part(s) with 1 file(s) remainingCompleted 267 of 654 part(s) with 1 file(s) remainingCompleted 268 of 654 part(s) with 1 file(s) remainingCompleted 269 of 654 part(s) with 1 file(s) remainingCompleted 270 of 654 part(s) with 1 file(s) remainingCompleted 271 of 654 part(s) with 1 file(s) remainingCompleted 272 of 654 part(s) with 1 file(s) remainingCompleted 273 of 654 part(s) with 1 file(s) remainingCompleted 274 of 654 part(s) with 1 file(s) remainingCompleted 275 of 654 part(s) with 1 file(s) remainingCompleted 276 of 654 part(s) with 1 file(s) remainingCompleted 277 of 654 part(s) with 1 file(s) remainingCompleted 278 of 654 part(s) with 1 file(s) remainingCompleted 279 of 654 part(s) with 1 file(s) remainingCompleted 280 of 654 part(s) with 1 file(s) remainingCompleted 281 of 654 part(s) with 1 file(s) remainingCompleted 282 of 654 part(s) with 1 file(s) remainingCompleted 283 of 654 part(s) with 1 file(s) remainingCompleted 284 of 654 part(s) with 1 file(s) remainingCompleted 285 of 654 part(s) with 1 file(s) remainingCompleted 286 of 654 part(s) with 1 file(s) remainingCompleted 287 of 654 part(s) with 1 file(s) remainingCompleted 288 of 654 part(s) with 1 file(s) remainingCompleted 289 of 654 part(s) with 1 file(s) remainingCompleted 290 of 654 part(s) with 1 file(s) remainingCompleted 291 of 654 part(s) with 1 file(s) remainingCompleted 292 of 654 part(s) with 1 file(s) remainingCompleted 293 of 654 part(s) with 1 file(s) remainingCompleted 294 of 654 part(s) with 1 file(s) remainingCompleted 295 of 654 part(s) with 1 file(s) remainingCompleted 296 of 654 part(s) with 1 file(s) remainingCompleted 297 of 654 part(s) with 1 file(s) remainingCompleted 298 of 654 part(s) with 1 file(s) remainingCompleted 299 of 654 part(s) with 1 file(s) remainingCompleted 300 of 654 part(s) with 1 file(s) remainingCompleted 301 of 654 part(s) with 1 file(s) remainingCompleted 302 of 654 part(s) with 1 file(s) remainingCompleted 303 of 654 part(s) with 1 file(s) remainingCompleted 304 of 654 part(s) with 1 file(s) remainingCompleted 305 of 654 part(s) with 1 file(s) remainingCompleted 306 of 654 part(s) with 1 file(s) remainingCompleted 307 of 654 part(s) with 1 file(s) remainingCompleted 308 of 654 part(s) with 1 file(s) remainingCompleted 309 of 654 part(s) with 1 file(s) remainingCompleted 310 of 654 part(s) with 1 file(s) remainingCompleted 311 of 654 part(s) with 1 file(s) remainingCompleted 312 of 654 part(s) with 1 file(s) remainingCompleted 313 of 654 part(s) with 1 file(s) remainingCompleted 314 of 654 part(s) with 1 file(s) remainingCompleted 315 of 654 part(s) with 1 file(s) remainingCompleted 316 of 654 part(s) with 1 file(s) remainingCompleted 317 of 654 part(s) with 1 file(s) remainingCompleted 318 of 654 part(s) with 1 file(s) remainingCompleted 319 of 654 part(s) with 1 file(s) remainingCompleted 320 of 654 part(s) with 1 file(s) remainingCompleted 321 of 654 part(s) with 1 file(s) remainingCompleted 322 of 654 part(s) with 1 file(s) remainingCompleted 323 of 654 part(s) with 1 file(s) remainingCompleted 324 of 654 part(s) with 1 file(s) remainingCompleted 325 of 654 part(s) with 1 file(s) remainingCompleted 326 of 654 part(s) with 1 file(s) remainingCompleted 327 of 654 part(s) with 1 file(s) remainingCompleted 328 of 654 part(s) with 1 file(s) remainingCompleted 329 of 654 part(s) with 1 file(s) remainingCompleted 330 of 654 part(s) with 1 file(s) remainingCompleted 331 of 654 part(s) with 1 file(s) remainingCompleted 332 of 654 part(s) with 1 file(s) remainingCompleted 333 of 654 part(s) with 1 file(s) remainingCompleted 334 of 654 part(s) with 1 file(s) remainingCompleted 335 of 654 part(s) with 1 file(s) remainingCompleted 336 of 654 part(s) with 1 file(s) remainingCompleted 337 of 654 part(s) with 1 file(s) remainingCompleted 338 of 654 part(s) with 1 file(s) remainingCompleted 339 of 654 part(s) with 1 file(s) remainingCompleted 340 of 654 part(s) with 1 file(s) remainingCompleted 341 of 654 part(s) with 1 file(s) remainingCompleted 342 of 654 part(s) with 1 file(s) remainingCompleted 343 of 654 part(s) with 1 file(s) remainingCompleted 344 of 654 part(s) with 1 file(s) remainingCompleted 345 of 654 part(s) with 1 file(s) remainingCompleted 346 of 654 part(s) with 1 file(s) remainingCompleted 347 of 654 part(s) with 1 file(s) remainingCompleted 348 of 654 part(s) with 1 file(s) remainingCompleted 349 of 654 part(s) with 1 file(s) remainingCompleted 350 of 654 part(s) with 1 file(s) remainingCompleted 351 of 654 part(s) with 1 file(s) remainingCompleted 352 of 654 part(s) with 1 file(s) remainingCompleted 353 of 654 part(s) with 1 file(s) remainingCompleted 354 of 654 part(s) with 1 file(s) remainingCompleted 355 of 654 part(s) with 1 file(s) remainingCompleted 356 of 654 part(s) with 1 file(s) remainingCompleted 357 of 654 part(s) with 1 file(s) remainingCompleted 358 of 654 part(s) with 1 file(s) remainingCompleted 359 of 654 part(s) with 1 file(s) remainingCompleted 360 of 654 part(s) with 1 file(s) remainingCompleted 361 of 654 part(s) with 1 file(s) remainingCompleted 362 of 654 part(s) with 1 file(s) remainingCompleted 363 of 654 part(s) with 1 file(s) remainingCompleted 364 of 654 part(s) with 1 file(s) remainingCompleted 365 of 654 part(s) with 1 file(s) remainingCompleted 366 of 654 part(s) with 1 file(s) remainingCompleted 367 of 654 part(s) with 1 file(s) remainingCompleted 368 of 654 part(s) with 1 file(s) remainingCompleted 369 of 654 part(s) with 1 file(s) remainingCompleted 370 of 654 part(s) with 1 file(s) remainingCompleted 371 of 654 part(s) with 1 file(s) remainingCompleted 372 of 654 part(s) with 1 file(s) remainingCompleted 373 of 654 part(s) with 1 file(s) remainingCompleted 374 of 654 part(s) with 1 file(s) remainingCompleted 375 of 654 part(s) with 1 file(s) remainingCompleted 376 of 654 part(s) with 1 file(s) remainingCompleted 377 of 654 part(s) with 1 file(s) remainingCompleted 378 of 654 part(s) with 1 file(s) remainingCompleted 379 of 654 part(s) with 1 file(s) remainingCompleted 380 of 654 part(s) with 1 file(s) remainingCompleted 381 of 654 part(s) with 1 file(s) remainingCompleted 382 of 654 part(s) with 1 file(s) remainingCompleted 383 of 654 part(s) with 1 file(s) remainingCompleted 384 of 654 part(s) with 1 file(s) remainingCompleted 385 of 654 part(s) with 1 file(s) remainingCompleted 386 of 654 part(s) with 1 file(s) remainingCompleted 387 of 654 part(s) with 1 file(s) remainingCompleted 388 of 654 part(s) with 1 file(s) remainingCompleted 389 of 654 part(s) with 1 file(s) remainingCompleted 390 of 654 part(s) with 1 file(s) remainingCompleted 391 of 654 part(s) with 1 file(s) remainingCompleted 392 of 654 part(s) with 1 file(s) remainingCompleted 393 of 654 part(s) with 1 file(s) remainingCompleted 394 of 654 part(s) with 1 file(s) remainingCompleted 395 of 654 part(s) with 1 file(s) remainingCompleted 396 of 654 part(s) with 1 file(s) remainingCompleted 397 of 654 part(s) with 1 file(s) remainingCompleted 398 of 654 part(s) with 1 file(s) remainingCompleted 399 of 654 part(s) with 1 file(s) remainingCompleted 400 of 654 part(s) with 1 file(s) remainingCompleted 401 of 654 part(s) with 1 file(s) remainingCompleted 402 of 654 part(s) with 1 file(s) remainingCompleted 403 of 654 part(s) with 1 file(s) remainingCompleted 404 of 654 part(s) with 1 file(s) remainingCompleted 405 of 654 part(s) with 1 file(s) remainingCompleted 406 of 654 part(s) with 1 file(s) remainingCompleted 407 of 654 part(s) with 1 file(s) remainingCompleted 408 of 654 part(s) with 1 file(s) remainingCompleted 409 of 654 part(s) with 1 file(s) remainingCompleted 410 of 654 part(s) with 1 file(s) remainingCompleted 411 of 654 part(s) with 1 file(s) remainingCompleted 412 of 654 part(s) with 1 file(s) remainingCompleted 413 of 654 part(s) with 1 file(s) remainingCompleted 414 of 654 part(s) with 1 file(s) remainingCompleted 415 of 654 part(s) with 1 file(s) remainingCompleted 416 of 654 part(s) with 1 file(s) remainingCompleted 417 of 654 part(s) with 1 file(s) remainingCompleted 418 of 654 part(s) with 1 file(s) remainingCompleted 419 of 654 part(s) with 1 file(s) remainingCompleted 420 of 654 part(s) with 1 file(s) remainingCompleted 421 of 654 part(s) with 1 file(s) remainingCompleted 422 of 654 part(s) with 1 file(s) remainingCompleted 423 of 654 part(s) with 1 file(s) remainingCompleted 424 of 654 part(s) with 1 file(s) remainingCompleted 425 of 654 part(s) with 1 file(s) remainingCompleted 426 of 654 part(s) with 1 file(s) remainingCompleted 427 of 654 part(s) with 1 file(s) remainingCompleted 428 of 654 part(s) with 1 file(s) remainingCompleted 429 of 654 part(s) with 1 file(s) remainingCompleted 430 of 654 part(s) with 1 file(s) remainingCompleted 431 of 654 part(s) with 1 file(s) remainingCompleted 432 of 654 part(s) with 1 file(s) remainingCompleted 433 of 654 part(s) with 1 file(s) remainingCompleted 434 of 654 part(s) with 1 file(s) remainingCompleted 435 of 654 part(s) with 1 file(s) remainingCompleted 436 of 654 part(s) with 1 file(s) remainingCompleted 437 of 654 part(s) with 1 file(s) remainingCompleted 438 of 654 part(s) with 1 file(s) remainingCompleted 439 of 654 part(s) with 1 file(s) remainingCompleted 440 of 654 part(s) with 1 file(s) remainingCompleted 441 of 654 part(s) with 1 file(s) remainingCompleted 442 of 654 part(s) with 1 file(s) remainingCompleted 443 of 654 part(s) with 1 file(s) remainingCompleted 444 of 654 part(s) with 1 file(s) remainingCompleted 445 of 654 part(s) with 1 file(s) remainingCompleted 446 of 654 part(s) with 1 file(s) remainingCompleted 447 of 654 part(s) with 1 file(s) remainingCompleted 448 of 654 part(s) with 1 file(s) remainingCompleted 449 of 654 part(s) with 1 file(s) remainingCompleted 450 of 654 part(s) with 1 file(s) remainingCompleted 451 of 654 part(s) with 1 file(s) remainingCompleted 452 of 654 part(s) with 1 file(s) remainingCompleted 453 of 654 part(s) with 1 file(s) remainingCompleted 454 of 654 part(s) with 1 file(s) remainingCompleted 455 of 654 part(s) with 1 file(s) remainingCompleted 456 of 654 part(s) with 1 file(s) remainingCompleted 457 of 654 part(s) with 1 file(s) remainingCompleted 458 of 654 part(s) with 1 file(s) remainingCompleted 459 of 654 part(s) with 1 file(s) remainingCompleted 460 of 654 part(s) with 1 file(s) remainingCompleted 461 of 654 part(s) with 1 file(s) remainingCompleted 462 of 654 part(s) with 1 file(s) remainingCompleted 463 of 654 part(s) with 1 file(s) remainingCompleted 464 of 654 part(s) with 1 file(s) remainingCompleted 465 of 654 part(s) with 1 file(s) remainingCompleted 466 of 654 part(s) with 1 file(s) remainingCompleted 467 of 654 part(s) with 1 file(s) remainingCompleted 468 of 654 part(s) with 1 file(s) remainingCompleted 469 of 654 part(s) with 1 file(s) remainingCompleted 470 of 654 part(s) with 1 file(s) remainingCompleted 471 of 654 part(s) with 1 file(s) remainingCompleted 472 of 654 part(s) with 1 file(s) remainingCompleted 473 of 654 part(s) with 1 file(s) remainingCompleted 474 of 654 part(s) with 1 file(s) remainingCompleted 475 of 654 part(s) with 1 file(s) remainingCompleted 476 of 654 part(s) with 1 file(s) remainingCompleted 477 of 654 part(s) with 1 file(s) remainingCompleted 478 of 654 part(s) with 1 file(s) remainingCompleted 479 of 654 part(s) with 1 file(s) remainingCompleted 480 of 654 part(s) with 1 file(s) remainingCompleted 481 of 654 part(s) with 1 file(s) remainingCompleted 482 of 654 part(s) with 1 file(s) remainingCompleted 483 of 654 part(s) with 1 file(s) remainingCompleted 484 of 654 part(s) with 1 file(s) remainingCompleted 485 of 654 part(s) with 1 file(s) remainingCompleted 486 of 654 part(s) with 1 file(s) remainingCompleted 487 of 654 part(s) with 1 file(s) remainingCompleted 488 of 654 part(s) with 1 file(s) remainingCompleted 489 of 654 part(s) with 1 file(s) remainingCompleted 490 of 654 part(s) with 1 file(s) remainingCompleted 491 of 654 part(s) with 1 file(s) remainingCompleted 492 of 654 part(s) with 1 file(s) remainingCompleted 493 of 654 part(s) with 1 file(s) remainingCompleted 494 of 654 part(s) with 1 file(s) remainingCompleted 495 of 654 part(s) with 1 file(s) remainingCompleted 496 of 654 part(s) with 1 file(s) remainingCompleted 497 of 654 part(s) with 1 file(s) remainingCompleted 498 of 654 part(s) with 1 file(s) remainingCompleted 499 of 654 part(s) with 1 file(s) remainingCompleted 500 of 654 part(s) with 1 file(s) remainingCompleted 501 of 654 part(s) with 1 file(s) remainingCompleted 502 of 654 part(s) with 1 file(s) remainingCompleted 503 of 654 part(s) with 1 file(s) remainingCompleted 504 of 654 part(s) with 1 file(s) remainingCompleted 505 of 654 part(s) with 1 file(s) remainingCompleted 506 of 654 part(s) with 1 file(s) remainingCompleted 507 of 654 part(s) with 1 file(s) remainingCompleted 508 of 654 part(s) with 1 file(s) remainingCompleted 509 of 654 part(s) with 1 file(s) remainingCompleted 510 of 654 part(s) with 1 file(s) remainingCompleted 511 of 654 part(s) with 1 file(s) remainingCompleted 512 of 654 part(s) with 1 file(s) remainingCompleted 513 of 654 part(s) with 1 file(s) remainingCompleted 514 of 654 part(s) with 1 file(s) remainingCompleted 515 of 654 part(s) with 1 file(s) remainingCompleted 516 of 654 part(s) with 1 file(s) remainingCompleted 517 of 654 part(s) with 1 file(s) remainingCompleted 518 of 654 part(s) with 1 file(s) remainingCompleted 519 of 654 part(s) with 1 file(s) remainingCompleted 520 of 654 part(s) with 1 file(s) remainingCompleted 521 of 654 part(s) with 1 file(s) remainingCompleted 522 of 654 part(s) with 1 file(s) remainingCompleted 523 of 654 part(s) with 1 file(s) remainingCompleted 524 of 654 part(s) with 1 file(s) remainingCompleted 525 of 654 part(s) with 1 file(s) remainingCompleted 526 of 654 part(s) with 1 file(s) remainingCompleted 527 of 654 part(s) with 1 file(s) remainingCompleted 528 of 654 part(s) with 1 file(s) remainingCompleted 529 of 654 part(s) with 1 file(s) remainingCompleted 530 of 654 part(s) with 1 file(s) remainingCompleted 531 of 654 part(s) with 1 file(s) remainingCompleted 532 of 654 part(s) with 1 file(s) remainingCompleted 533 of 654 part(s) with 1 file(s) remainingCompleted 534 of 654 part(s) with 1 file(s) remainingCompleted 535 of 654 part(s) with 1 file(s) remainingCompleted 536 of 654 part(s) with 1 file(s) remainingCompleted 537 of 654 part(s) with 1 file(s) remainingCompleted 538 of 654 part(s) with 1 file(s) remainingCompleted 539 of 654 part(s) with 1 file(s) remainingCompleted 540 of 654 part(s) with 1 file(s) remainingCompleted 541 of 654 part(s) with 1 file(s) remainingCompleted 542 of 654 part(s) with 1 file(s) remainingCompleted 543 of 654 part(s) with 1 file(s) remainingCompleted 544 of 654 part(s) with 1 file(s) remainingCompleted 545 of 654 part(s) with 1 file(s) remainingCompleted 546 of 654 part(s) with 1 file(s) remainingCompleted 547 of 654 part(s) with 1 file(s) remainingCompleted 548 of 654 part(s) with 1 file(s) remainingCompleted 549 of 654 part(s) with 1 file(s) remainingCompleted 550 of 654 part(s) with 1 file(s) remainingCompleted 551 of 654 part(s) with 1 file(s) remainingCompleted 552 of 654 part(s) with 1 file(s) remainingCompleted 553 of 654 part(s) with 1 file(s) remainingCompleted 554 of 654 part(s) with 1 file(s) remainingCompleted 555 of 654 part(s) with 1 file(s) remainingCompleted 556 of 654 part(s) with 1 file(s) remainingCompleted 557 of 654 part(s) with 1 file(s) remainingCompleted 558 of 654 part(s) with 1 file(s) remainingCompleted 559 of 654 part(s) with 1 file(s) remainingCompleted 560 of 654 part(s) with 1 file(s) remainingCompleted 561 of 654 part(s) with 1 file(s) remainingCompleted 562 of 654 part(s) with 1 file(s) remainingCompleted 563 of 654 part(s) with 1 file(s) remainingCompleted 564 of 654 part(s) with 1 file(s) remainingCompleted 565 of 654 part(s) with 1 file(s) remainingCompleted 566 of 654 part(s) with 1 file(s) remainingCompleted 567 of 654 part(s) with 1 file(s) remainingCompleted 568 of 654 part(s) with 1 file(s) remainingCompleted 569 of 654 part(s) with 1 file(s) remainingCompleted 570 of 654 part(s) with 1 file(s) remainingCompleted 571 of 654 part(s) with 1 file(s) remainingCompleted 572 of 654 part(s) with 1 file(s) remainingCompleted 573 of 654 part(s) with 1 file(s) remainingCompleted 574 of 654 part(s) with 1 file(s) remainingCompleted 575 of 654 part(s) with 1 file(s) remainingCompleted 576 of 654 part(s) with 1 file(s) remainingCompleted 577 of 654 part(s) with 1 file(s) remainingCompleted 578 of 654 part(s) with 1 file(s) remainingCompleted 579 of 654 part(s) with 1 file(s) remainingCompleted 580 of 654 part(s) with 1 file(s) remainingCompleted 581 of 654 part(s) with 1 file(s) remainingCompleted 582 of 654 part(s) with 1 file(s) remainingCompleted 583 of 654 part(s) with 1 file(s) remainingCompleted 584 of 654 part(s) with 1 file(s) remainingCompleted 585 of 654 part(s) with 1 file(s) remainingCompleted 586 of 654 part(s) with 1 file(s) remainingCompleted 587 of 654 part(s) with 1 file(s) remainingCompleted 588 of 654 part(s) with 1 file(s) remainingCompleted 589 of 654 part(s) with 1 file(s) remainingCompleted 590 of 654 part(s) with 1 file(s) remainingCompleted 591 of 654 part(s) with 1 file(s) remainingCompleted 592 of 654 part(s) with 1 file(s) remainingCompleted 593 of 654 part(s) with 1 file(s) remainingCompleted 594 of 654 part(s) with 1 file(s) remainingCompleted 595 of 654 part(s) with 1 file(s) remainingCompleted 596 of 654 part(s) with 1 file(s) remainingCompleted 597 of 654 part(s) with 1 file(s) remainingCompleted 598 of 654 part(s) with 1 file(s) remainingCompleted 599 of 654 part(s) with 1 file(s) remainingCompleted 600 of 654 part(s) with 1 file(s) remainingCompleted 601 of 654 part(s) with 1 file(s) remainingCompleted 602 of 654 part(s) with 1 file(s) remainingCompleted 603 of 654 part(s) with 1 file(s) remainingCompleted 604 of 654 part(s) with 1 file(s) remainingCompleted 605 of 654 part(s) with 1 file(s) remainingCompleted 606 of 654 part(s) with 1 file(s) remainingCompleted 607 of 654 part(s) with 1 file(s) remainingCompleted 608 of 654 part(s) with 1 file(s) remainingCompleted 609 of 654 part(s) with 1 file(s) remainingCompleted 610 of 654 part(s) with 1 file(s) remainingCompleted 611 of 654 part(s) with 1 file(s) remainingCompleted 612 of 654 part(s) with 1 file(s) remainingCompleted 613 of 654 part(s) with 1 file(s) remainingCompleted 614 of 654 part(s) with 1 file(s) remainingCompleted 615 of 654 part(s) with 1 file(s) remainingCompleted 616 of 654 part(s) with 1 file(s) remainingCompleted 617 of 654 part(s) with 1 file(s) remainingCompleted 618 of 654 part(s) with 1 file(s) remainingCompleted 619 of 654 part(s) with 1 file(s) remainingCompleted 620 of 654 part(s) with 1 file(s) remainingCompleted 621 of 654 part(s) with 1 file(s) remainingCompleted 622 of 654 part(s) with 1 file(s) remainingCompleted 623 of 654 part(s) with 1 file(s) remainingCompleted 624 of 654 part(s) with 1 file(s) remainingCompleted 625 of 654 part(s) with 1 file(s) remainingCompleted 626 of 654 part(s) with 1 file(s) remainingCompleted 627 of 654 part(s) with 1 file(s) remainingCompleted 628 of 654 part(s) with 1 file(s) remainingCompleted 629 of 654 part(s) with 1 file(s) remainingCompleted 630 of 654 part(s) with 1 file(s) remainingCompleted 631 of 654 part(s) with 1 file(s) remainingCompleted 632 of 654 part(s) with 1 file(s) remainingCompleted 633 of 654 part(s) with 1 file(s) remainingCompleted 634 of 654 part(s) with 1 file(s) remainingCompleted 635 of 654 part(s) with 1 file(s) remainingCompleted 636 of 654 part(s) with 1 file(s) remainingCompleted 637 of 654 part(s) with 1 file(s) remainingCompleted 638 of 654 part(s) with 1 file(s) remainingCompleted 639 of 654 part(s) with 1 file(s) remainingCompleted 640 of 654 part(s) with 1 file(s) remainingCompleted 641 of 654 part(s) with 1 file(s) remainingCompleted 642 of 654 part(s) with 1 file(s) remainingCompleted 643 of 654 part(s) with 1 file(s) remainingCompleted 644 of 654 part(s) with 1 file(s) remainingCompleted 645 of 654 part(s) with 1 file(s) remainingCompleted 646 of 654 part(s) with 1 file(s) remainingCompleted 647 of 654 part(s) with 1 file(s) remainingCompleted 648 of 654 part(s) with 1 file(s) remainingCompleted 649 of 654 part(s) with 1 file(s) remainingCompleted 650 of 654 part(s) with 1 file(s) remainingCompleted 651 of 654 part(s) with 1 file(s) remainingCompleted 652 of 654 part(s) with 1 file(s) remainingCompleted 653 of 654 part(s) with 1 file(s) remainingCompleted 654 of 654 part(s) with 1 file(s) remainingupload: ./SRR8615282_2.fastq.gz to s3://crownproject/ccle/fq/SRR8615282_2.fastq.gz
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ ls
+hgr1.1.bt2  hgr1.3.bt2  hgr1.fa      hgr1.rev.1.bt2  [0m[01;31mSRR8615282_1.fastq.gz[0m
+hgr1.2.bt2  hgr1.4.bt2  hgr1.fa.fai  hgr1.rev.2.bt2  [01;31mSRR8615282_2.fastq.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~/align[00m$ cd ..
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  hct116.rna             [01;34mncbi[0m       screenlog.0  [01;34msratoolkit.2.9.6-1-ubuntu64[0m
+[01;34mbin[0m    [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mresources[0m  [01;34msoftware[0m     [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ tail screenlog.0 =[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kless -NS screenlog.0 
+[?1049h[?1h=      1 Completed 1 of 10 part(s) with 1 file(s) remaining[7m^M[27mCompleted 2 of 10 part(s) w
+      2  -- hgr1 Alignment Pipeline -- 
+      3  version: 190528 build -- CCLE 
+      4  ami:     crown-180813 - ami-0031fd61f932bdef9  
+      5  s3:      s3://crownproject/ccle  
+      6  library: HCT116 -- rna
+      7  date:    Thu May 30 01:53:55 UTC 2019
+      8 
+      9 Initializing ...
+     10 Download fastq files: SRR8615282
+     11   cmd: /home/ubuntu/sratoolkit.2.9.6-1-ubuntu64/bin/fastq-dump --gzip --split-f
+     12 2019-05-30T03:19:06 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     13 2019-05-30T03:46:09 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     14 2019-05-30T04:01:24 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     15 2019-05-30T04:05:53 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     16 2019-05-30T06:20:39 fastq-dump.2.9.6 sys: connection not found while validating
+     17 2019-05-30T06:20:39 fastq-dump.2.9.6 err: connection not found while validating
+     18 2019-05-30T06:20:40 fastq-dump.2.9.6 sys: connection not found while validating
+     19 2019-05-30T06:20:40 fastq-dump.2.9.6 err: connection not found while validating
+     20 2019-05-30T06:20:41 fastq-dump.2.9.6 sys: connection not found while validating
+     21 2019-05-30T06:20:41 fastq-dump.2.9.6 err: connection not found while validating
+     22 2019-05-30T06:20:43 fastq-dump.2.9.6 sys: connection not found while validating
+     23 2019-05-30T06:20:43 fastq-dump.2.9.6 err: connection not found while validating
+     24 2019-05-30T07:15:40 fastq-dump.2.9.6 sys: connection not found while validating
+     25 2019-05-30T07:15:40 fastq-dump.2.9.6 err: connection not found while validating
+     26 2019-05-30T07:15:44 fastq-dump.2.9.6 sys: connection not found while validating
+     27 2019-05-30T07:15:44 fastq-dump.2.9.6 err: connection not found while validating
+     28 2019-05-30T07:15:45 fastq-dump.2.9.6 sys: connection not found while validating
+     29 2019-05-30T07:15:45 fastq-dump.2.9.6 err: connection not found while validating
+     30 2019-05-30T07:15:56 fastq-dump.2.9.6 sys: connection not found while validating
+     31 2019-05-30T07:15:56 fastq-dump.2.9.6 err: connection not found while validating
+     32 Read 83894908 spots for SRR8615282
+     33 Written 83894908 spots for SRR8615282
+     34 ls: cannot access '*_0.fastq.gz': No such file or directory
+     35   fastq_1: SRR8615282_1.fastq.gz
+     36   fastq_2: SRR8615282_2.fastq.gz
+     37 Single-end Reads Detected.
+     38 
+     39 ERROR
+[7mscreenlog.0 (END)[27m[K[K[7m(END)[27m[K[K...skipping...
+      1 Completed 1 of 10 part(s) with 1 file(s) remaining[7m^M[27mCompleted 2 of 10 part(s) w
+      2  -- hgr1 Alignment Pipeline -- 
+      3  version: 190528 build -- CCLE 
+      4  ami:     crown-180813 - ami-0031fd61f932bdef9  
+      5  s3:      s3://crownproject/ccle  
+      6  library: HCT116 -- rna
+      7  date:    Thu May 30 01:53:55 UTC 2019
+      8 
+      9 Initializing ...
+     10 Download fastq files: SRR8615282
+     11   cmd: /home/ubuntu/sratoolkit.2.9.6-1-ubuntu64/bin/fastq-dump --gzip --split-f
+     12 2019-05-30T03:19:06 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     13 2019-05-30T03:46:09 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     14 2019-05-30T04:01:24 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     15 2019-05-30T04:05:53 fastq-dump.2.9.6 sys: timeout exhausted while reading file 
+     16 2019-05-30T06:20:39 fastq-dump.2.9.6 sys: connection not found while validating
+     17 2019-05-30T06:20:39 fastq-dump.2.9.6 err: connection not found while validating
+     18 2019-05-30T06:20:40 fastq-dump.2.9.6 sys: connection not found while validating
+     19 2019-05-30T06:20:40 fastq-dump.2.9.6 err: connection not found while validating
+     20 2019-05-30T06:20:41 fastq-dump.2.9.6 sys: connection not found while validating
+     21 2019-05-30T06:20:41 fastq-dump.2.9.6 err: connection not found while validating
+     22 2019-05-30T06:20:43 fastq-dump.2.9.6 sys: connection not found while validating
+     23 2019-05-30T06:20:43 fastq-dump.2.9.6 err: connection not found while validating
+     24 2019-05-30T07:15:40 fastq-dump.2.9.6 sys: connection not found while validating
+     25 2019-05-30T07:15:40 fastq-dump.2.9.6 err: connection not found while validating
+     26 2019-05-30T07:15:44 fastq-dump.2.9.6 sys: connection not found while validating
+     27 2019-05-30T07:15:44 fastq-dump.2.9.6 err: connection not found while validating
+     28 2019-05-30T07:15:45 fastq-dump.2.9.6 sys: connection not found while validating
+     29 2019-05-30T07:15:45 fastq-dump.2.9.6 err: connection not found while validating
+     30 2019-05-30T07:15:56 fastq-dump.2.9.6 sys: connection not found while validating
+     31 2019-05-30T07:15:56 fastq-dump.2.9.6 err: connection not found while validating
+     32 Read 83894908 spots for SRR8615282
+     33 Written 83894908 spots for SRR8615282
+     34 ls: cannot access '*_0.fastq.gz': No such file or directory
+     35   fastq_1: SRR8615282_1.fastq.gz
+     36   fastq_2: SRR8615282_2.fastq.gz
+     37 Single-end Reads Detected.
+     38 
+     39 ERROR
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ less -NS screenlog.0 [Kaws s3 c[p [K[K[Kp screenlog.0 s3://crownproject/ccle/tmp/scren[K[K[Kreen.fail1 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. 1
+upload: ./screenlog.0 to s3://crownproject/ccle/tmp/screen.fail.1
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ^C
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [K[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  [01;34mbin[0m  hct116.rna  [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mncbi[0m  [01;34mresources[0m  screenlog.0  [01;34msoftware[0m  [01;34msratoolkit.2.9.6-1-ubuntu64[0m  [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ cd[K[Krm screenlog.0 
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ bash sc[K[K[K[K[K[K[Kscreen -[K[K[K[K[K[K[K[Kvim hgr1_align_v3.ccle.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;48r[?12;25h[?12l[?25h[27m[24m[0m[H[2J[?25l[48;1H"hgr1_align_v3.ccle.sh" 185L, 5305C[1;1H[34m#!/bin/bash
+# hgr1_align_v3.ccle.sh
+# rDNA alignment pipeline - SRA version[0m
+[36mPIPE_VERSION[0m=[38;5;130m'[0m[31m190528 build -- CCLE[0m[38;5;130m'[0m
+[36mAMI_VERSION[0m=[38;5;130m'[0m[31mcrown-180813 - ami-0031fd61f932bdef9[0m[38;5;130m'[0m
+[34m# EC2: c4.2xlarge (8cpu / 15 gb)
+# EC2: c4.xlarge  (4cpu / 8  gb)
+# Storage: 200 Gb
+#
+
+# Input Requirements --------------------------
+
+## get SRA toolkit
+# wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.9.6-1/sratoolkit.2.9.6-1-ubuntu64.tar.gz
+# aws s3 cp sratoolkit.2.9.6-1-ubuntu64.tar.gz s3://crownproject/ccle/scripts/sratoolkit.tar.gz[0m
+aws s[31m3[0m cp s[31m3[0m://crownproject/ccle/scripts/sratoolkit.tar.gz ./
+gzip [35m-dc[0m sratoolkit.tar.gz | tar [35m-xf[0m -
+[36mSRABIN[0m=[38;5;130m"[0m[35m$HOME[0m[31m/sratoolkit.2.9.6-1-ubuntu64/bin[0m[38;5;130m"[0m [34m# binary path
+
+# $1 : Library name + Output name(unique)
+# $2 : Seq-read type (wgs|rna)
+# $3 : BioSample ID
+# $4 : Library SRA Accession
+
+# Control Panel -------------------------------
+# Amazon AWS S3 Home URL[0m
+  [36mS3URL[0m=[38;5;130m'[0m[31ms3://crownproject/ccle[0m[38;5;130m'[0m
+
+[34m# CPU[0m[30;9H[36mTHREADS[0m=[38;5;130m'[0m[31m3[0m[38;5;130m'[0m
+
+[34m# Terminate instances upon completion (for debuggin)[0m
+  [36mTERMINATE[0m=[38;5;130m'[0m[31mTRUE[0m[38;5;130m'[0m
+
+[34m# Read Group Data[0m
+  [36mLIBRARY[0m=[35m$1[0m    [34m# Library Name / File prefix[0m
+  [36mTYPE[0m=[35m$2[0m[7C[34m# wgs OR rna data-type[0m[38;9H[36mRGPO[0m=[38;5;130m'[0m[31mccle[0m[38;5;130m'[0m   [34m# Patient Population - CCLE[0m[39;9H[36mRGSM[0m=[35m$3[0m[7C[34m# Sample / Patient Identifer[0m[40;9H[36mRGID[0m=[35m$4[0m[7C[34m# Read Group ID. SRA Accession Number[0m
+  [36mRGLB[0m=[35m$LIBRARY[0m [34m# Library Name. Accession Number[0m
+  [36mRGPL[0m=[38;5;130m'[0m[31mILLUMINA[0m[38;5;130m'[0m [34m# Seq Platform[0m
+  [36mRGPU[0m=[35m$5[0m[7C[34m# Read Group. Platform Unit (SRA Experiment)[0m[46;3H[36mSRA[0m=[35m$4[0m
+  [36mOUTPUT[0m=[38;5;130m"[0m[35m$LIBRARY[0m[31m.[0m[35m$TYPE[0m[38;5;130m"[0m [34m# Output filename[0m[48;159H1,1[11CTop[1;1H[?12l[?25h[?25l[48;159H2[2;1H[?12l[?25h[?25l[48;159H3[3;1H[?12l[?25h[?25l[48;159H4[4;1H[?12l[?25h[?25l[48;159H5[5;1H[?12l[?25h[?25l[48;159H6[6;1H[?12l[?25h[?25l[48;159H7[7;1H[?12l[?25h[?25l[48;159H8[8;1H[?12l[?25h[?25l[48;159H9[9;1H[?12l[?25h[?25l[48;159H10,0-1[10;1H[?12l[?25h[?25l[48;160H1,1  [11;1H[?12l[?25h[?25l[48;160H2,0-1[12;1H[?12l[?25h[?25l[48;160H3,1  [13;1H[?12l[?25h[?25l[48;160H4[14;1H[?12l[?25h[?25l[48;160H5[15;1H[?12l[?25h[?25l[48;160H6[16;1H[?12l[?25h[?25l[48;160H7[17;1H[?12l[?25h[?25l[48;160H8[18;1H[?12l[?25h[?25l[48;160H9,0-1[19;1H[?12l[?25h[?25l[48;160H8,1  [18;1H[?12l[?25h[?25l[48;160H7[17;1H[?12l[?25h[?25l[48;160H6[16;1H[?12l[?25h[?25l[48;160H7[17;1H[?12l[?25h[?25l[48;160H6[16;1H[?12l[?25h[?25l[16;47r[47;1H
+[1;48r[48;1H[K[48;159H16,1[10CTop[16;1H[?12l[?25h[?25l[16;47r[47;1H
+[1;48r[47;3H[34m# Fastq files from fastq-dump[0m[48;159H[K[48;159H16,1[10CTop[16;1H[?12l[?25h[?25l[16;47r[47;1H
+[1;48r[47;3H[34m# FQ1=<SRR>_1.fastq.gz[0m[48;159H[K[48;159H16,0-1[8CTop[16;1H[?12l[?25h[?25l[48;160H7,1  [17;1H[?12l[?25h[?25l[48;160H8[18;1H[?12l[?25h[?25l[48;160H9[19;1H[?12l[?25h[?25l[48;159H20[20;1H[?12l[?25h[?25l[48;160H1,0-1[21;1H[?12l[?25h[?25l[48;160H2,1  [22;1H[?12l[?25h[?25l[48;160H3[23;1H[?12l[?25h[?25l[48;160H4[24;1H[?12l[?25h[?25l[48;160H5,0-1[25;1H[?12l[?25h[?25l[48;160H6,1  [26;1H[?12l[?25h[?25l[48;160H7,1-8[27;8H[?12l[?25h[?25l[48;160H8,0-1[28;1H[?12l[?25h[?25l[48;160H9,1  [29;1H[?12l[?25h[?25l[48;159H30[30;1H[?12l[?25h[?25l[48;159H29[29;1H[?12l[?25h[?25l[48;159H30[30;1H[?12l[?25h[?25l[48;160H1[31;1H[?12l[?25h[?25l[48;160H2[32;1H[?12l[?25h[?25l[48;160H3[33;1H[?12l[?25h[?25l[48;160H4[34;1H[?12l[?25h[?25l[48;160H5,1-8[35;8H[?12l[?25h[?25l[48;160H6[36;8H[?12l[?25h[?25l[48;160H7[37;8H[?12l[?25h[?25l[48;160H8,1  [38;1H[?12l[?25h[?25l[48;160H9[39;1H[?12l[?25h[?25l[48;159H40[40;1H[?12l[?25h[?25l[48;160H1,0-1[41;1H[?12l[?25h[?25l[48;160H2[42;1H[?12l[?25h[?25l[48;160H3,1  [43;1H[?12l[?25h[?25l[48;160H4[44;1H[?12l[?25h[?25l[48;160H5,0-1[45;1H[?12l[?25h[?25l[48;160H6,1  [46;1H[?12l[?25h[?25l[48;160H7[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;3H[34m# FQ2=<SRR>_2.fastq.gz[0m[48;159H[K[48;159H48,1[11C0%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H49,0-1[9C1%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m -- hgr1 Alignment Pipeline -- [0m[38;5;130m"[0m[48;159H[K[48;159H50,1[11C2%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m version: [0m[35m$PIPE_VERSION[0m[31m [0m[38;5;130m"[0m[48;159H[K[48;159H51,1[11C2%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m ami:     [0m[35m$AMI_VERSION[0m[31m  [0m[38;5;130m"[0m[48;159H[K[48;159H52,1[11C3%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m s3:      [0m[35m$S3URL[0m[31m  [0m[38;5;130m"[0m[48;159H[K[48;159H53,1[11C4%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m library: [0m[35m$LIBRARY[0m[31m -- [0m[35m$TYPE[0m[38;5;130m"[0m[48;159H[K[48;159H54,1[11C5%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m date:    [0m[35m$(date)[0m[38;5;130m"[0m[48;159H[K[48;159H55,1[11C5%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[48;159H[K[48;159H56,1[11C6%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H57,0-1[9C7%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m# Initialize wordir ---------------------------[0m[48;159H[K[48;159H58,1[11C8%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m'[0m[31mInitializing ...[0m[38;5;130m'[0m[48;159H[K[48;159H59,1[11C8%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H60,0-1[9C9%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m# Make working directory[0m[48;159H[K[48;159H61,1[10C10%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;3H[38;5;130mmkdir[0m [35m-p[0m align; [38;5;130mcd[0m align[48;159H[K[48;159H62,1[10C11%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H63,0-1[8C11%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m# Copy hgrX genome and create bowtie2 index[0m[48;159H[K[48;159H64,1[10C12%[47;1H[?12l[?25h[?25l[48;160H3,0-1[46;1H[?12l[?25h[?25l[48;160H2,1  [45;1H[?12l[?25h[?25l[48;160H1[44;1H[?12l[?25h[?25l[48;160H0,0-1[43;1H[?12l[?25h[?25l[48;159H59,1  [42;1H[?12l[?25h[?25l[48;160H8[41;1H[?12l[?25h[?25l[48;160H7,0-1[40;1H[?12l[?25h[?25l[48;160H6,1  [39;1H[?12l[?25h[?25l[48;160H5[38;1H[?12l[?25h[?25l[48;160H4[37;1H[?12l[?25h[?25l[48;160H3[36;1H[?12l[?25h[?25l[48;160H2[35;1H[?12l[?25h[?25l[48;160H1[34;1H[?12l[?25h[?25l[48;160H0[33;1H[?12l[?25h[?25l[48;159H49,0-1[32;1H[?12l[?25h[?25l[48;160H8,1  [31;1H[?12l[?25h[?25l[48;160H7[30;1H[?12l[?25h[?25l[48;160H6[29;1H[?12l[?25h[?25l[48;160H5,0-1[28;1H[?12l[?25h[?25l[48;160H4,1  [27;1H[?12l[?25h[?25l[48;160H5,0-1[28;1H[?12l[?25h[?25l[48;160H6,1  [29;1H[?12l[?25h[?25l[48;160H7[30;1H[?12l[?25h[?25l[48;160H8[31;1H[?12l[?25h[?25l[48;160H9,0-1[32;1H[?12l[?25h[?25l[48;159H50,1  [33;1H[?12l[?25h[?25l[48;160H1[34;1H[?12l[?25h[?25l[48;160H2[35;1H[?12l[?25h[?25l[48;160H3[36;1H[?12l[?25h[?25l[48;160H4[37;1H[?12l[?25h[?25l[48;160H5[38;1H[?12l[?25h[?25l[48;160H6[39;1H[?12l[?25h[?25l[48;160H7,0-1[40;1H[?12l[?25h[?25l[48;160H8,1  [41;1H[?12l[?25h[?25l[48;160H9[42;1H[?12l[?25h[?25l[48;159H60,0-1[43;1H[?12l[?25h[?25l[48;160H1,1  [44;1H[?12l[?25h[?25l[48;160H2[45;1H[?12l[?25h[?25l[48;160H3,0-1[46;1H[?12l[?25h[?25l[48;160H4,1  [47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;3Hcp ~/resources/hgr[31m1[0m/* ./[48;159H[K[48;159H65,1[10C13%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H66,0-1[8C14%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m# Load updated GDC token to instance[0m[48;159H[K[48;159H67,1[10C14%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m#aws s3 cp $S3URL/scripts/gdc.token gdc.token[0m[48;159H[K[48;159H68,1[10C15%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m#chmod 600 gdc.token[0m[48;159H[K[48;159H69,1[10C16%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H70,0-1[8C17%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mDownload fastq files: [0m[35m$SRA[0m[38;5;130m"[0m[48;159H[K[48;159H71,1[10C17%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  cmd: [0m[35m$SRABIN[0m[31m/fastq-dump --gzip --split-files [0m[35m$SRA[0m[38;5;130m"[0m[48;159H[K[48;159H72,1[10C18%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H73,0-1[8C19%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[35m$SRABIN[0m/fastq-dump [35m--gzip[0m [35m--split-files[0m [35m$SRA[0m[48;159H[K[48;159H74,1[10C20%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H75,0-1[8C20%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[36mFQ1[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m1[0m[35m.fastq.gz)[0m[48;159H[K[48;159H76,1[10C21%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[36mFQ2[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m2[0m[35m.fastq.gz)[0m[48;159H[K[48;159H77,1[10C22%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[36mFQ0[0m=[35m$([0m[38;5;130mls[0m[35m *_[0m[31m0[0m[35m.fastq.gz)[0m[48;159H[K[48;159H78,1[10C22%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H79,0-1[8C23%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  fastq_1: [0m[35m$FQ1[0m[38;5;130m"[0m[31m  [0m[48;159H[K[48;159H80,1[10C24%[47;1H[?12l[?25h[?25l[48;159H79,0-1[46;1H[?12l[?25h[?25l[48;160H8,1  [45;1H[?12l[?25h[?25l[48;160H7[44;1H[?12l[?25h[?25l[48;160H6[43;1H[?12l[?25h[?25l[48;160H5,0-1[42;1H[?12l[?25h[?25l[48;160H4,1  [41;1H[?12l[?25h[?25l[48;160H3,0-1[40;1H[?12l[?25h[?25l[48;160H2,1  [39;1H[?12l[?25h[?25l[48;160H1[38;1H[?12l[?25h[?25l[48;160H0,0-1[37;1H[?12l[?25h[?25l[48;159H69,1  [36;1H[?12l[?25h[?25l[48;159H70,0-1[37;1H[?12l[?25h[?25l[48;159H69,1  [36;1H[?12l[?25h[?25l[48;160H8[35;1H[?12l[?25h[?25l[48;160H7[34;1H[?12l[?25h[?25l[48;160H6,0-1[33;1H[?12l[?25h[?25l[48;160H7,1  [34;1H[?12l[?25h[?25l[48;160H8[35;1H[?12l[?25h[?25l[48;160H9[36;1H[?12l[?25h[?25l[48;159H70,0-1[37;1H[?12l[?25h[?25l[48;160H1,1  [38;1H[?12l[?25h[?25l[48;160H2[39;1H[?12l[?25h[?25l[48;160H3,0-1[40;1H[?12l[?25h[?25l[48;160H4,1  [41;1H[?12l[?25h[?25l[48;160H5,0-1[42;1H[?12l[?25h[?25l[48;160H6,1  [43;1H[?12l[?25h[?25l[48;160H7[44;1H[?12l[?25h[?25l[48;160H8[45;1H[?12l[?25h[?25l[48;160H9,0-1[46;1H[?12l[?25h[?25l[48;159H80,1  [47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31m  fastq_2: [0m[35m$FQ2[0m[38;5;130m"[0m[48;159H[K[48;159H81,1[10C25%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H82,0-1[8C25%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m# SINGLE END READS ====================================================[0m[48;159H[K[48;159H83,1[10C26%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H84,0-1[8C27%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mif [[0m [38;5;130m-s[0m [35m$FQ0[0m [38;5;130m][0m[48;159H[K[48;159H85,1[10C28%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mthen[0m[48;159H[K[48;159H86,1[10C28%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mSingle-end Reads Detected.[0m[38;5;130m"[0m[48;159H[K[48;159H87,1[10C29%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[48;159H[K[48;159H88,1[10C30%[47;1H[?12l[?25h[?25l[48;160H7[46;1H[?12l[?25h[?25l[48;160H6[45;1H[?12l[?25h[?25l[48;160H5[44;1H[?12l[?25h[?25l[48;160H4,0-1[43;1H[?12l[?25h[?25l[48;160H3,1  [42;1H[?12l[?25h[?25l[48;160H2,0-1[41;1H[?12l[?25h[?25l[48;160H1,1  [40;1H[?12l[?25h[?25l[48;160H0[39;1H[?12l[?25h[?25l[48;159H79,0-1[38;1H[?12l[?25h[?25l[48;160H8,1  [37;1H[?12l[?25h[?25l[48;160H7[36;1H[?12l[?25h[?25l[48;160H6[35;1H[?12l[?25h[?25l[48;160H5,0-1[34;1H[?12l[?25h[?25l[48;160H4,1  [33;1H[?12l[?25h[?25l[33;47r[47;1H
+[1;48r[47;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mERROR[0m[38;5;130m"[0m[48;159H[K[48;159H74,0-1[8C30%[33;1H[?12l[?25h[?25l[48;160H3[32;1H[?12l[?25h[?25l[32;47r[47;1H
+[1;48r[47;5H[38;5;130mexit[0m [31m666[0m[48;159H[K[48;159H73,0-1[8C30%[32;1H[?12l[?25h[?25l[48;160H4,1  [33;1H[?12l[?25h[?25l[48;160H5[34;1H[?12l[?25h[?25l[48;160H6[35;1H[?12l[?25h[?25l[35;47r[47;1H
+[1;48r[47;1H[38;5;130mfi[0m[48;159H[K[48;159H76,0-1[8C31%[35;1H[?12l[?25h[?25l[48;160H7,1  [36;1H[?12l[?25h[?25l[48;160H8[37;1H[?12l[?25h[?25l[48;160H9,0-1[38;1H[?12l[?25h[?25l[48;159H80,1  [39;1H[?12l[?25h[?25l[48;160H1,0-1[40;1H[?12l[?25h[?25l[48;160H2,1  [41;1H[?12l[?25h[?25l[48;160H3[42;1H[?12l[?25h[?25l[48;160H4[43;1H[?12l[?25h[?25l[48;160H5[44;1H[?12l[?25h[?25l[48;160H6[45;1H[?12l[?25h[?25l[48;160H7[46;1H[?12l[?25h[?25l[48;160H8[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H89,0-1[8C31%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[34m# PAIRED END READS ====================================================[0m[48;159H[K[48;159H90,1[10C32%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H91,0-1[8C33%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mif [[0m [38;5;130m-s[0m [35m$FQ1[0m [38;5;130m][0m[48;159H[K[48;159H92,1[10C34%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;1H[38;5;130mthen[0m[48;159H[K[48;159H93,1[10C34%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mPaired-end Reads Detected.[0m[38;5;130m"[0m[48;159H[K[48;159H94,1[10C35%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[38;5;130mecho[0m[31m [0m[38;5;130m''[0m[48;159H[K[48;159H95,1[10C36%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mStarting hgr1 alignment[0m[38;5;130m"[0m[48;159H[K[48;159H96,1[10C37%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[34m# Paired-End Extracted Reads Alignment[0m[48;159H[K[48;159H97,1[10C37%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[48;159H[K[48;159H98,0-1[8C38%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5H[34m# Bowtie2: align to genome[0m[48;159H[K[48;159H99,1[10C39%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;5Hbowtie[31m2[0m [35m--very-sensitive-local[0m [38;5;130m-p[0m [35m$THREADS[0m \[48;159H[K[48;159H100,1[9C40%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;7H[35m--rg-id[0m [35m$RGID[0m [35m--rg[0m LB:[35m$RGLB[0m [35m--rg[0m SM:[35m$RGSM[0m \[48;159H[K[48;159H101,1[9C40%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;7H[35m--rg[0m PL:[35m$RGPL[0m [35m--rg[0m PU:[35m$RGPU[0m \[48;159H[K[48;159H102,1[9C41%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;7H[38;5;130m-x[0m hgr[31m1[0m [31m-1[0m [35m$FQ1[0m [31m-2[0m [35m$FQ2[0m [38;5;130m|[0m \[48;159H[K[48;159H103,1[9C42%[47;1H[?12l[?25h[?25l[1;47r[47;1H
+[1;48r[47;7H~/bin/samtools view [35m-bS[0m - [38;5;130m>[0m aligned_unsorted.bam[48;159H[K[48;159H104,1[9C43%[47;1H[?12l[?25h[?25l[48;161H3[46;1H[?12l[?25h[?25l[48;161H2[45;1H[?12l[?25h[?25l[48;161H1[44;1H[?12l[?25h[?25l[48;161H0[43;1H[?12l[?25h[?25l[48;159H99,1 [42;1H[?12l[?25h[?25l[48;160H8,0-1[41;1H[?12l[?25h[?25l[48;160H7,1  [40;1H[?12l[?25h[?25l[48;160H6[39;1H[?12l[?25h[?25l[48;160H5[38;1H[?12l[?25h[?25l[48;160H4[37;1H[?12l[?25h[?25l[48;160H3[36;1H[?12l[?25h[?25l[48;160H2[35;1H[?12l[?25h[?25l[48;160H1,0-1[34;1H[?12l[?25h[?25l[48;160H0,1  [33;1H[?12l[?25h[?25l[48;159H89,0-1[32;1H[?12l[?25h[?25l[48;160H8,1  [31;1H[?12l[?25h[?25l[48;160H7[30;1H[?12l[?25h[?25l[48;160H6[29;1H[?12l[?25h[?25l[48;160H5[28;1H[?12l[?25h[?25l[48;160H4[27;1H[?12l[?25h[?25l[48;160H3[26;1H[?12l[?25h[?25l[48;160H2[25;1H[?12l[?25h[?25l[48;1H6 fewer lines[48;159H[K[25;47r[25;1H[6M[1;48r[25;1H[97m[101mfi[0m[43;5H[38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mAlignment complete.[0m[38;5;130m"
+[0m    [38;5;130mecho[0m[31m [0m[38;5;130m"[0m[31mCalculate flagstats.[0m[38;5;130m"[0m[46;5H[34m# Calcualte library flagstats[0m[47;7H~/bin/samtools flagstat aligned_unsorted.bam [38;5;130m>[0m aligned_unsorted.flagstat[48;1H[K[48;159H82,1[10C45%6 fewer lines[48;159H[K[48;159H82,1[10C45%[25;1H[?12l[?25h[?25l[?12l[?25h[?25l[25;47r[47;1H
+[1;48r[48;1H[K[48;159H82,0-1[8C45%[25;1H[?12l[?25h[?25l[48;160H1[24;1H[?12l[?25h[?25l[48;160H0,1  [23;1H[?12l[?25h[?25l[48;160H1,0-1[24;1H[?12l[?25h[?25l[48;1H[1m-- INSERT --[0m[48;159H[K[48;159H81,1[10C45%[24;1H[?12l[?25h[?25l[34m#[0m[48;162H2[24;2H[?12l[?25h[?25l[34m [0m[48;162H3[24;3H[?12l[?25h[?25l[34mN[0m[48;162H4[24;4H[?12l[?25h[?25l[34mA[0m[48;162H5[24;5H[?12l[?25h[48;1H[K[24;4H[?25l[48;159H81,4[10C45%[24;4H[?12l[?25h[?25l[48;159H[K[48;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"hgr1_align_v3.ccle.sh" 172L, 4975C written
+[?1l>[?12l[?25h[?1049l[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ [H[2J[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ ls
+[0m[01;34malign[0m  [01;34mbin[0m  hct116.rna  [01;32mhgr1_align_v3.ccle.sh[0m  [01;34mncbi[0m  [01;34mresources[0m  [01;34msoftware[0m  [01;34msratoolkit.2.9.6-1-ubuntu64[0m  [01;31msratoolkit.tar.gz[0m
+[01;32mubuntu@ip-172-31-23-92[00m:[01;34m~[00m$ screen -L
+[!p[?3;4l[4l>[?1049h[4l[?1h=[0m(B[1;48r[H[2J[H[2Jubuntu@ip-172-31-23-92:~$ bash hgr1_align_v3.ccle.sh HCT116[?5h                                                                                                                                                                                                                                                                                                                                                                                                                                          [?5lrna[?5h                                                                                                                                                                                                                                                                                                                                                                                                                                          [?5lSAMN10988251[?5h                                                                                                                                                                                                                                                                                                                                                                                                                                          [?5lSRR8615282[?5h                                                                                                                                                                                                                                                                                                                                                                                                                                          [?5lSRX54144716 rnaSAMN10988251SRR8615282SRX5414471rna SAMN10988251SRR8615282SRX5414471SAMN10988251 SRR8615282SRX5414471SRR86152822 SRX5414471
+ -- hgr1 Alignment Pipeline -- 
+ version: 190528 build -- CCLE 
+ ami:     crown-180813 - ami-0031fd61f932bdef9  
+ s3:      s3://crownproject/ccle  
+ library: HCT116 -- rna
+ date:    Thu May 30 16:18:25 UTC 2019
+
+Initializing ...
+Download fastq files: SRR8615282
+  cmd: /fastq-dump --gzip --split-files SRR8615282
+  fastq_1: SRR8615282_1.fastq.gz
+  fastq_2: SRR8615282_2.fastq.gz
+Paired-end Reads Detected.
+
+Starting hgr1 alignment
+packet_write_wait: Connection to 54.245.171.125 port 22: Broken pipe
+[1m[7m%[27m[1m[0m                                                                                                                                                                                ]1;~/Desktop]2;artem@glitch[~/Desktop][0m[27m[24m[Jartem@glitch[Desktop] [K[144C[1m[11:47AM][0m[153D[?1h=[?2004h[1m[7m%[27m[1m[0m                                                                                                                                                          ]1;~/Desktop]2;artem@glitch[~/Desktop][0m[27m[24m[Jartem@glitch[Desktop] [K[122C[1m[10:58AM][0m[131D[?1h=[?2004hsssh -i "~/.ssh/CrownKey.pem" ec2-user@ec2-54-188-166-62.us-west-2.compute.amazonaws.com      [?1l>[?2004l
+X11 forwarding request failed on channel 0
+Last login: Fri May 31 17:53:45 2019 from dhcp-206-87-209-247.ubcsecure.wireless.ubc.ca
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+36 package(s) needed for security, out of 347 available
+Run "sudo yum update" to apply all updates.
+kec2-user@ip-172-31-38-171:~\[?1034h[ec2-user@ip-172-31-38-171 ~]$ less[K[K[K[Kcat screenlog.0 
+kec2-user@ip-172-31-38-171:~\[?1034h[ec2-user@ip-172-31-38-171 ~]$ cd align/
+kec2-user@ip-172-31-38-171:~/align\[ec2-user@ip-172-31-38-171 align]$ SRABIN="$HOME/sratoolkit.2.9.6-1-ubuntu64/bin"
+kec2-user@ip-172-31-38-171:~/align\[ec2-user@ip-172-31-38-171 align]$ echo Jurkat; date; $SRABIN/prefetch -X 100G -O ./ SRR8615712; date;\
+>         echo K562; $SRABIN/prefetch -X 100G -O ./ SRR8615717; date
+Jurkat
+Fri May 31 15:43:02 UTC 2019
+
+2019-05-31T15:43:03 prefetch.2.9.3: 1) Downloading 'SRR8615712'...
+2019-05-31T15:43:03 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:47:51 prefetch.2.9.3: 1) 'SRR8615712' was downloaded successfully
+2019-05-31T15:48:17 prefetch.2.9.3: 'SRR8615712' has 77 unresolved dependencies
+2019-05-31T15:48:18 prefetch.2.9.3: 2) Downloading 'ncbi-acc:CM000663.1?vdb-ctx=refseq'...
+2019-05-31T15:48:18 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:21 prefetch.2.9.3: 2) 'ncbi-acc:CM000663.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:21 prefetch.2.9.3: 3) Downloading 'ncbi-acc:CM000664.1?vdb-ctx=refseq'...
+2019-05-31T15:48:21 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:25 prefetch.2.9.3: 3) 'ncbi-acc:CM000664.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:25 prefetch.2.9.3: 4) Downloading 'ncbi-acc:CM000665.1?vdb-ctx=refseq'...
+2019-05-31T15:48:25 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:28 prefetch.2.9.3: 4) 'ncbi-acc:CM000665.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:29 prefetch.2.9.3: 5) Downloading 'ncbi-acc:CM000666.1?vdb-ctx=refseq'...
+2019-05-31T15:48:29 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:32 prefetch.2.9.3: 5) 'ncbi-acc:CM000666.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:32 prefetch.2.9.3: 6) Downloading 'ncbi-acc:CM000667.1?vdb-ctx=refseq'...
+2019-05-31T15:48:32 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:35 prefetch.2.9.3: 6) 'ncbi-acc:CM000667.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:36 prefetch.2.9.3: 7) Downloading 'ncbi-acc:CM000668.1?vdb-ctx=refseq'...
+2019-05-31T15:48:36 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:38 prefetch.2.9.3: 7) 'ncbi-acc:CM000668.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:39 prefetch.2.9.3: 8) Downloading 'ncbi-acc:CM000669.1?vdb-ctx=refseq'...
+2019-05-31T15:48:39 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:42 prefetch.2.9.3: 8) 'ncbi-acc:CM000669.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:42 prefetch.2.9.3: 9) Downloading 'ncbi-acc:CM000670.1?vdb-ctx=refseq'...
+2019-05-31T15:48:42 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:44 prefetch.2.9.3: 9) 'ncbi-acc:CM000670.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:45 prefetch.2.9.3: 10) Downloading 'ncbi-acc:CM000671.1?vdb-ctx=refseq'...
+2019-05-31T15:48:45 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:47 prefetch.2.9.3: 10) 'ncbi-acc:CM000671.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:48 prefetch.2.9.3: 11) Downloading 'ncbi-acc:CM000672.1?vdb-ctx=refseq'...
+2019-05-31T15:48:48 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:50 prefetch.2.9.3: 11) 'ncbi-acc:CM000672.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:51 prefetch.2.9.3: 12) Downloading 'ncbi-acc:CM000673.1?vdb-ctx=refseq'...
+2019-05-31T15:48:51 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:53 prefetch.2.9.3: 12) 'ncbi-acc:CM000673.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:54 prefetch.2.9.3: 13) Downloading 'ncbi-acc:CM000674.1?vdb-ctx=refseq'...
+2019-05-31T15:48:54 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:56 prefetch.2.9.3: 13) 'ncbi-acc:CM000674.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:48:57 prefetch.2.9.3: 14) Downloading 'ncbi-acc:CM000675.1?vdb-ctx=refseq'...
+2019-05-31T15:48:57 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:48:59 prefetch.2.9.3: 14) 'ncbi-acc:CM000675.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:00 prefetch.2.9.3: 15) Downloading 'ncbi-acc:CM000676.1?vdb-ctx=refseq'...
+2019-05-31T15:49:00 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:01 prefetch.2.9.3: 15) 'ncbi-acc:CM000676.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:02 prefetch.2.9.3: 16) Downloading 'ncbi-acc:CM000677.1?vdb-ctx=refseq'...
+2019-05-31T15:49:02 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:04 prefetch.2.9.3: 16) 'ncbi-acc:CM000677.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:04 prefetch.2.9.3: 17) Downloading 'ncbi-acc:CM000678.1?vdb-ctx=refseq'...
+2019-05-31T15:49:04 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:06 prefetch.2.9.3: 17) 'ncbi-acc:CM000678.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:07 prefetch.2.9.3: 18) Downloading 'ncbi-acc:CM000679.1?vdb-ctx=refseq'...
+2019-05-31T15:49:07 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:08 prefetch.2.9.3: 18) 'ncbi-acc:CM000679.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:09 prefetch.2.9.3: 19) Downloading 'ncbi-acc:CM000680.1?vdb-ctx=refseq'...
+2019-05-31T15:49:09 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:10 prefetch.2.9.3: 19) 'ncbi-acc:CM000680.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:11 prefetch.2.9.3: 20) Downloading 'ncbi-acc:CM000681.1?vdb-ctx=refseq'...
+2019-05-31T15:49:11 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:12 prefetch.2.9.3: 20) 'ncbi-acc:CM000681.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:13 prefetch.2.9.3: 21) Downloading 'ncbi-acc:CM000682.1?vdb-ctx=refseq'...
+2019-05-31T15:49:13 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:15 prefetch.2.9.3: 21) 'ncbi-acc:CM000682.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:15 prefetch.2.9.3: 22) Downloading 'ncbi-acc:CM000683.1?vdb-ctx=refseq'...
+2019-05-31T15:49:15 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:16 prefetch.2.9.3: 22) 'ncbi-acc:CM000683.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:17 prefetch.2.9.3: 23) Downloading 'ncbi-acc:CM000684.1?vdb-ctx=refseq'...
+2019-05-31T15:49:17 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:18 prefetch.2.9.3: 23) 'ncbi-acc:CM000684.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:18 prefetch.2.9.3: 24) Downloading 'ncbi-acc:CM000685.1?vdb-ctx=refseq'...
+2019-05-31T15:49:18 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:21 prefetch.2.9.3: 24) 'ncbi-acc:CM000685.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:21 prefetch.2.9.3: 25) Downloading 'ncbi-acc:CM000686.1?vdb-ctx=refseq'...
+2019-05-31T15:49:21 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:22 prefetch.2.9.3: 25) 'ncbi-acc:CM000686.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:23 prefetch.2.9.3: 26) Downloading 'ncbi-acc:GL000191.1?vdb-ctx=refseq'...
+2019-05-31T15:49:23 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:24 prefetch.2.9.3: 26) 'ncbi-acc:GL000191.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:24 prefetch.2.9.3: 27) Downloading 'ncbi-acc:GL000192.1?vdb-ctx=refseq'...
+2019-05-31T15:49:24 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:25 prefetch.2.9.3: 27) 'ncbi-acc:GL000192.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:26 prefetch.2.9.3: 28) Downloading 'ncbi-acc:GL000193.1?vdb-ctx=refseq'...
+2019-05-31T15:49:26 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:26 prefetch.2.9.3: 28) 'ncbi-acc:GL000193.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:26 prefetch.2.9.3: 29) Downloading 'ncbi-acc:GL000194.1?vdb-ctx=refseq'...
+2019-05-31T15:49:26 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:27 prefetch.2.9.3: 29) 'ncbi-acc:GL000194.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:27 prefetch.2.9.3: 30) Downloading 'ncbi-acc:GL000195.1?vdb-ctx=refseq'...
+2019-05-31T15:49:27 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:28 prefetch.2.9.3: 30) 'ncbi-acc:GL000195.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:29 prefetch.2.9.3: 31) Downloading 'ncbi-acc:GL000196.1?vdb-ctx=refseq'...
+2019-05-31T15:49:29 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:29 prefetch.2.9.3: 31) 'ncbi-acc:GL000196.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:30 prefetch.2.9.3: 32) Downloading 'ncbi-acc:GL000197.1?vdb-ctx=refseq'...
+2019-05-31T15:49:30 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:30 prefetch.2.9.3: 32) 'ncbi-acc:GL000197.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:30 prefetch.2.9.3: 33) Downloading 'ncbi-acc:GL000198.1?vdb-ctx=refseq'...
+2019-05-31T15:49:30 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:31 prefetch.2.9.3: 33) 'ncbi-acc:GL000198.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:31 prefetch.2.9.3: 34) Downloading 'ncbi-acc:GL000199.1?vdb-ctx=refseq'...
+2019-05-31T15:49:31 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:32 prefetch.2.9.3: 34) 'ncbi-acc:GL000199.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:32 prefetch.2.9.3: 35) Downloading 'ncbi-acc:GL000200.1?vdb-ctx=refseq'...
+2019-05-31T15:49:32 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:33 prefetch.2.9.3: 35) 'ncbi-acc:GL000200.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:34 prefetch.2.9.3: 36) Downloading 'ncbi-acc:GL000201.1?vdb-ctx=refseq'...
+2019-05-31T15:49:34 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:34 prefetch.2.9.3: 36) 'ncbi-acc:GL000201.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:34 prefetch.2.9.3: 37) Downloading 'ncbi-acc:GL000203.1?vdb-ctx=refseq'...
+2019-05-31T15:49:34 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:35 prefetch.2.9.3: 37) 'ncbi-acc:GL000203.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:35 prefetch.2.9.3: 38) Downloading 'ncbi-acc:GL000204.1?vdb-ctx=refseq'...
+2019-05-31T15:49:35 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:36 prefetch.2.9.3: 38) 'ncbi-acc:GL000204.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:36 prefetch.2.9.3: 39) Downloading 'ncbi-acc:GL000205.1?vdb-ctx=refseq'...
+2019-05-31T15:49:36 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:37 prefetch.2.9.3: 39) 'ncbi-acc:GL000205.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:37 prefetch.2.9.3: 40) Downloading 'ncbi-acc:GL000206.1?vdb-ctx=refseq'...
+2019-05-31T15:49:37 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:38 prefetch.2.9.3: 40) 'ncbi-acc:GL000206.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:38 prefetch.2.9.3: 41) Downloading 'ncbi-acc:GL000208.1?vdb-ctx=refseq'...
+2019-05-31T15:49:38 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:39 prefetch.2.9.3: 41) 'ncbi-acc:GL000208.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:39 prefetch.2.9.3: 42) Downloading 'ncbi-acc:GL000209.1?vdb-ctx=refseq'...
+2019-05-31T15:49:39 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:40 prefetch.2.9.3: 42) 'ncbi-acc:GL000209.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:40 prefetch.2.9.3: 43) Downloading 'ncbi-acc:GL000210.1?vdb-ctx=refseq'...
+2019-05-31T15:49:40 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:41 prefetch.2.9.3: 43) 'ncbi-acc:GL000210.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:41 prefetch.2.9.3: 44) Downloading 'ncbi-acc:GL000211.1?vdb-ctx=refseq'...
+2019-05-31T15:49:41 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:41 prefetch.2.9.3: 44) 'ncbi-acc:GL000211.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:42 prefetch.2.9.3: 45) Downloading 'ncbi-acc:GL000212.1?vdb-ctx=refseq'...
+2019-05-31T15:49:42 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:42 prefetch.2.9.3: 45) 'ncbi-acc:GL000212.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:43 prefetch.2.9.3: 46) Downloading 'ncbi-acc:GL000213.1?vdb-ctx=refseq'...
+2019-05-31T15:49:43 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:44 prefetch.2.9.3: 46) 'ncbi-acc:GL000213.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:44 prefetch.2.9.3: 47) Downloading 'ncbi-acc:GL000214.1?vdb-ctx=refseq'...
+2019-05-31T15:49:44 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:45 prefetch.2.9.3: 47) 'ncbi-acc:GL000214.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:45 prefetch.2.9.3: 48) Downloading 'ncbi-acc:GL000215.1?vdb-ctx=refseq'...
+2019-05-31T15:49:45 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:45 prefetch.2.9.3: 48) 'ncbi-acc:GL000215.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:46 prefetch.2.9.3: 49) Downloading 'ncbi-acc:GL000216.1?vdb-ctx=refseq'...
+2019-05-31T15:49:46 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:46 prefetch.2.9.3: 49) 'ncbi-acc:GL000216.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:47 prefetch.2.9.3: 50) Downloading 'ncbi-acc:GL000217.1?vdb-ctx=refseq'...
+2019-05-31T15:49:47 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:47 prefetch.2.9.3: 50) 'ncbi-acc:GL000217.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:48 prefetch.2.9.3: 51) Downloading 'ncbi-acc:GL000218.1?vdb-ctx=refseq'...
+2019-05-31T15:49:48 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:49 prefetch.2.9.3: 51) 'ncbi-acc:GL000218.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:49 prefetch.2.9.3: 52) Downloading 'ncbi-acc:GL000219.1?vdb-ctx=refseq'...
+2019-05-31T15:49:49 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:50 prefetch.2.9.3: 52) 'ncbi-acc:GL000219.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:50 prefetch.2.9.3: 53) Downloading 'ncbi-acc:GL000220.1?vdb-ctx=refseq'...
+2019-05-31T15:49:50 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:51 prefetch.2.9.3: 53) 'ncbi-acc:GL000220.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:51 prefetch.2.9.3: 54) Downloading 'ncbi-acc:GL000221.1?vdb-ctx=refseq'...
+2019-05-31T15:49:51 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:52 prefetch.2.9.3: 54) 'ncbi-acc:GL000221.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:52 prefetch.2.9.3: 55) Downloading 'ncbi-acc:GL000222.1?vdb-ctx=refseq'...
+2019-05-31T15:49:52 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:52 prefetch.2.9.3: 55) 'ncbi-acc:GL000222.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:53 prefetch.2.9.3: 56) Downloading 'ncbi-acc:GL000223.1?vdb-ctx=refseq'...
+2019-05-31T15:49:53 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:54 prefetch.2.9.3: 56) 'ncbi-acc:GL000223.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:54 prefetch.2.9.3: 57) Downloading 'ncbi-acc:GL000224.1?vdb-ctx=refseq'...
+2019-05-31T15:49:54 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:55 prefetch.2.9.3: 57) 'ncbi-acc:GL000224.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:55 prefetch.2.9.3: 58) Downloading 'ncbi-acc:GL000225.1?vdb-ctx=refseq'...
+2019-05-31T15:49:55 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:56 prefetch.2.9.3: 58) 'ncbi-acc:GL000225.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:56 prefetch.2.9.3: 59) Downloading 'ncbi-acc:GL000226.1?vdb-ctx=refseq'...
+2019-05-31T15:49:56 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:57 prefetch.2.9.3: 59) 'ncbi-acc:GL000226.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:57 prefetch.2.9.3: 60) Downloading 'ncbi-acc:GL000227.1?vdb-ctx=refseq'...
+2019-05-31T15:49:57 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:58 prefetch.2.9.3: 60) 'ncbi-acc:GL000227.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:58 prefetch.2.9.3: 61) Downloading 'ncbi-acc:GL000228.1?vdb-ctx=refseq'...
+2019-05-31T15:49:58 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:49:59 prefetch.2.9.3: 61) 'ncbi-acc:GL000228.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:49:59 prefetch.2.9.3: 62) Downloading 'ncbi-acc:GL000229.1?vdb-ctx=refseq'...
+2019-05-31T15:49:59 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:00 prefetch.2.9.3: 62) 'ncbi-acc:GL000229.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:00 prefetch.2.9.3: 63) Downloading 'ncbi-acc:GL000230.1?vdb-ctx=refseq'...
+2019-05-31T15:50:00 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:01 prefetch.2.9.3: 63) 'ncbi-acc:GL000230.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:01 prefetch.2.9.3: 64) Downloading 'ncbi-acc:GL000231.1?vdb-ctx=refseq'...
+2019-05-31T15:50:01 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:01 prefetch.2.9.3: 64) 'ncbi-acc:GL000231.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:02 prefetch.2.9.3: 65) Downloading 'ncbi-acc:GL000232.1?vdb-ctx=refseq'...
+2019-05-31T15:50:02 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:02 prefetch.2.9.3: 65) 'ncbi-acc:GL000232.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:03 prefetch.2.9.3: 66) Downloading 'ncbi-acc:GL000234.1?vdb-ctx=refseq'...
+2019-05-31T15:50:03 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:03 prefetch.2.9.3: 66) 'ncbi-acc:GL000234.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:04 prefetch.2.9.3: 67) Downloading 'ncbi-acc:GL000235.1?vdb-ctx=refseq'...
+2019-05-31T15:50:04 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:04 prefetch.2.9.3: 67) 'ncbi-acc:GL000235.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:05 prefetch.2.9.3: 68) Downloading 'ncbi-acc:GL000237.1?vdb-ctx=refseq'...
+2019-05-31T15:50:05 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:05 prefetch.2.9.3: 68) 'ncbi-acc:GL000237.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:06 prefetch.2.9.3: 69) Downloading 'ncbi-acc:GL000238.1?vdb-ctx=refseq'...
+2019-05-31T15:50:06 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:06 prefetch.2.9.3: 69) 'ncbi-acc:GL000238.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:07 prefetch.2.9.3: 70) Downloading 'ncbi-acc:GL000240.1?vdb-ctx=refseq'...
+2019-05-31T15:50:07 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:07 prefetch.2.9.3: 70) 'ncbi-acc:GL000240.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:08 prefetch.2.9.3: 71) Downloading 'ncbi-acc:GL000241.1?vdb-ctx=refseq'...
+2019-05-31T15:50:08 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:08 prefetch.2.9.3: 71) 'ncbi-acc:GL000241.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:09 prefetch.2.9.3: 72) Downloading 'ncbi-acc:GL000242.1?vdb-ctx=refseq'...
+2019-05-31T15:50:09 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:09 prefetch.2.9.3: 72) 'ncbi-acc:GL000242.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:10 prefetch.2.9.3: 73) Downloading 'ncbi-acc:GL000243.1?vdb-ctx=refseq'...
+2019-05-31T15:50:10 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:10 prefetch.2.9.3: 73) 'ncbi-acc:GL000243.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:11 prefetch.2.9.3: 74) Downloading 'ncbi-acc:GL000244.1?vdb-ctx=refseq'...
+2019-05-31T15:50:11 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:11 prefetch.2.9.3: 74) 'ncbi-acc:GL000244.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:11 prefetch.2.9.3: 75) Downloading 'ncbi-acc:GL000246.1?vdb-ctx=refseq'...
+2019-05-31T15:50:11 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:12 prefetch.2.9.3: 75) 'ncbi-acc:GL000246.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:12 prefetch.2.9.3: 76) Downloading 'ncbi-acc:GL000249.1?vdb-ctx=refseq'...
+2019-05-31T15:50:12 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:13 prefetch.2.9.3: 76) 'ncbi-acc:GL000249.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:13 prefetch.2.9.3: 77) Downloading 'ncbi-acc:NC_007605.1?vdb-ctx=refseq'...
+2019-05-31T15:50:13 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:14 prefetch.2.9.3: 77) 'ncbi-acc:NC_007605.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:14 prefetch.2.9.3: 78) Downloading 'ncbi-acc:NC_012920.1?vdb-ctx=refseq'...
+2019-05-31T15:50:14 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:15 prefetch.2.9.3: 78) 'ncbi-acc:NC_012920.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:50:16 prefetch.2.9.3: 'SRR8615712' has remote vdbcache
+2019-05-31T15:50:16 prefetch.2.9.3:  Downloading vdbcache...
+2019-05-31T15:50:16 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:50:29 prefetch.2.9.3:  vdbcache was downloaded successfully
+Fri May 31 15:50:29 UTC 2019
+K562
+
+2019-05-31T15:50:31 prefetch.2.9.3: 1) Downloading 'SRR8615717'...
+2019-05-31T15:50:31 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:56:40 prefetch.2.9.3: 1) 'SRR8615717' was downloaded successfully
+2019-05-31T15:57:05 prefetch.2.9.3: 'SRR8615717' has 78 unresolved dependencies
+2019-05-31T15:57:07 prefetch.2.9.3: 2) 'ncbi-acc:CM000663.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:08 prefetch.2.9.3: 3) 'ncbi-acc:CM000664.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:08 prefetch.2.9.3: 4) 'ncbi-acc:CM000665.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:09 prefetch.2.9.3: 5) 'ncbi-acc:CM000666.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:10 prefetch.2.9.3: 6) 'ncbi-acc:CM000667.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:11 prefetch.2.9.3: 7) 'ncbi-acc:CM000668.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:11 prefetch.2.9.3: 8) 'ncbi-acc:CM000669.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:12 prefetch.2.9.3: 9) 'ncbi-acc:CM000670.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:13 prefetch.2.9.3: 10) 'ncbi-acc:CM000671.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:13 prefetch.2.9.3: 11) 'ncbi-acc:CM000672.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:14 prefetch.2.9.3: 12) 'ncbi-acc:CM000673.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:15 prefetch.2.9.3: 13) 'ncbi-acc:CM000674.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:15 prefetch.2.9.3: 14) 'ncbi-acc:CM000675.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:16 prefetch.2.9.3: 15) 'ncbi-acc:CM000676.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:16 prefetch.2.9.3: 16) 'ncbi-acc:CM000677.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:17 prefetch.2.9.3: 17) 'ncbi-acc:CM000678.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:17 prefetch.2.9.3: 18) 'ncbi-acc:CM000679.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:18 prefetch.2.9.3: 19) 'ncbi-acc:CM000680.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:19 prefetch.2.9.3: 20) 'ncbi-acc:CM000681.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:19 prefetch.2.9.3: 21) 'ncbi-acc:CM000682.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:20 prefetch.2.9.3: 22) 'ncbi-acc:CM000683.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:21 prefetch.2.9.3: 23) 'ncbi-acc:CM000684.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:21 prefetch.2.9.3: 24) 'ncbi-acc:CM000685.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:22 prefetch.2.9.3: 25) 'ncbi-acc:CM000686.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:22 prefetch.2.9.3: 26) 'ncbi-acc:GL000191.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:23 prefetch.2.9.3: 27) 'ncbi-acc:GL000192.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:23 prefetch.2.9.3: 28) 'ncbi-acc:GL000193.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:24 prefetch.2.9.3: 29) 'ncbi-acc:GL000194.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:25 prefetch.2.9.3: 30) 'ncbi-acc:GL000195.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:25 prefetch.2.9.3: 31) 'ncbi-acc:GL000196.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:26 prefetch.2.9.3: 32) 'ncbi-acc:GL000197.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:26 prefetch.2.9.3: 33) 'ncbi-acc:GL000198.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:27 prefetch.2.9.3: 34) 'ncbi-acc:GL000199.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:27 prefetch.2.9.3: 35) 'ncbi-acc:GL000200.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:28 prefetch.2.9.3: 36) Downloading 'ncbi-acc:GL000202.1?vdb-ctx=refseq'...
+2019-05-31T15:57:28 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:57:28 prefetch.2.9.3: 36) 'ncbi-acc:GL000202.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:57:29 prefetch.2.9.3: 37) 'ncbi-acc:GL000203.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:29 prefetch.2.9.3: 38) 'ncbi-acc:GL000204.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:30 prefetch.2.9.3: 39) 'ncbi-acc:GL000205.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:31 prefetch.2.9.3: 40) 'ncbi-acc:GL000208.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:31 prefetch.2.9.3: 41) 'ncbi-acc:GL000209.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:32 prefetch.2.9.3: 42) 'ncbi-acc:GL000211.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:32 prefetch.2.9.3: 43) 'ncbi-acc:GL000212.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:33 prefetch.2.9.3: 44) 'ncbi-acc:GL000213.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:34 prefetch.2.9.3: 45) 'ncbi-acc:GL000214.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:34 prefetch.2.9.3: 46) 'ncbi-acc:GL000215.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:35 prefetch.2.9.3: 47) 'ncbi-acc:GL000216.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:35 prefetch.2.9.3: 48) 'ncbi-acc:GL000217.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:36 prefetch.2.9.3: 49) 'ncbi-acc:GL000218.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:36 prefetch.2.9.3: 50) 'ncbi-acc:GL000219.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:37 prefetch.2.9.3: 51) 'ncbi-acc:GL000220.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:38 prefetch.2.9.3: 52) 'ncbi-acc:GL000221.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:38 prefetch.2.9.3: 53) 'ncbi-acc:GL000222.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:39 prefetch.2.9.3: 54) 'ncbi-acc:GL000223.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:39 prefetch.2.9.3: 55) 'ncbi-acc:GL000224.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:40 prefetch.2.9.3: 56) 'ncbi-acc:GL000225.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:41 prefetch.2.9.3: 57) 'ncbi-acc:GL000227.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:41 prefetch.2.9.3: 58) 'ncbi-acc:GL000228.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:42 prefetch.2.9.3: 59) 'ncbi-acc:GL000229.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:42 prefetch.2.9.3: 60) 'ncbi-acc:GL000230.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:43 prefetch.2.9.3: 61) 'ncbi-acc:GL000231.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:44 prefetch.2.9.3: 62) 'ncbi-acc:GL000232.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:44 prefetch.2.9.3: 63) Downloading 'ncbi-acc:GL000233.1?vdb-ctx=refseq'...
+2019-05-31T15:57:44 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:57:45 prefetch.2.9.3: 63) 'ncbi-acc:GL000233.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:57:45 prefetch.2.9.3: 64) 'ncbi-acc:GL000234.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:46 prefetch.2.9.3: 65) 'ncbi-acc:GL000235.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:46 prefetch.2.9.3: 66) Downloading 'ncbi-acc:GL000236.1?vdb-ctx=refseq'...
+2019-05-31T15:57:46 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:57:47 prefetch.2.9.3: 66) 'ncbi-acc:GL000236.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:57:47 prefetch.2.9.3: 67) 'ncbi-acc:GL000237.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:48 prefetch.2.9.3: 68) 'ncbi-acc:GL000238.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:49 prefetch.2.9.3: 69) Downloading 'ncbi-acc:GL000239.1?vdb-ctx=refseq'...
+2019-05-31T15:57:49 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:57:49 prefetch.2.9.3: 69) 'ncbi-acc:GL000239.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:57:49 prefetch.2.9.3: 70) 'ncbi-acc:GL000240.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:50 prefetch.2.9.3: 71) 'ncbi-acc:GL000241.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:51 prefetch.2.9.3: 72) 'ncbi-acc:GL000243.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:51 prefetch.2.9.3: 73) 'ncbi-acc:GL000244.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:52 prefetch.2.9.3: 74) Downloading 'ncbi-acc:GL000245.1?vdb-ctx=refseq'...
+2019-05-31T15:57:52 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:57:52 prefetch.2.9.3: 74) 'ncbi-acc:GL000245.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:57:53 prefetch.2.9.3: 75) 'ncbi-acc:GL000246.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:54 prefetch.2.9.3: 76) Downloading 'ncbi-acc:GL000247.1?vdb-ctx=refseq'...
+2019-05-31T15:57:54 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:57:54 prefetch.2.9.3: 76) 'ncbi-acc:GL000247.1?vdb-ctx=refseq' was downloaded successfully
+2019-05-31T15:57:55 prefetch.2.9.3: 77) 'ncbi-acc:GL000249.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:55 prefetch.2.9.3: 78) 'ncbi-acc:NC_007605.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:56 prefetch.2.9.3: 79) 'ncbi-acc:NC_012920.1?vdb-ctx=refseq' is found locally
+2019-05-31T15:57:57 prefetch.2.9.3: 'SRR8615717' has remote vdbcache
+2019-05-31T15:57:57 prefetch.2.9.3:  Downloading vdbcache...
+2019-05-31T15:57:57 prefetch.2.9.3:  Downloading via https...
+2019-05-31T15:58:20 prefetch.2.9.3:  vdbcache was downloaded successfully
+Fri May 31 15:58:20 UTC 2019
+kec2-user@ip-172-31-38-171:~/align\[ec2-user@ip-172-31-38-171 align]$ kec2-user@ip-172-31-38-171:~\[ec2-user@ip-172-31-38-171 ~]$ 

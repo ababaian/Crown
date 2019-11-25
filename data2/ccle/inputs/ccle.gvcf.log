@@ -1,0 +1,35 @@
+[01;32mubuntu@ip-172-31-35-24[00m:[01;34m~[00m$ bash ADcalc_ccle.sh 
+Analyzing ccle...
+Started processing 18S
+[mpileup] 945 samples in 945 input files
+Warning: Potential memory hog, up to 94500000M reads in the pileup!
+Done with 18S 
+chr13:1003660-1005529
+Started processing 18SE
+[mpileup] 945 samples in 945 input files
+Warning: Potential memory hog, up to 94500000M reads in the pileup!
+Done with 18SE 
+chr13:1005529-1005629
+Started processing 5S
+[mpileup] 945 samples in 945 input files
+Warning: Potential memory hog, up to 94500000M reads in the pileup!
+Done with 5S 
+chr13:10219-10340
+Started processing 5.8S
+[mpileup] 945 samples in 945 input files
+Warning: Potential memory hog, up to 94500000M reads in the pileup!
+Done with 5.8S 
+chr13:1006622-1006779
+Started processing 28S
+[mpileup] 945 samples in 945 input files
+Warning: Potential memory hog, up to 94500000M reads in the pileup!
+Done with 28S 
+chr13:1007948-1013018
+upload: ./ccle.18SE.gvcf to s3://crownproject/ccle/gvcf/ccle.18SE.gvcf
+Completed 1 of 18 part(s) with 5 file(s) remainingCompleted 2 of 18 part(s) with 5 file(s) remainingCompleted 3 of 18 part(s) with 5 file(s) remainingCompleted 4 of 18 part(s) with 5 file(s) remainingCompleted 5 of 18 part(s) with 5 file(s) remainingCompleted 6 of 18 part(s) with 5 file(s) remainingCompleted 7 of 18 part(s) with 5 file(s) remainingCompleted 8 of 18 part(s) with 5 file(s) remainingCompleted 9 of 18 part(s) with 5 file(s) remainingCompleted 10 of 18 part(s) with 5 file(s) remainingupload: ./ccle.bamlist to s3://crownproject/ccle/gvcf/ccle.bamlist
+Completed 11 of 18 part(s) with 4 file(s) remainingupload: ./ccle.5S.gvcf to s3://crownproject/ccle/gvcf/ccle.5S.gvcf
+Completed 12 of 18 part(s) with 3 file(s) remainingupload: ./ccle.18S.gvcf to s3://crownproject/ccle/gvcf/ccle.18S.gvcf
+Completed 12 of 18 part(s) with 2 file(s) remainingCompleted 13 of 18 part(s) with 2 file(s) remainingCompleted 14 of 18 part(s) with 2 file(s) remainingupload: ./ccle.5.8S.gvcf to s3://crownproject/ccle/gvcf/ccle.5.8S.gvcf
+Completed 15 of 18 part(s) with 1 file(s) remainingCompleted 16 of 18 part(s) with 1 file(s) remainingCompleted 17 of 18 part(s) with 1 file(s) remainingCompleted 18 of 18 part(s) with 1 file(s) remainingupload: ./ccle.28S.gvcf to s3://crownproject/ccle/gvcf/ccle.28S.gvcf
+Run Complete -- Instance is online.
+[01;32mubuntu@ip-172-31-35-24[00m:[01;34m~[00m$ 
