@@ -1,0 +1,119 @@
+---
+title: "CRC_CMS"
+output: html_document
+---
+
+Date: 190726
+
+```{r setup,c("darkorchid") include=FALSE}
+library(reshape2)
+library(ggplot2)
+```
+
+# Import + Intersect Data
+
+```{r}
+# Load MACP df and parse
+  load('tcga.macp_190727.Rdata')
+
+# RAF / VAF
+  MACP$RAF = MACP$T / MACP$DP
+  MACP$VAF = 1 - MACP$RAF
+  
+# Subset data for analysis
+# COAD and READ cohorts only
+  Normals = which( grepl( '11', MACP$'lib.code') & ( grepl('TCGA-COAD', MACP$cohort) | grepl('TCGA-READ', MACP$cohort)))
+  Cancers = which(!grepl( '11', MACP$'lib.code') & ( grepl('TCGA-COAD', MACP$cohort) | grepl('TCGA-READ', MACP$cohort)))
+
+# Calculate global "Normal" 99% quantile
+  q95 = quantile( MACP$VAF[ Normals ], 0.05)
+  q99 = quantile( MACP$VAF[ Normals ], 0.01)
+  sd2 = mean(MACP$VAF[Normals]) - 2*sd(MACP$VAF[Normals])
+  sd3 = mean(MACP$VAF[Normals]) - 3*sd(MACP$VAF[Normals])
+  #sd3 = 0.10
+
+# Define hypo-mod libraries
+  MACP$hypo.macp = ".normo"
+  MACP$hypo.macp[which(MACP$VAF <= sd3)] = ".hypo"
+  
+# Load CMS classification
+  CMS <- read.table(file = 'cms_tcga.txt', header = T)
+  
+# Intersect/Annotate CMS matrix into MACP data.frame
+  lookup.cms <- sapply(CMS$sample, match, table = MACP$pt)
+
+# From 570/573 entries in CMS have a match in MACP
+  # TCGA-A6-2670; TCGA-AZ-4681; TCGA-AA-3695 are no-match
+  CMS <- CMS[ !is.na(lookup.cms), ]
+  lookup.cms <- lookup.cms[ !is.na(lookup.cms) ]
+
+# Assign CMS classification to MACP matrix
+  MACP$cms <- NA
+  MACP$cms[ lookup.cms ] <- as.character(CMS$CMS_final_network_plus_RFclassifier_in_nonconsensus_samples)
+  MACP <- MACP[ !is.na(MACP$cms), ]
+  
+```
+
+# Binomial Test  / Fishers Exact Test
+```{r}
+
+# Intersect CMS and hypo.macp
+  MACP$cms.hypo <- paste0(MACP$cms, MACP$hypo.macp)
+  cms <- table(MACP$cms)
+  cms.hypo <- table(MACP$cms.hypo)
+  
+  macp.rate <- length(which(MACP$hypo.macp == '.hypo')) / length(MACP$hypo.macp)
+  
+# Print fraction of each classification that is hypo.macp  
+  binom.test( x = length(which(MACP$cms.hypo == 'CMS1.hypo')),
+              n = length(which(MACP$cms == 'CMS1')),
+              p = macp.rate, alternative = 'two.sided')
+  
+  binom.test( x = length(which(MACP$cms.hypo == 'CMS2.hypo')),
+              n = length(which(MACP$cms == 'CMS2')),
+              p = macp.rate, alternative = 'two.sided')
+
+  binom.test( x = length(which(MACP$cms.hypo == 'CMS3.hypo')),
+              n = length(which(MACP$cms == 'CMS3')),
+              p = macp.rate, alternative = 'two.sided')
+
+  binom.test( x = length(which(MACP$cms.hypo == 'CMS4.hypo')),
+              n = length(which(MACP$cms == 'CMS4')),
+              p = macp.rate, alternative = 'two.sided')
+
+# One way ANOVA for mean
+  macp.aov <- aov(VAF ~ cms, data = MACP)
+  summary(macp.aov)
+  
+  plot <- ggplot(MACP, aes(cms, VAF, color = cms)) + geom_violin( ) + geom_boxplot() + geom_jitter() +
+   theme_bw()
+  plot
+  
+# Fishers Exact Test between proportions (also consider odds-ratio)
+  fisher.test( x = rbind(
+    c( cms.hypo['CMS1.hypo'], cms.hypo['CMS1.normo']),
+    c( cms.hypo['CMS2.hypo'], cms.hypo['CMS2.normo']) )
+  )
+  fisher.test( x = rbind(
+    c( cms.hypo['CMS1.hypo'], cms.hypo['CMS1.normo']),
+    c( cms.hypo['CMS3.hypo'], cms.hypo['CMS3.normo']) )
+  )
+  fisher.test( x = rbind(
+    c( cms.hypo['CMS1.hypo'], cms.hypo['CMS1.normo']),
+    c( cms.hypo['CMS4.hypo'], cms.hypo['CMS4.normo']) )
+  )
+  fisher.test( x = rbind(
+    c( cms.hypo['CMS2.hypo'], cms.hypo['CMS2.normo']),
+    c( cms.hypo['CMS3.hypo'], cms.hypo['CMS3.normo']) )
+  )
+  fisher.test( x = rbind(
+    c( cms.hypo['CMS2.hypo'], cms.hypo['CMS2.normo']),
+    c( cms.hypo['CMS4.hypo'], cms.hypo['CMS4.normo']) )
+  )
+  fisher.test( x = rbind(
+    c( cms.hypo['CMS3.hypo'], cms.hypo['CMS3.normo']),
+    c( cms.hypo['CMS4.hypo'], cms.hypo['CMS4.normo']) )
+  )
+  
+t.test(MACP$VAF[ which(MACP$cms != 'CMS2') ], (MACP$VAF[ which(MACP$cms == 'CMS2') ] ))
+```

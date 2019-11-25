@@ -67,15 +67,18 @@ data/rm/*
 data/tmp/*
 
 # rDNA/rRNA Variation in cancer
-# 
+# restricted data  ----------- 
 data2/*/hgr1.fa
+data2/aml/*
 data2/Breast/*
-data2/6EK0/*
+data2/cml/*
 data2/TALL/*
 data2/TALL2/*
 
 # extra files in data folders
 data2/*.pdf
+data2/6EK0/*
+data2/archs4/*
 
 #
 wiki/notebook/.ipynb_checkpoints/*
