@@ -126,7 +126,7 @@ bowtie2 --very-sensitive-local -p $THREADS --rg-id $RGID --rg LB:$RGLB --rg SM:$
   aws s3 cp s3://crownproject/resources/hgr1.gatk.fa.fai ./
   aws s3 cp s3://crownproject/resources/hgr1.gatk.dict ./
   
-#  java -Xmx12G -jar /home/ubuntu/software/GenomeAnalysisTK.jar \
+  java -Xmx12G -jar /home/ubuntu/software/GenomeAnalysisTK.jar \
   -R hgr1.gatk.fa -T HaplotypeCaller \
   -ploidy 2 --max_alternate_alleles 6 \
   -I $LIBRARY.bam -o $LIBRARY.hgr1.vcf
