@@ -14,14 +14,14 @@ Open-source investigation into ribosomal DNA/RNA variation in humans
 
 ## Content
 
-  `[./Crown/wiki/Home.md](./wiki/Home.md)`: 
+  [./Crown/wiki/Home.md](./wiki/Home.md): 
 	Index file for notebooks
 
   `./Crown/scripts/`:
 	Analysis scripts for Crown
 
 ### Research Files
-- [PROTOCOL: amino-carboxyl-propyl Reverse Transcriptase (aRT)-PCR](./resources/aRT-pCR]
+- [PROTOCOL: amino-carboxyl-propyl Reverse Transcriptase (aRT)-PCR](https://github.com/ababaian/Crown/tree/master/resources/aRT-PCR)
 - [100 Genomes (GVCF)](./data/hgr1_vcf/100g_gvcf/100g.hgr1.g.vcf.gz) [(XLS)](./data/hgr1_vcf/100g_gvcf/100genomes.hgr1.xls)
 - [100 Genomes hgr1-aligned BAM](./data/hgr1_vcf/100g_gvcf/100g_bamFiles.txt)
 - [hgr1 reference sequence (fasta)](./data/hgr1/hgr1.fa) [(annotation)](./data/rDNA_stats/hgr1/annot/rRNA.bed)
